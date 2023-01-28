@@ -1,0 +1,264 @@
+{
+	id: "290BD574E76653DF"
+	group: ""
+	order_index: 0
+	filename: "test"
+	title: "Test"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting Started"
+			x: -0.5d
+			y: 0.5d
+			subtitle: "Making Space"
+			description: ["Use your Tablet of Conjure Island on a Ritual Brazier to build your first island.\\n\\nInteracting with the Brazier after consuming the ritual will start it.\\n\\nFull documentation for Ars Nouveau is found within the Worn Notebook."]
+			id: "37129673918B4F75"
+			tasks: [{
+				id: "2E1A00522DF038A0"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+			rewards: [{
+				id: "7A803E59009D635C"
+				type: "item"
+				item: "ars_nouveau:worn_notebook"
+			}]
+		}
+		{
+			title: "Performing Rituals"
+			x: 1.0d
+			y: -0.5d
+			description: ["Once a Tablet has been placed in a Brazier and started, it cannot be removed. Choose your locations carefully!\\n\\nThe Ritual of Mana Regen will enable your spell casting within a limited range, and the Ritual of Sedimentation will generate cobblestone from nearby water."]
+			dependencies: ["37129673918B4F75"]
+			id: "3593A3B5C8427EB2"
+			tasks: [{
+				id: "10818F7E4BF36F8A"
+				type: "checkmark"
+				title: "I Won't Break My Rituals"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			description: ["Full documentation on Spell Creation is found in the Worn Notebook. To open your Spell Book, hold it and press 'c'.\\n\\nSpells must typically contain a Form, determing how a spell is cast, and an Effect, what the spell does.\\n\\nTo create Cobble, you will need two spells, one for Crush and one for Conjure Water. Using a Glyph item will add it to your known glyphs."]
+			dependencies: ["37129673918B4F75"]
+			id: "15B9F7659D132389"
+			tasks: [{
+				id: "2B52447DD447C95D"
+				type: "checkmark"
+				title: "Making Spells"
+			}]
+		}
+		{
+			title: "Crushin It"
+			x: 4.0d
+			y: 0.5d
+			description: ["Crushing Cobblestone will convert it to gravel with a slight chance for nuggets and resources. Crush it again to make sand, and again for clay and redstone.\\n\\nSelecting the Crush Glyph in REI will display all possible drop tables for Crush."]
+			dependencies: ["0CA3766AE7DA0929"]
+			id: "5434FD35898DA564"
+			tasks: [{
+				id: "1F60FD0B5B8A2D1B"
+				type: "item"
+				item: "minecraft:iron_nugget"
+			}]
+		}
+		{
+			title: "Waterworks"
+			x: 2.5d
+			y: 0.5d
+			description: ["The Ritual of Sedimentation will consume nearby Water Sources and generate a Cobblestone block. Place your ritual and equip a spell with Conjure Water. Cast your spell nearby until you receive cobble!"]
+			dependencies: [
+				"15B9F7659D132389"
+				"3593A3B5C8427EB2"
+			]
+			id: "0CA3766AE7DA0929"
+			tasks: [{
+				id: "718D372D540617A0"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			description: ["Soon you will need seeds! Frostaya can be composted, assuming you haven't eaten it all."]
+			dependencies: ["5434FD35898DA564"]
+			id: "3D12F7A364A0D277"
+			tasks: [{
+				id: "32C5CE6B2DA358B2"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			description: ["An Imbuement Chamber can be used to transmute certain items. Initially you will only be able to create Source Gems, but will eventually need to create Essences.\\n\\nPlace Lapis or Amethyst in the Imbuement Chamber and wait. Imbuement Chambers can consume source from nearby Source Jars to operate faster."]
+			dependencies: ["5434FD35898DA564"]
+			id: "76D63B3E394212ED"
+			tasks: [
+				{
+					id: "400505F357B61D9A"
+					type: "item"
+					item: "ars_nouveau:imbuement_chamber"
+				}
+				{
+					id: "7089FCBD9371DC30"
+					type: "item"
+					item: "ars_nouveau:source_gem"
+				}
+			]
+		}
+		{
+			title: "Acquire Source"
+			x: 4.0d
+			y: -2.5d
+			dependencies: ["76D63B3E394212ED"]
+			id: "73937DADFAF6DAEE"
+			tasks: [
+				{
+					id: "088FFF82286EFA63"
+					type: "item"
+					item: "ars_nouveau:agronomic_sourcelink"
+				}
+				{
+					id: "08905D5B90055DEF"
+					type: "item"
+					item: "ars_nouveau:source_jar"
+				}
+			]
+		}
+		{
+			title: "New Spells"
+			x: 4.0d
+			y: 2.0d
+			description: ["New Glyphs can be created at the Scribes Table. To open the menu, use your spell book on the table.\\n\\nGlyphs cost EXP and items to craft. Select your glyph you wish to craft. Throw items onto the table and your glyph will be created.\\n\\nFull Glyph documentation is in the worn notebook or item tooltips."]
+			dependencies: ["5434FD35898DA564"]
+			id: "7E99B255A00E8014"
+			tasks: [
+				{
+					id: "5E7638DE68DE6ACF"
+					type: "item"
+					item: "ars_nouveau:scribes_table"
+				}
+				{
+					id: "0D761155EE9498CB"
+					type: "item"
+					item: "ars_nouveau:glyph_craft"
+				}
+			]
+			rewards: [{
+				id: "44351945F2B163B3"
+				type: "item"
+				item: "ars_nouveau:glyph_self"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			description: ["Contains mycelium, bastion fruit, mushrooms, and vexing trees."]
+			dependencies: ["436678048E9C48BB"]
+			id: "209971171B86E7E9"
+			tasks: [{
+				id: "79DD5DCB0F136DBA"
+				type: "item"
+				item: "ars_caelum:ritual_conjure_island_vexing"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.0d
+			description: ["Contains moss, sweet berries, bamboo, mendosteen, and flourishing trees."]
+			dependencies: ["436678048E9C48BB"]
+			id: "7F43851A9C6D5805"
+			tasks: [{
+				id: "1FB9BFC2EC83D028"
+				type: "item"
+				item: "ars_caelum:ritual_conjure_island_flourishing"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			description: ["Contains lava, pumpkins, granite, and blazing archwood trees."]
+			dependencies: ["436678048E9C48BB"]
+			id: "28CE515EC64C90F8"
+			tasks: [{
+				id: "050ABAB1825D298F"
+				type: "item"
+				item: "ars_caelum:ritual_conjure_island_blazing"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			description: ["Contains coral, sugarcane, and sea grass. Also converts the nearby area into a Warm Ocean."]
+			dependencies: ["436678048E9C48BB"]
+			id: "47B78DE895A1E4E2"
+			tasks: [{
+				id: "342655738A133570"
+				type: "item"
+				item: "ars_caelum:ritual_conjure_island_cascading"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			dependencies: ["76D63B3E394212ED"]
+			id: "34602A8B5EB8F541"
+			tasks: [
+				{
+					id: "7527C0643A0B0024"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "3AD834ED7339C40D"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 4L
+					consume_items: false
+				}
+				{
+					id: "24669E4C05A69CF2"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["Some recipes for the Imbuement Chamber require Arcane Pedestals placed adjacent to the chamber.\\n\\nTo craft Essences, place three pedestals near the imbuement chamber and place the items required for each essence onto the pedestal. Then place your gem in the chamber to begin crafting an essence.\\n\\nItems on the pedestal are not consumed."]
+			dependencies: ["76D63B3E394212ED"]
+			id: "26E668C31E63E807"
+			tasks: [
+				{
+					id: "6C58D3F5A046B06E"
+					type: "item"
+					item: "ars_nouveau:manipulation_essence"
+				}
+				{
+					id: "7E349C620D4F74B1"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 3L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			description: ["Archwood Islands contain new and otherwise unobtainable resources. Each Ritual will require a full Source Jar near the Ritual Brazier. Perform the ritual 14+ blocks from any other blocks, or you may miss out on parts of the island.\\n\\nUse Manipulation Essence to convert Archwood Saplings for the island of your choice."]
+			dependencies: ["73937DADFAF6DAEE"]
+			id: "436678048E9C48BB"
+			tasks: [{
+				id: "0E1DF835702B31C4"
+				type: "checkmark"
+				title: "Island Conjuring"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
