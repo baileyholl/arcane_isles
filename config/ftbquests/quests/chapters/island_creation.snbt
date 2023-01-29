@@ -57,6 +57,7 @@
 		{
 			x: -2.5d
 			y: 0.0d
+			description: ["Places oak and birch trees nearby with a radius of 7, increased for each source gem added to the ritual.\\n\\nAugmenting with a Brown Mushroom will convert the area and resources to Taiga.\\n\\nAugmenting with Glow Berries will spawn a jungle."]
 			dependencies: ["7F43851A9C6D5805"]
 			id: "34CC74F94005C45D"
 			tasks: [
@@ -90,6 +91,7 @@
 		{
 			x: -2.0d
 			y: -1.0d
+			description: ["Spawns flowers and grass nearby with a radius of 7, increased for each source gem added.\\n\\nAugmenting with Sand will change the ritual to place cactus if possible."]
 			dependencies: ["7F43851A9C6D5805"]
 			id: "493F79CBA01189DF"
 			tasks: [
@@ -108,6 +110,7 @@
 		{
 			x: -1.0d
 			y: -1.5d
+			description: ["Creates an island of grass and dirt. Starts with a radius of 7, and increased by 1 for each Source Gem added to the ritual. Converts the biome to Plains."]
 			dependencies: ["7F43851A9C6D5805"]
 			id: "5263474A41F518A2"
 			tasks: [{
@@ -117,8 +120,12 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -1.5d
+			x: 2.0d
+			y: -2.5d
+			description: [
+				"Creates an island of Sculk and Deepslate and converts the area to Deep Dark. Be warned, the Warden is near!\\n\\nPerform 14 blocks from anything else. Requires a full jar of source."
+				""
+			]
 			dependencies: ["7D9EFB225A839AAD"]
 			id: "42DA6FEE22215A5A"
 			tasks: [{
@@ -130,6 +137,7 @@
 		{
 			x: 1.0d
 			y: -1.5d
+			description: ["Consumes food to generate source, granting bonuses for Sourceberries and magical food.\\n\\nAll Sourcelinks can consume items placed into adjacent pedestals."]
 			dependencies: ["209971171B86E7E9"]
 			id: "7D3C01D14E69EA26"
 			tasks: [{
@@ -139,8 +147,9 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 0.0d
+			x: 2.0d
+			y: -1.0d
+			description: ["Conjures a geode of Calcite, Basalt, and Amethyst. Summon 14 blocks from anything else. Requires a full jar of source."]
 			dependencies: ["209971171B86E7E9"]
 			id: "7D9EFB225A839AAD"
 			tasks: [{
@@ -167,19 +176,28 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.0d
+			x: 3.5d
+			y: -1.0d
+			description: ["Amethyst Golems can automate the collection and growing of Amethyst, and converts nearby Amethyst Blocks into Budding Amethyst.\\n\\nObtained by performing a Ritual of Awakening near a Budding Amethyst block."]
 			dependencies: ["7D9EFB225A839AAD"]
 			id: "3AD4C88E5DE9C0AF"
-			tasks: [{
-				id: "15626879437D3063"
-				type: "item"
-				item: "ars_nouveau:amethyst_golem_charm"
-			}]
+			tasks: [
+				{
+					id: "15626879437D3063"
+					type: "item"
+					item: "ars_nouveau:amethyst_golem_charm"
+				}
+				{
+					id: "6D33C17ADD7BD5E3"
+					type: "item"
+					item: "ars_nouveau:ritual_awakening"
+				}
+			]
 		}
 		{
 			x: 1.0d
 			y: 4.5d
+			description: ["Creates an island of Sand and Sandstone. Converts the area to Desert. Starts with a radius of 7, increased for each Source Gem applied.\\n\\nAugmenting with Terracotta will create a Badlands with red sand and terracotta."]
 			dependencies: ["28CE515EC64C90F8"]
 			id: "0946010E36BFBE7F"
 			tasks: [{
@@ -191,6 +209,7 @@
 		{
 			x: 2.5d
 			y: 3.0d
+			description: ["Consumes burnable materials to generate source. Will convert nearby Stone into Magma and Lava. See the worn notebook for more.\\n\\nCan consume items from adjacent pedestals."]
 			dependencies: ["28CE515EC64C90F8"]
 			id: "32D0704AED5BF1D4"
 			tasks: [{
@@ -214,6 +233,35 @@
 				id: "03BF30A850782E9E"
 				type: "item"
 				item: "ars_nouveau:starbuncle_shards"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: ["Summons the Stronghold Portal Room. Note: The portal cannot be moved once placed. Perform far from other blocks! Requires a full jar of source."]
+			dependencies: ["209971171B86E7E9"]
+			id: "656A7A573BD36A4F"
+			tasks: [{
+				id: "52CF439B0A365578"
+				type: "item"
+				item: "ars_caelum:ritual_conjure_island_end_portal"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			dependencies: ["7D9EFB225A839AAD"]
+			id: "0415DA254AB79A7C"
+			tasks: [{
+				id: "4FCF1073F6E33765"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "hexcasting:thehexbook"
+					}
+				}
 			}]
 		}
 	]

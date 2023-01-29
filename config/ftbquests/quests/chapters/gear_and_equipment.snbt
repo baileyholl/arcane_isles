@@ -5,11 +5,12 @@
 	filename: "gear_and_equipment"
 	title: "Gear and Equipment"
 	default_quest_shape: ""
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	quests: [
 		{
-			x: 0.0d
+			x: -0.5d
 			y: 0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "14D75769B9098DC7"
 			tasks: [{
 				id: "0C62B3BF9833D767"
@@ -24,8 +25,9 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: 0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "27E928F3752CA5E8"
 			tasks: [{
 				id: "70D7B99CD437DE8B"
@@ -40,8 +42,9 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: -0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "1A2F2EDAFC7C6C66"
 			tasks: [{
 				id: "0320EF661A0720C3"
@@ -54,8 +57,9 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -1.5d
 			y: -0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "2A821F6CEDCF1FB2"
 			tasks: [{
 				id: "0B22DFD52216BEE0"
@@ -64,8 +68,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -3.0d
+			x: -1.0d
+			y: -2.0d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "5A21DF68C69794F1"
 			tasks: [{
 				id: "1A02AAB1E8F3264F"
@@ -74,8 +79,9 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -3.0d
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "7BB0DDEF328A4A1C"
 			tasks: [{
 				id: "68D0A8D61CB9F26B"
@@ -84,8 +90,9 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -5.0d
+			x: 0.5d
+			y: -3.0d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "51A882C9DAF0EE4E"
 			tasks: [{
 				id: "780D177AD1464F6E"
@@ -94,8 +101,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -5.0d
+			x: -0.5d
+			y: -3.0d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "38C3DF3DA00EA9E6"
 			tasks: [{
 				id: "48DBC8C063F7F807"
@@ -104,8 +112,9 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.5d
 			y: -0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "36B3477F77D1A0C7"
 			tasks: [{
 				id: "16BB4616F5BB47A9"
@@ -118,8 +127,9 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.5d
 			y: 0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "5E6D6D4F39333627"
 			tasks: [{
 				id: "1B6E081718856424"
@@ -132,8 +142,9 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -0.5d
 			y: -0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "4A64F9DFBE022CB9"
 			tasks: [{
 				id: "5D9E92CA413FAB89"
@@ -152,13 +163,38 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -3.0d
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["632AD43DFB1E7DB7"]
 			id: "02377E6F4C466FAE"
 			tasks: [{
 				id: "03AE74373BC200E6"
 				type: "item"
 				item: "ars_nouveau:jar_of_light"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			dependencies: ["632AD43DFB1E7DB7"]
+			id: "4A63A6C7E8C2EC9D"
+			tasks: [{
+				id: "43D1A14C1C4B182A"
+				type: "item"
+				item: "ars_elemental:air_bangle"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["Many items and blocks added by Ars Nouveau and addons are not covered in these quests. See the Worn Notebook for a full list."]
+			dependencies: ["75EF2966C0C149EF"]
+			hide: true
+			id: "632AD43DFB1E7DB7"
+			tasks: [{
+				id: "7579FBE4232EA91D"
+				type: "checkmark"
+				title: "Gear and Equipment"
 			}]
 		}
 	]

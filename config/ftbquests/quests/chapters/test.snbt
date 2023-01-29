@@ -328,6 +328,7 @@
 		{
 			x: 7.0d
 			y: -4.0d
+			description: ["Starbuncles can transport items, harvest sourceberries, and pick items off the ground."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "166A8594ADE733CA"
 			tasks: [{
@@ -360,6 +361,7 @@
 		{
 			x: 6.5d
 			y: -5.0d
+			description: ["Drygmys provide alternatives to mob farms by generating loot from the mobs around their home. Additional items are created for the number of mobs nearby. Mobs can also be stored and harvested from Containment Jars."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "6A3154A3D6CC1B97"
 			tasks: [{
@@ -369,8 +371,9 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -5.0d
+			x: 4.0d
+			y: -4.0d
+			description: ["A Whirlisprig can generate natural materials that are placed within its home, enabling the automation of unique plants materials without harvesting them.\\n\\nThe Whirlisprig has unique happiness requirements and restriction. See the Worn Notebook."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "00BE258E0FA15BC2"
 			tasks: [{
@@ -382,6 +385,7 @@
 		{
 			x: 5.5d
 			y: -5.5d
+			description: ["A Wixie can autocraft items and potions at the cost of a small amount of Source. Use a Wixie Charm on a Cauldron and use an item you wish to craft onto it.\\n\\nItems will be automatically taken from nearby chests."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "09327991E8546F09"
 			tasks: [{
@@ -407,8 +411,9 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -4.0d
+			x: 4.5d
+			y: -5.0d
+			description: ["Like the whirlisprig, a Siren will generate fishing loot based on its happiness. See the Worn Notebook for more information."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "5E81794FFE9B5C34"
 			tasks: [{
@@ -566,6 +571,7 @@
 		{
 			x: 5.5d
 			y: -7.0d
+			description: ["To craft potions, place a Potion Jar near a Wixie and use a potion on the cauldron. Water is supplied for free. Jars may be locked to a specific potion type by using the dominion wand on them."]
 			dependencies: ["09327991E8546F09"]
 			id: "06E806C5362559F0"
 			tasks: [{
@@ -577,6 +583,7 @@
 		{
 			x: 7.5d
 			y: -6.0d
+			description: ["Containment Jars provide decorative and functional storage for mobs. To store a mob in a jar, perform the Ritual of Containment with a Containment Jar nearby.\\n\\nSome mobs can be interacted with while in the jar, including chickens, sheep, villagers, cows, and more. Cast Dispel on a jar to release the mob."]
 			dependencies: ["6A3154A3D6CC1B97"]
 			id: "60935DDD3F0B3E00"
 			tasks: [{
@@ -584,10 +591,17 @@
 				type: "item"
 				item: "ars_nouveau:mob_jar"
 			}]
+			rewards: [{
+				id: "0693DB81790E273B"
+				type: "item"
+				item: "ars_nouveau:mob_jar"
+				count: 8
+			}]
 		}
 		{
 			x: 4.5d
-			y: -8.0d
+			y: -7.5d
+			description: ["Enables the mixing of potions into a single liquid. To use, bind two potion jars to the Melder with the dominion wand, and then bind an output jar.\\n\\nConsumes a small amount of source each combination."]
 			dependencies: ["06E806C5362559F0"]
 			id: "2C1808D5DA7F6F6E"
 			tasks: [{
@@ -599,6 +613,7 @@
 		{
 			x: 5.5d
 			y: -8.0d
+			description: ["A stackable potion. Use on a Potion Jar or craft with a potion item to add a charge.\\n\\nSee the enchanted flasks for upgraded versions."]
 			dependencies: ["06E806C5362559F0"]
 			id: "065BCE40BB1890CC"
 			tasks: [{
@@ -615,13 +630,35 @@
 		}
 		{
 			x: 6.5d
-			y: -8.0d
+			y: -7.5d
+			description: ["Allows starbuncles to be bound to Potion Jars for transportation instead of items."]
 			dependencies: ["06E806C5362559F0"]
 			id: "6B3A9BA2C20E8A58"
 			tasks: [{
 				id: "634A971F0390F1A1"
 				type: "item"
 				item: "ars_nouveau:wixie_hat"
+			}]
+			rewards: [{
+				id: "6342AFC66F8BD062"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			description: ["Generates a large amount of source based on the complexity of potion consumed. Place a Potion Jar adjacent to the Sourcelink."]
+			dependencies: ["06E806C5362559F0"]
+			id: "36FCB963CD3A43DC"
+			tasks: [{
+				id: "2F7837148CEF1AF7"
+				type: "item"
+				item: "ars_nouveau:alchemical_sourcelink"
 			}]
 		}
 	]
