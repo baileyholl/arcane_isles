@@ -1,0 +1,166 @@
+{
+	id: "1992F86F3BDB7666"
+	group: ""
+	order_index: 3
+	filename: "gear_and_equipment"
+	title: "Gear and Equipment"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.5d
+			id: "14D75769B9098DC7"
+			tasks: [{
+				id: "0C62B3BF9833D767"
+				type: "item"
+				item: {
+					id: "ars_nouveau:enchanters_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			id: "27E928F3752CA5E8"
+			tasks: [{
+				id: "70D7B99CD437DE8B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:enchanters_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			id: "1A2F2EDAFC7C6C66"
+			tasks: [{
+				id: "0320EF661A0720C3"
+				type: "item"
+				item: {
+					id: "ars_nouveau:wand"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			id: "2A821F6CEDCF1FB2"
+			tasks: [{
+				id: "0B22DFD52216BEE0"
+				type: "item"
+				item: "ars_nouveau:shapers_focus"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			id: "5A21DF68C69794F1"
+			tasks: [{
+				id: "1A02AAB1E8F3264F"
+				type: "item"
+				item: "ars_nouveau:belt_of_levitation"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			id: "7BB0DDEF328A4A1C"
+			tasks: [{
+				id: "68D0A8D61CB9F26B"
+				type: "item"
+				item: "ars_nouveau:void_jar"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			id: "51A882C9DAF0EE4E"
+			tasks: [{
+				id: "780D177AD1464F6E"
+				type: "item"
+				item: "ars_nouveau:ring_of_lesser_discount"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.0d
+			id: "38C3DF3DA00EA9E6"
+			tasks: [{
+				id: "48DBC8C063F7F807"
+				type: "item"
+				item: "ars_nouveau:amulet_of_mana_regen"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			id: "36B3477F77D1A0C7"
+			tasks: [{
+				id: "16BB4616F5BB47A9"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_bow"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			id: "5E6D6D4F39333627"
+			tasks: [{
+				id: "1B6E081718856424"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_crossbow"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			id: "4A64F9DFBE022CB9"
+			tasks: [{
+				id: "5D9E92CA413FAB89"
+				type: "item"
+				item: {
+					id: "ars_nouveau:enchanters_mirror"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "50D8E926F606B2CF"
+				type: "item"
+				item: "ars_elemental:spell_mirror"
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			id: "02377E6F4C466FAE"
+			tasks: [{
+				id: "03AE74373BC200E6"
+				type: "item"
+				item: "ars_nouveau:jar_of_light"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

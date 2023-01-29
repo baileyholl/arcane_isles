@@ -10,8 +10,8 @@
 	quests: [
 		{
 			title: "Getting Started"
-			x: -0.5d
-			y: 0.5d
+			x: 4.0d
+			y: 4.5d
 			subtitle: "Making Space"
 			description: ["Use your Tablet of Conjure Island on a Ritual Brazier to build your first island.\\n\\nInteracting with the Brazier after consuming the ritual will start it.\\n\\nFull documentation for Ars Nouveau is found within the Worn Notebook."]
 			id: "37129673918B4F75"
@@ -28,8 +28,8 @@
 		}
 		{
 			title: "Performing Rituals"
-			x: 1.0d
-			y: -0.5d
+			x: 3.0d
+			y: 3.0d
 			description: ["Once a Tablet has been placed in a Brazier and started, it cannot be removed. Choose your locations carefully!\\n\\nThe Ritual of Mana Regen will enable your spell casting within a limited range, and the Ritual of Sedimentation will generate cobblestone from nearby water."]
 			dependencies: ["37129673918B4F75"]
 			id: "3593A3B5C8427EB2"
@@ -40,8 +40,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 1.5d
+			x: 5.0d
+			y: 3.0d
 			description: ["Full documentation on Spell Creation is found in the Worn Notebook. To open your Spell Book, hold it and press 'c'.\\n\\nSpells must typically contain a Form, determing how a spell is cast, and an Effect, what the spell does.\\n\\nTo create Cobble, you will need two spells, one for Crush and one for Conjure Water. Using a Glyph item will add it to your known glyphs."]
 			dependencies: ["37129673918B4F75"]
 			id: "15B9F7659D132389"
@@ -66,8 +66,8 @@
 		}
 		{
 			title: "Waterworks"
-			x: 2.5d
-			y: 0.5d
+			x: 4.0d
+			y: 2.0d
 			description: ["The Ritual of Sedimentation will consume nearby Water Sources and generate a Cobblestone block. Place your ritual and equip a spell with Conjure Water. Cast your spell nearby until you receive cobble!"]
 			dependencies: [
 				"15B9F7659D132389"
@@ -113,9 +113,9 @@
 		}
 		{
 			title: "Acquire Source"
-			x: 4.0d
+			x: 2.5d
 			y: -2.5d
-			description: ["Agronomic Sourcelink generates Source when nearby plants grow. Agronomic Sourcelinks can generate from a very large distance. Source is exported into nearby Source Jars within 6 blocks wirelessly. "]
+			description: ["Agronomic Sourcelinks generate Source when nearby plants grow and can generate from a very large distance.\\n\\nSource is exported into nearby Source Jars within 6 blocks wirelessly. "]
 			dependencies: ["76D63B3E394212ED"]
 			id: "73937DADFAF6DAEE"
 			tasks: [
@@ -133,8 +133,8 @@
 		}
 		{
 			title: "New Spells"
-			x: 4.0d
-			y: 2.0d
+			x: 2.5d
+			y: 0.5d
 			description: ["New Glyphs can be created at the Scribes Table. To open the menu, use your spell book on the table.\\n\\nGlyphs cost EXP and items to craft. Select your glyph you wish to craft. Throw items onto the table and your glyph will be created.\\n\\nFull Glyph documentation is in the worn notebook or item tooltips."]
 			dependencies: ["5434FD35898DA564"]
 			id: "7E99B255A00E8014"
@@ -150,63 +150,22 @@
 					item: "ars_nouveau:glyph_craft"
 				}
 			]
-			rewards: [{
-				id: "44351945F2B163B3"
-				type: "item"
-				item: "ars_nouveau:glyph_self"
-			}]
-		}
-		{
-			x: 2.5d
-			y: -5.0d
-			description: ["Contains mycelium, bastion fruit, mushrooms, source berries, and vexing trees. Converts the area to Mushroom Island."]
-			dependencies: ["436678048E9C48BB"]
-			id: "209971171B86E7E9"
-			tasks: [{
-				id: "79DD5DCB0F136DBA"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_vexing"
-			}]
-		}
-		{
-			x: 3.5d
-			y: -5.0d
-			description: ["Contains moss, sweet berries, bamboo, mendosteen, and flourishing trees. Converts the area to Mangrove Swamp"]
-			dependencies: ["436678048E9C48BB"]
-			id: "7F43851A9C6D5805"
-			tasks: [{
-				id: "1FB9BFC2EC83D028"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_flourishing"
-			}]
-		}
-		{
-			x: 4.5d
-			y: -5.0d
-			description: ["Contains lava, pumpkins, granite, and blazing archwood trees."]
-			dependencies: ["436678048E9C48BB"]
-			id: "28CE515EC64C90F8"
-			tasks: [{
-				id: "050ABAB1825D298F"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_blazing"
-			}]
+			rewards: [
+				{
+					id: "44351945F2B163B3"
+					type: "item"
+					item: "ars_nouveau:glyph_self"
+				}
+				{
+					id: "3AEF656ED0BBE482"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
 		}
 		{
 			x: 5.5d
-			y: -5.0d
-			description: ["Contains coral, sugarcane, and sea grass. Also converts the nearby area into a Warm Ocean."]
-			dependencies: ["436678048E9C48BB"]
-			id: "47B78DE895A1E4E2"
-			tasks: [{
-				id: "342655738A133570"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_cascading"
-			}]
-		}
-		{
-			x: 5.5d
-			y: -1.0d
+			y: -2.5d
 			description: ["The Enchanting Apparatus is a multiblock crafting structure. Recipes will consume items on nearby pedestals and a central item placed in the apparatus. Note: Pedestals from nearby Imbuement Chambers can interfere with crafting.\\n\\nTo construct, place an apparatus on top of an Arcane Core, and surround it with pedestals within 3 blocks of the apparatus."]
 			dependencies: ["76D63B3E394212ED"]
 			id: "34602A8B5EB8F541"
@@ -229,10 +188,22 @@
 					item: "ars_nouveau:arcane_core"
 				}
 			]
+			rewards: [
+				{
+					id: "56D1ACCB4EE5DD47"
+					type: "item"
+					item: "ars_nouveau:scryers_oculus"
+				}
+				{
+					id: "25A662DFA3C2BC44"
+					type: "item"
+					item: "ars_nouveau:scryers_crystal"
+				}
+			]
 		}
 		{
-			x: 2.5d
-			y: -1.0d
+			x: 4.0d
+			y: -2.5d
 			description: ["Some recipes for the Imbuement Chamber require Arcane Pedestals placed adjacent to the chamber.\\n\\nTo craft Essences, place three pedestals near the imbuement chamber and place the items required for each essence onto the pedestal. Then place your gem in the chamber to begin crafting an essence.\\n\\nItems on the pedestal are not consumed."]
 			dependencies: ["76D63B3E394212ED"]
 			id: "26E668C31E63E807"
@@ -249,51 +220,16 @@
 					count: 3L
 				}
 			]
-		}
-		{
-			x: 4.0d
-			y: -3.5d
-			description: ["Archwood Islands contain new and otherwise unobtainable resources. Each Ritual will require a full Source Jar near the Ritual Brazier. Perform the ritual 14+ blocks from any other blocks, or you may miss out on parts of the island.\\n\\nUse Manipulation Essence to convert Archwood Saplings for the island of your choice."]
-			dependencies: ["73937DADFAF6DAEE"]
-			id: "436678048E9C48BB"
-			tasks: [{
-				id: "0E1DF835702B31C4"
-				type: "checkmark"
-				title: "Island Conjuring"
-			}]
-		}
-		{
-			x: 7.0d
-			y: -1.0d
-			description: ["Magebloom's are used for crafting magic fiber, used for a variety of items in Ars Nouveau.\\n\\nMageblooms also grant a bonus to the Agronomic Sourcelink when they grow."]
-			dependencies: ["34602A8B5EB8F541"]
-			id: "557EE1C4BE8CEDA4"
-			tasks: [{
-				id: "01F637FA0076295B"
-				type: "item"
-				item: "ars_nouveau:magebloom_crop"
-			}]
-		}
-		{
-			x: 7.0d
-			y: 0.5d
-			description: ["The Alteration Table allows you to add Threads to magical armors. Threads provide a variety of buffs including max mana, elytra flight, spell damage, and more.\\n\\nEach type of magical armor has its own set of Thread Slots, check the documentation before deciding which armor to create."]
-			dependencies: ["557EE1C4BE8CEDA4"]
-			id: "3672A17FB1186495"
-			tasks: [{
-				id: "0F5650B15DFEB4DE"
-				type: "item"
-				item: "ars_nouveau:alteration_table"
-			}]
 			rewards: [{
-				id: "0007AD58D7410388"
+				id: "22A615264D4D08FB"
 				type: "item"
-				item: "ars_nouveau:blank_thread"
+				item: "ars_nouveau:falseweave"
+				count: 32
 			}]
 		}
 		{
-			x: 2.5d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
 			description: ["Mana can be increased by learning new glyphs, wearing magical armor, special curios, and upgrading your spell book.\\n\\nPotions, foods, and other items can also provide a boost."]
 			dependencies: ["7E99B255A00E8014"]
 			id: "43F025AEA6544B2E"
@@ -312,6 +248,380 @@
 						Potion: "ars_nouveau:mana_regen_potion_strong"
 					}
 				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			description: ["Allows the usage of Tier 2 glyphs."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "04F4F5A09F1527B9"
+			tasks: [{
+				id: "56C6A26CA01E53C7"
+				type: "item"
+				item: "ars_nouveau:apprentice_spell_book"
+			}]
+			rewards: [{
+				id: "4F60473C1216A84E"
+				type: "item"
+				item: "ars_scalaes:glyph_resize"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["Allows the usage of Tier 3 glyphs."]
+			dependencies: ["13FC7955A316CA5E"]
+			id: "6BE252B39297F0D3"
+			tasks: [{
+				id: "65FFDFAF1BFF8521"
+				type: "item"
+				item: "ars_nouveau:archmage_spell_book"
+			}]
+			rewards: [{
+				id: "7A8EC0F503B0CDCF"
+				type: "item"
+				item: "ars_nouveau:glyph_orbit"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			description: ["Relay's can be used to transfer source between other jars and relays. Basic relays can support one connection for draining, and one for importing.\\n\\nTo configure a Relay, see the documentation on the Dominion Wand and Source Relay."]
+			dependencies: ["73937DADFAF6DAEE"]
+			id: "65975BBB8CD2E37D"
+			tasks: [{
+				id: "745C5C62B31CD7E7"
+				type: "item"
+				item: "ars_nouveau:relay"
+			}]
+			rewards: [{
+				id: "25400EB1F616D8D2"
+				type: "item"
+				item: "ars_nouveau:relay"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: ["Obtained by defeating the Wilden Chimera, a highly destructive boss. Can be summoned by performing a Ritual of Summon Wilden augmented with one of each Wilden drop."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "13FC7955A316CA5E"
+			tasks: [
+				{
+					id: "77EA87B8868C42AD"
+					type: "item"
+					item: "ars_nouveau:wilden_tribute"
+				}
+				{
+					id: "10A0B6D5DC529423"
+					type: "item"
+					item: "ars_nouveau:ritual_wilden_summon"
+				}
+			]
+			rewards: [{
+				id: "068BCF080725D722"
+				type: "item"
+				item: "ars_nouveau:summon_focus"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.0d
+			dependencies: ["3EA4C9F408CE81EF"]
+			id: "166A8594ADE733CA"
+			tasks: [{
+				id: "48DD9E39E7ECFFE9"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "0743ABA8D70153B7"
+					type: "item"
+					item: "ars_nouveau:starbuncle_shades"
+				}
+				{
+					id: "4F548DE27D2A8D38"
+					type: "item"
+					item: "minecraft:jukebox"
+				}
+				{
+					id: "2A5C381D924BABE8"
+					type: "item"
+					item: "minecraft:music_disc_pigstep"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -5.0d
+			dependencies: ["3EA4C9F408CE81EF"]
+			id: "6A3154A3D6CC1B97"
+			tasks: [{
+				id: "7E837590FDD6EA87"
+				type: "item"
+				item: "ars_nouveau:drygmy_charm"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			dependencies: ["3EA4C9F408CE81EF"]
+			id: "00BE258E0FA15BC2"
+			tasks: [{
+				id: "653A4290A7620E8E"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_charm"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.5d
+			dependencies: ["3EA4C9F408CE81EF"]
+			id: "09327991E8546F09"
+			tasks: [{
+				id: "662DAD8F9B48A4EA"
+				type: "item"
+				item: "ars_nouveau:wixie_charm"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			description: ["The Dominion Wand is used to configure relays, entities, and other automations in the mod.\\n\\nUsage of the wand is described in the entries that the wand applies to, such as Starbuncles or Relays."]
+			dependencies: ["34602A8B5EB8F541"]
+			id: "3EA4C9F408CE81EF"
+			tasks: [{
+				id: "5D27952A1D1DE8BF"
+				type: "item"
+				item: {
+					id: "ars_nouveau:dominion_wand"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["3EA4C9F408CE81EF"]
+			id: "5E81794FFE9B5C34"
+			tasks: [{
+				id: "6373C5FA80801234"
+				type: "item"
+				item: "ars_elemental:siren_charm"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["Warp Scrolls are one use items for teleporting within the same dimension. Useful for the nether!\\n\\nUse a scroll while sneaking to set its location. Using the scroll will consume it."]
+			dependencies: ["76D63B3E394212ED"]
+			id: "7C783A5073522204"
+			tasks: [{
+				id: "252D599B4E416645"
+				type: "item"
+				item: {
+					id: "ars_nouveau:warp_scroll"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "37171D4BCFA27272"
+				type: "item"
+				item: "ars_nouveau:ghostweave"
+				count: 32
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			subtitle: "Warp Portals"
+			description: ["Warp Portals can be created by building a frame of Sourcestone and throwing a warp scroll into it with a full source jar nearby.\\n\\nPortals can be any size and flat or vertical. Once a portal is created, it does not require source to warp you. Use a dominion wand on the portal to change the texture.\\n\\nPortal Frames can be made of any sourcestone variant as well as Mirrorweave."]
+			dependencies: ["7C783A5073522204"]
+			id: "5949B54611E31DC0"
+			tasks: [{
+				id: "7FB1D8BD7B81691B"
+				type: "advancement"
+				advancement: "ars_nouveau:create_portal"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "663E58B105A10EFB"
+					type: "item"
+					item: {
+						id: "ars_nouveau:warp_scroll"
+						Count: 1b
+						tag: { }
+					}
+					count: 5
+				}
+				{
+					id: "68B119BE0391B52B"
+					type: "item"
+					item: "ars_nouveau:mirrorweave"
+					count: 64
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -5.5d
+			description: ["Splitter Relay's support an infinite number of connections in both directions."]
+			dependencies: ["65975BBB8CD2E37D"]
+			id: "390AF620B9A909CA"
+			tasks: [{
+				id: "6FBF772F980E21BA"
+				type: "item"
+				item: "ars_nouveau:relay_splitter"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -7.0d
+			description: ["Warper Relay's can teleport Source between other warp relays an infinite distance. Warping beyond 30 blocks has a chance to lose source in the process."]
+			dependencies: ["390AF620B9A909CA"]
+			id: "55009434AE8F5DB3"
+			tasks: [{
+				id: "31B3BB350149420F"
+				type: "item"
+				item: "ars_nouveau:relay_warp"
+			}]
+			rewards: [{
+				id: "007505A12620DAF5"
+				type: "item"
+				item: "ars_nouveau:relay_warp"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			description: ["Ars Caelum adds a variety of rituals for conjuring islands and platforms.\\n\\nThe chapter for Island Creation has been unlocked!"]
+			dependencies: ["73937DADFAF6DAEE"]
+			id: "01F235E075031B43"
+			tasks: [{
+				id: "78423E32A0699DFB"
+				type: "checkmark"
+				title: "Island Creation"
+			}]
+			rewards: [{
+				id: "13AB6A848CFA61E9"
+				type: "item"
+				item: "ars_nouveau:ritual_brazier"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			description: ["The Alteration Table allows you to add Threads to magical armors. Threads provide a variety of buffs including max mana, elytra flight, spell damage, and more.\\n\\nEach type of magical armor has its own set of Thread Slots, check the documentation before deciding which armor to create."]
+			dependencies: ["557EE1C4BE8CEDA4"]
+			id: "3672A17FB1186495"
+			tasks: [{
+				id: "0F5650B15DFEB4DE"
+				type: "item"
+				item: "ars_nouveau:alteration_table"
+			}]
+			rewards: [{
+				id: "0007AD58D7410388"
+				type: "item"
+				item: "ars_nouveau:blank_thread"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			description: ["Magebloom is used for crafting magic fiber, used for a variety of items in Ars Nouveau.\\n\\nMageblooms also grant a bonus to the Agronomic Sourcelink when they grow."]
+			dependencies: ["34602A8B5EB8F541"]
+			id: "557EE1C4BE8CEDA4"
+			tasks: [{
+				id: "01F637FA0076295B"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+			}]
+			rewards: [{
+				id: "3F23327887F910E3"
+				type: "item"
+				item: "ars_nouveau:blue_sbed"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			description: ["Ars Nouveau and addons add a large variety of equipment for utility and combat. The section on Gear and Equipment has been unlocked!"]
+			dependencies: ["34602A8B5EB8F541"]
+			id: "75EF2966C0C149EF"
+			tasks: [{
+				id: "536B0DC237A499E9"
+				type: "checkmark"
+				title: "Gear and Equipment"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -7.0d
+			dependencies: ["09327991E8546F09"]
+			id: "06E806C5362559F0"
+			tasks: [{
+				id: "142786DAAED62E82"
+				type: "item"
+				item: "ars_nouveau:potion_jar"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -6.0d
+			dependencies: ["6A3154A3D6CC1B97"]
+			id: "60935DDD3F0B3E00"
+			tasks: [{
+				id: "6175602F69003DA9"
+				type: "item"
+				item: "ars_nouveau:mob_jar"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -8.0d
+			dependencies: ["06E806C5362559F0"]
+			id: "2C1808D5DA7F6F6E"
+			tasks: [{
+				id: "1B5D65937A6506CE"
+				type: "item"
+				item: "ars_nouveau:potion_melder"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -8.0d
+			dependencies: ["06E806C5362559F0"]
+			id: "065BCE40BB1890CC"
+			tasks: [{
+				id: "2BC34A03D0B0162D"
+				type: "item"
+				item: {
+					id: "ars_nouveau:potion_flask"
+					Count: 1b
+					tag: {
+						Damage: 8
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -8.0d
+			dependencies: ["06E806C5362559F0"]
+			id: "6B3A9BA2C20E8A58"
+			tasks: [{
+				id: "634A971F0390F1A1"
+				type: "item"
+				item: "ars_nouveau:wixie_hat"
 			}]
 		}
 	]
