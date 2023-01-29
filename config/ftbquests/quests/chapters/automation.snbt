@@ -1,0 +1,154 @@
+{
+	id: "5F9DCBD75DC62A0F"
+	group: ""
+	order_index: 1
+	filename: "automation"
+	title: "Automation"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["76D63B3E394212ED"]
+			hide: true
+			id: "55610EA99C268B52"
+			tasks: [{
+				id: "36E6265C6BB77905"
+				type: "item"
+				item: "ars_nouveau:basic_spell_turret"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			id: "47B6EE74B546978E"
+			tasks: [{
+				id: "2ECDADA2452A5A93"
+				type: "item"
+				item: "ars_nouveau:glyph_fell"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			id: "5427188DBF65F303"
+			tasks: [{
+				id: "17070BEF2A74AC87"
+				type: "item"
+				item: "ars_nouveau:glyph_harvest"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			id: "69ECEC9231F14A5F"
+			tasks: [{
+				id: "5A46DC601C570781"
+				type: "item"
+				item: "ars_nouveau:glyph_break"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			id: "3ACF028EB8BA7F3D"
+			tasks: [{
+				id: "56816F9044CC6A1C"
+				type: "item"
+				item: "ars_nouveau:glyph_redstone_signal"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			id: "3C58308BBF04F5A6"
+			tasks: [{
+				id: "000578F9B3D37718"
+				type: "item"
+				item: "ars_nouveau:glyph_cut"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			id: "5D28B1CBD1DFAC03"
+			tasks: [{
+				id: "5BE38B841CC9EA16"
+				type: "item"
+				item: "ars_nouveau:glyph_interact"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			id: "514FA5FA8A6D09AB"
+			tasks: [{
+				id: "007E77231CFECCAE"
+				type: "item"
+				item: "ars_nouveau:glyph_rune"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			id: "6F4662152C83A94A"
+			tasks: [{
+				id: "516B7B107073A1A6"
+				type: "item"
+				item: "ars_nouveau:glyph_smelt"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			id: "682FD115FB66C96B"
+			tasks: [{
+				id: "31A1C505D6C889A7"
+				type: "item"
+				item: "ars_nouveau:glyph_exchange"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			id: "7989B9D0D5132C12"
+			tasks: [{
+				id: "44725F71326A9C67"
+				type: "item"
+				item: "ars_nouveau:ritual_harvest"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			id: "78BE8E977B19D614"
+			tasks: [{
+				id: "43B5EFFA6BE0B7F4"
+				type: "item"
+				item: "ars_nouveau:ritual_fertility"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			id: "359EE30A874318A6"
+			tasks: [{
+				id: "231146E52499733A"
+				type: "item"
+				item: "ars_nouveau:ritual_containment"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			id: "0C251A79F4459A65"
+			tasks: [{
+				id: "763E41C4B50CEE83"
+				type: "item"
+				item: "ars_nouveau:ritual_overgrowth"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

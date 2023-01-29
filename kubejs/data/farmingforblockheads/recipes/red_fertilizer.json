@@ -1,0 +1,26 @@
+{
+  "result": {
+    "item": "minecraft:air",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "NSN",
+    "WWW"
+  ],
+  "key": {
+    "G": {
+      "tag": "balm:green_dyes"
+    },
+    "N": {
+      "item": "minecraft:gold_nugget"
+    },
+    "S": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  }
+}

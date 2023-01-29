@@ -17,3 +17,6 @@ options.txt
 .curseclient
 knownkeys.txt
 kubejs/exported
+screenshots/
+trashslotsavestate.json
+config/roughlyenoughitems

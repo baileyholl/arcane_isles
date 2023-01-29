@@ -3,7 +3,8 @@
 	group: ""
 	order_index: 0
 	filename: "test"
-	title: "Test"
+	title: "Getting Started"
+	icon: "ars_nouveau:novice_spell_book"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -114,6 +115,7 @@
 			title: "Acquire Source"
 			x: 4.0d
 			y: -2.5d
+			description: ["Agronomic Sourcelink generates Source when nearby plants grow. Agronomic Sourcelinks can generate from a very large distance. Source is exported into nearby Source Jars within 6 blocks wirelessly. "]
 			dependencies: ["76D63B3E394212ED"]
 			id: "73937DADFAF6DAEE"
 			tasks: [
@@ -157,7 +159,7 @@
 		{
 			x: 2.5d
 			y: -5.0d
-			description: ["Contains mycelium, bastion fruit, mushrooms, and vexing trees."]
+			description: ["Contains mycelium, bastion fruit, mushrooms, source berries, and vexing trees. Converts the area to Mushroom Island."]
 			dependencies: ["436678048E9C48BB"]
 			id: "209971171B86E7E9"
 			tasks: [{
@@ -169,7 +171,7 @@
 		{
 			x: 3.5d
 			y: -5.0d
-			description: ["Contains moss, sweet berries, bamboo, mendosteen, and flourishing trees."]
+			description: ["Contains moss, sweet berries, bamboo, mendosteen, and flourishing trees. Converts the area to Mangrove Swamp"]
 			dependencies: ["436678048E9C48BB"]
 			id: "7F43851A9C6D5805"
 			tasks: [{
@@ -205,6 +207,7 @@
 		{
 			x: 5.5d
 			y: -1.0d
+			description: ["The Enchanting Apparatus is a multiblock crafting structure. Recipes will consume items on nearby pedestals and a central item placed in the apparatus. Note: Pedestals from nearby Imbuement Chambers can interfere with crafting.\\n\\nTo construct, place an apparatus on top of an Arcane Core, and surround it with pedestals within 3 blocks of the apparatus."]
 			dependencies: ["76D63B3E394212ED"]
 			id: "34602A8B5EB8F541"
 			tasks: [
@@ -249,7 +252,7 @@
 		}
 		{
 			x: 4.0d
-			y: -4.0d
+			y: -3.5d
 			description: ["Archwood Islands contain new and otherwise unobtainable resources. Each Ritual will require a full Source Jar near the Ritual Brazier. Perform the ritual 14+ blocks from any other blocks, or you may miss out on parts of the island.\\n\\nUse Manipulation Essence to convert Archwood Saplings for the island of your choice."]
 			dependencies: ["73937DADFAF6DAEE"]
 			id: "436678048E9C48BB"
@@ -257,6 +260,58 @@
 				id: "0E1DF835702B31C4"
 				type: "checkmark"
 				title: "Island Conjuring"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			description: ["Magebloom's are used for crafting magic fiber, used for a variety of items in Ars Nouveau.\\n\\nMageblooms also grant a bonus to the Agronomic Sourcelink when they grow."]
+			dependencies: ["34602A8B5EB8F541"]
+			id: "557EE1C4BE8CEDA4"
+			tasks: [{
+				id: "01F637FA0076295B"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			description: ["The Alteration Table allows you to add Threads to magical armors. Threads provide a variety of buffs including max mana, elytra flight, spell damage, and more.\\n\\nEach type of magical armor has its own set of Thread Slots, check the documentation before deciding which armor to create."]
+			dependencies: ["557EE1C4BE8CEDA4"]
+			id: "3672A17FB1186495"
+			tasks: [{
+				id: "0F5650B15DFEB4DE"
+				type: "item"
+				item: "ars_nouveau:alteration_table"
+			}]
+			rewards: [{
+				id: "0007AD58D7410388"
+				type: "item"
+				item: "ars_nouveau:blank_thread"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			description: ["Mana can be increased by learning new glyphs, wearing magical armor, special curios, and upgrading your spell book.\\n\\nPotions, foods, and other items can also provide a boost."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "43F025AEA6544B2E"
+			tasks: [{
+				id: "5608A02265905B37"
+				type: "checkmark"
+				title: "Improved Mana"
+			}]
+			rewards: [{
+				id: "64448454CC5CA765"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "ars_nouveau:mana_regen_potion_strong"
+					}
+				}
 			}]
 		}
 	]
