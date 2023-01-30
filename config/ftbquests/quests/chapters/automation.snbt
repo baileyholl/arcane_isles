@@ -10,6 +10,7 @@
 		{
 			x: 0.5d
 			y: 1.0d
+			description: ["Spell Turrets can cast spells at the cost of Source. To set a spell, use your book on the turret while sneaking, or use Spell Parchment.\\n\\nBasic turrets need redstone and a nearby source jar to activate."]
 			dependencies: ["76D63B3E394212ED"]
 			hide: true
 			id: "55610EA99C268B52"
@@ -18,140 +19,244 @@
 				type: "item"
 				item: "ars_nouveau:basic_spell_turret"
 			}]
+			rewards: [
+				{
+					id: "563C8F317DF0E340"
+					type: "item"
+					item: "ars_nouveau:basic_spell_turret"
+					count: 5
+				}
+				{
+					id: "09873F358A638555"
+					type: "item"
+					item: "minecraft:observer"
+					count: 5
+				}
+				{
+					id: "547E229A99BDBF1B"
+					type: "random"
+					table_id: 4542458237970434754L
+				}
+			]
 		}
 		{
 			x: 3.0d
 			y: -0.5d
+			description: ["Breaks entire trees at once."]
 			id: "47B6EE74B546978E"
 			tasks: [{
 				id: "2ECDADA2452A5A93"
 				type: "item"
 				item: "ars_nouveau:glyph_fell"
 			}]
+			rewards: [{
+				id: "097491FF67F5DA21"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 4.0d
 			y: 3.0d
+			description: ["Harvests crops. Because projectiles pass through plants, Sensitive can be added to target them. Alternatively, use Touch."]
 			id: "5427188DBF65F303"
 			tasks: [{
 				id: "17070BEF2A74AC87"
 				type: "item"
 				item: "ars_nouveau:glyph_harvest"
 			}]
+			rewards: [{
+				id: "122A6F94F0A4A6E4"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: 4.0d
 			y: -0.5d
+			description: ["Breaks blocks."]
 			id: "69ECEC9231F14A5F"
 			tasks: [{
 				id: "5A46DC601C570781"
 				type: "item"
 				item: "ars_nouveau:glyph_break"
 			}]
+			rewards: [{
+				id: "6D7DF9E7BB46E949"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 4.0d
 			y: 2.0d
+			description: ["Summons an invisible redstone block at the hit location."]
 			id: "3ACF028EB8BA7F3D"
 			tasks: [{
 				id: "56816F9044CC6A1C"
 				type: "item"
 				item: "ars_nouveau:glyph_redstone_signal"
 			}]
+			rewards: [{
+				id: "4C10106F9827FAD0"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: 3.0d
 			y: 2.0d
+			description: ["Shears animals or deals a half heart of damage. Amplify will simulate an axe, useful for logs!"]
 			id: "3C58308BBF04F5A6"
 			tasks: [{
 				id: "000578F9B3D37718"
 				type: "item"
 				item: "ars_nouveau:glyph_cut"
 			}]
+			rewards: [{
+				id: "46D116ECE495115B"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
-			x: 3.5d
+			x: 4.0d
 			y: 1.0d
+			description: ["Interacts with items and blocks. Turrets can simulate using items from nearby chests, useful for milk or other automations."]
 			id: "5D28B1CBD1DFAC03"
 			tasks: [{
 				id: "5BE38B841CC9EA16"
 				type: "item"
 				item: "ars_nouveau:glyph_interact"
 			}]
+			rewards: [{
+				id: "50FDB356A7D95CB3"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: 3.0d
 			y: 3.0d
+			description: ["Runes cast spells on entities that touch them. Permanent runes can be created with Runic Chalk. Useful for automating actions on items."]
 			id: "514FA5FA8A6D09AB"
 			tasks: [{
 				id: "007E77231CFECCAE"
 				type: "item"
 				item: "ars_nouveau:glyph_rune"
 			}]
+			rewards: [{
+				id: "630BA9879AE05DF0"
+				type: "item"
+				item: {
+					id: "ars_nouveau:runic_chalk"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			x: 3.0d
 			y: -1.5d
+			description: ["Smelts items and blocks."]
 			id: "6F4662152C83A94A"
 			tasks: [{
 				id: "516B7B107073A1A6"
 				type: "item"
 				item: "ars_nouveau:glyph_smelt"
 			}]
+			rewards: [{
+				id: "3DB3D12BD4C7363A"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 4.0d
 			y: -1.5d
+			description: ["Swaps a block for one in your inventory."]
 			id: "682FD115FB66C96B"
 			tasks: [{
 				id: "31A1C505D6C889A7"
 				type: "item"
 				item: "ars_nouveau:glyph_exchange"
 			}]
+			rewards: [{
+				id: "7E63BC409C0519E9"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 5.5d
 			y: 2.0d
+			description: ["Harvests nearby plants at the cost of Source."]
 			id: "7989B9D0D5132C12"
 			tasks: [{
 				id: "44725F71326A9C67"
 				type: "item"
 				item: "ars_nouveau:ritual_harvest"
 			}]
+			rewards: [{
+				id: "055E580254210729"
+				type: "item"
+				item: "ars_nouveau:starbuncle_shards"
+			}]
 		}
 		{
 			x: 5.5d
 			y: 3.0d
+			description: ["Causes all nearby animals to breed if possible, capping at 20 nearby mobs."]
 			id: "78BE8E977B19D614"
 			tasks: [{
 				id: "43B5EFFA6BE0B7F4"
 				type: "item"
 				item: "ars_nouveau:ritual_fertility"
 			}]
+			rewards: [{
+				id: "5A33F1F9491C48B9"
+				type: "item"
+				item: "toomanyglyphs:glyph_filter_is_mature"
+			}]
 		}
 		{
 			x: 6.5d
 			y: 2.0d
+			description: ["Places nearby items and mobs into Containment Jars. Useful for automating mobs with a Drygmy, or collecting wool and milk.\\n\\nSome mobs retain their behaviors and interactions while in a jar."]
 			id: "359EE30A874318A6"
 			tasks: [{
 				id: "231146E52499733A"
 				type: "item"
 				item: "ars_nouveau:ritual_containment"
 			}]
+			rewards: [{
+				id: "1F89972A2BD89C7F"
+				type: "item"
+				item: "ars_nouveau:drygmy_shard"
+			}]
 		}
 		{
 			x: 6.5d
 			y: 3.0d
+			description: ["Rapidly grows nearby plants. Can be augmented to rapidly grow baby mobs instead."]
 			id: "0C251A79F4459A65"
 			tasks: [{
 				id: "763E41C4B50CEE83"
 				type: "item"
 				item: "ars_nouveau:ritual_overgrowth"
 			}]
+			rewards: [{
+				id: "52DCE7E30C2FA8D0"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_shards"
+			}]
 		}
 		{
 			x: 0.0d
 			y: 2.5d
+			description: ["Casts a spell on a configurable timer. Redstone will disable casting.\\n\\nCasts Projectile and Redstone glyphs at a discount."]
 			dependencies: ["55610EA99C268B52"]
 			id: "241BC843A63F89EA"
 			tasks: [{
@@ -159,15 +264,24 @@
 				type: "item"
 				item: "ars_nouveau:timer_spell_turret"
 			}]
-			rewards: [{
-				id: "21B7EEAD0157354A"
-				type: "item"
-				item: "ars_nouveau:timer_spell_turret"
-			}]
+			rewards: [
+				{
+					id: "21B7EEAD0157354A"
+					type: "item"
+					item: "ars_nouveau:timer_spell_turret"
+				}
+				{
+					id: "67B053050D3AFDC8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4542458237970434754L
+				}
+			]
 		}
 		{
 			x: 1.0d
 			y: 2.5d
+			description: ["Casts all spells at a great discount."]
 			dependencies: ["55610EA99C268B52"]
 			id: "6E97B44CD3770C45"
 			tasks: [{
@@ -175,15 +289,24 @@
 				type: "item"
 				item: "ars_nouveau:spell_turret"
 			}]
-			rewards: [{
-				id: "64612D34757A0DAD"
-				type: "item"
-				item: "ars_nouveau:spell_turret"
-			}]
+			rewards: [
+				{
+					id: "64612D34757A0DAD"
+					type: "item"
+					item: "ars_nouveau:spell_turret"
+				}
+				{
+					id: "250B6AE9F7A056D2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4542458237970434754L
+				}
+			]
 		}
 		{
 			x: 0.5d
 			y: -0.5d
+			description: ["Redirects a spell projectile in the direction the prism is facing.\\n\\nCan be moved with a piston for making elaborate redstone contraptions."]
 			dependencies: ["55610EA99C268B52"]
 			id: "1FE9F44B1CEE2D5A"
 			tasks: [{
@@ -191,16 +314,59 @@
 				type: "item"
 				item: "ars_nouveau:spell_prism"
 			}]
+			rewards: [
+				{
+					id: "07EA6249949D1F08"
+					type: "item"
+					item: "ars_nouveau:spell_prism"
+					count: 5
+				}
+				{
+					id: "70E88E482A00F454"
+					type: "item"
+					item: "minecraft:piston"
+					count: 5
+				}
+			]
 		}
 		{
 			x: -1.0d
 			y: -0.5d
+			description: ["Cannot be moved by pistons, but can be set to face a block at any angle using the Dominion Wand.\\n\\nAccepts Prism Lenses."]
 			dependencies: ["1FE9F44B1CEE2D5A"]
 			id: "216BE3B75FE7DB74"
 			tasks: [{
 				id: "6405B677176D7B19"
 				type: "item"
 				item: "ars_elemental:advanced_prism"
+			}]
+			rewards: [
+				{
+					id: "7B8104B1B7CC1079"
+					type: "item"
+					item: "ars_elemental:rainbow_prism_lens"
+				}
+				{
+					id: "54BE023D714A3899"
+					type: "item"
+					item: "ars_nouveau:void_prism"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["Picks up nearby items and deposits them into an inventory or chest."]
+			id: "158F8105B22C9A4A"
+			tasks: [{
+				id: "5F1BAE0EA18F1451"
+				type: "item"
+				item: "ars_nouveau:glyph_pickup"
+			}]
+			rewards: [{
+				id: "08520732922EEABB"
+				type: "item"
+				item: "ars_nouveau:glyph_toss"
 			}]
 		}
 	]

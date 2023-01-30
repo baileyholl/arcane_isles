@@ -228,8 +228,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 1.5d
+			x: 2.5d
+			y: 2.0d
 			description: ["Mana can be increased by learning new glyphs, wearing magical armor, special curios, and upgrading your spell book.\\n\\nPotions, foods, and other items can also provide a boost."]
 			dependencies: ["7E99B255A00E8014"]
 			id: "43F025AEA6544B2E"
@@ -268,8 +268,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -1.0d
+			x: -1.0d
+			y: -1.5d
 			description: ["Allows the usage of Tier 3 glyphs."]
 			dependencies: ["13FC7955A316CA5E"]
 			id: "6BE252B39297F0D3"
@@ -302,8 +302,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 0.5d
+			x: 0.0d
+			y: -0.5d
 			description: ["Obtained by defeating the Wilden Chimera, a highly destructive boss. Can be summoned by performing a Ritual of Summon Wilden augmented with one of each Wilden drop."]
 			dependencies: ["04F4F5A09F1527B9"]
 			id: "13FC7955A316CA5E"
@@ -423,10 +423,10 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 7.0d
 			y: -1.0d
 			description: ["Warp Scrolls are one use items for teleporting within the same dimension. Useful for the nether!\\n\\nUse a scroll while sneaking to set its location. Using the scroll will consume it."]
-			dependencies: ["76D63B3E394212ED"]
+			dependencies: ["557EE1C4BE8CEDA4"]
 			id: "7C783A5073522204"
 			tasks: [{
 				id: "252D599B4E416645"
@@ -445,8 +445,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.0d
+			x: 7.0d
+			y: 0.5d
 			subtitle: "Warp Portals"
 			description: ["Warp Portals can be created by building a frame of Sourcestone and throwing a warp scroll into it with a full source jar nearby.\\n\\nPortals can be any size and flat or vertical. Once a portal is created, it does not require source to warp you. Use a dominion wand on the portal to change the texture.\\n\\nPortal Frames can be made of any sourcestone variant as well as Mirrorweave."]
 			dependencies: ["7C783A5073522204"]
@@ -487,6 +487,11 @@
 				type: "item"
 				item: "ars_nouveau:relay_splitter"
 			}]
+			rewards: [{
+				id: "50D2409A33CC5784"
+				type: "item"
+				item: "ars_nouveau:relay_splitter"
+			}]
 		}
 		{
 			x: 2.5d
@@ -524,7 +529,7 @@
 		}
 		{
 			x: 8.5d
-			y: -1.0d
+			y: -2.5d
 			description: ["The Alteration Table allows you to add Threads to magical armors. Threads provide a variety of buffs including max mana, elytra flight, spell damage, and more.\\n\\nEach type of magical armor has its own set of Thread Slots, check the documentation before deciding which armor to create."]
 			dependencies: ["557EE1C4BE8CEDA4"]
 			id: "3672A17FB1186495"
@@ -541,7 +546,7 @@
 		}
 		{
 			x: 7.0d
-			y: -1.0d
+			y: -2.5d
 			description: ["Magebloom is used for crafting magic fiber, used for a variety of items in Ars Nouveau.\\n\\nMageblooms also grant a bonus to the Agronomic Sourcelink when they grow."]
 			dependencies: ["34602A8B5EB8F541"]
 			id: "557EE1C4BE8CEDA4"
@@ -591,12 +596,19 @@
 				type: "item"
 				item: "ars_nouveau:mob_jar"
 			}]
-			rewards: [{
-				id: "0693DB81790E273B"
-				type: "item"
-				item: "ars_nouveau:mob_jar"
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "0693DB81790E273B"
+					type: "item"
+					item: "ars_nouveau:mob_jar"
+					count: 8
+				}
+				{
+					id: "249C1F03EAEC7660"
+					type: "item"
+					item: "ars_nouveau:scryers_crystal"
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -659,6 +671,248 @@
 				id: "2F7837148CEF1AF7"
 				type: "item"
 				item: "ars_nouveau:alchemical_sourcelink"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.5d
+			description: ["Boosts the wearers maximum mana."]
+			dependencies: ["3672A17FB1186495"]
+			id: "53923CB32491CB40"
+			tasks: [{
+				id: "638192AE6544BB03"
+				type: "item"
+				item: "ars_nouveau:thread_magic_capacity"
+			}]
+			rewards: [{
+				id: "1ECAD3E3F024EFFD"
+				type: "item"
+				item: "ars_nouveau:blank_thread"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.5d
+			description: ["Increases movement speed and grants step assist in slot 3."]
+			dependencies: ["3672A17FB1186495"]
+			id: "06792A76D1940F5C"
+			tasks: [{
+				id: "40137E1E03F71FF5"
+				type: "item"
+				item: "ars_nouveau:thread_starbuncle"
+			}]
+			rewards: [{
+				id: "3C337607F1D1E1B6"
+				type: "item"
+				item: "ars_nouveau:blank_thread"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.5d
+			description: ["Grants a bonus looting for every slot level."]
+			dependencies: ["3672A17FB1186495"]
+			id: "41828BF18EE8BA24"
+			tasks: [{
+				id: "3D45B758D98DA361"
+				type: "item"
+				item: "ars_nouveau:thread_drygmy"
+			}]
+			rewards: [{
+				id: "497D34336AFAED0C"
+				type: "item"
+				item: "ars_nouveau:blank_thread"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			description: ["Filters can be added to Starbuncles, Turrets, and more. For a full list of filters and their capabilities, see the Worn Notebook."]
+			dependencies: ["557EE1C4BE8CEDA4"]
+			id: "675CAE4AA8E85044"
+			tasks: [{
+				id: "2783E087A9DF3946"
+				type: "item"
+				item: "ars_nouveau:allow_scroll"
+			}]
+			rewards: [
+				{
+					id: "35C4ED37B407F987"
+					type: "item"
+					item: "ars_nouveau:deny_scroll"
+				}
+				{
+					id: "5142054AEEE49A66"
+					type: "item"
+					item: "ars_nouveau:mimic_scroll"
+				}
+				{
+					id: "0189943DFF1B0031"
+					type: "item"
+					item: "minecraft:item_frame"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			description: ["Deals damage in an area when hitting a cold or wet target."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "65DA37464846BBEE"
+			tasks: [{
+				id: "67326D1ECACB0A53"
+				type: "item"
+				item: "ars_nouveau:glyph_cold_snap"
+			}]
+			rewards: [{
+				id: "02F3AEF5FD764B22"
+				type: "item"
+				item: "ars_nouveau:glyph_firework"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			description: ["Deals a large amount of damage and inflicts Shocking. Each additional stack causes the target to take additional damage."]
+			dependencies: ["6BE252B39297F0D3"]
+			id: "44415AA2F61BE609"
+			tasks: [{
+				id: "58DB766EE37851DB"
+				type: "item"
+				item: "ars_nouveau:glyph_lightning"
+			}]
+			rewards: [{
+				id: "366DF60818CCBD2F"
+				type: "item"
+				item: "ars_scalaes:glyph_shrink"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["An extremely versatile augment. Increases the size of many effects."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "4D7C0CC16B7E4B64"
+			tasks: [{
+				id: "6C9F9FD4FA45D226"
+				type: "item"
+				item: "ars_nouveau:glyph_aoe"
+			}]
+			rewards: [{
+				id: "18ECAF65BD7F9223"
+				type: "item"
+				item: "minecraft:ender_chest"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			description: ["Versatile tool for transporting yourself or others.\\n\\nHitting a target while holding a Blink Scroll will teleport them to the bound location."]
+			dependencies: ["6BE252B39297F0D3"]
+			id: "4852E9A3A6767CEE"
+			tasks: [{
+				id: "1B068716970C145A"
+				type: "item"
+				item: "ars_nouveau:glyph_blink"
+			}]
+			rewards: [{
+				id: "685C327BF8930493"
+				type: "item"
+				item: "ars_nouveau:glyph_intangible"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			description: ["Casts spells in a field over time. "]
+			dependencies: ["6BE252B39297F0D3"]
+			id: "6613B977CE77A6D1"
+			tasks: [{
+				id: "04F7EC8C854E2EEF"
+				type: "item"
+				item: "ars_nouveau:glyph_linger"
+			}]
+			rewards: [{
+				id: "1A8B72EC27DC28FC"
+				type: "item"
+				item: "ars_nouveau:glyph_wall"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			description: ["Duplicates projectiles cast."]
+			dependencies: ["6BE252B39297F0D3"]
+			id: "33B80D2DA460583B"
+			tasks: [{
+				id: "224E3B4796207A7A"
+				type: "item"
+				item: "ars_nouveau:glyph_split"
+			}]
+			rewards: [{
+				id: "07068A2C4ADFEA91"
+				type: "item"
+				item: "ars_nouveau:glyph_orbit"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: ["Duplicates spells onto nearby similar blocks.\\n\\nVein mining!"]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "68A662E63CC0C4A9"
+			tasks: [{
+				id: "0AE9549C650B592D"
+				type: "item"
+				item: "toomanyglyphs:glyph_chaining"
+			}]
+		}
+		{
+			title: "Spell Essentials"
+			x: 2.5d
+			y: -1.0d
+			description: ["Some essential glyphs for an aspiring mage.\\n\\nEvery glyph increases your mana regen. Learn them all!"]
+			dependencies: ["7E99B255A00E8014"]
+			id: "2F92C27C35A46722"
+			tasks: [
+				{
+					id: "1032D7E54E7D0838"
+					type: "item"
+					item: "ars_nouveau:glyph_projectile"
+				}
+				{
+					id: "6C5DFE58A4CC1FF2"
+					type: "item"
+					item: "ars_nouveau:glyph_harm"
+				}
+				{
+					id: "614B73489A7BE895"
+					type: "item"
+					item: "ars_nouveau:glyph_self"
+				}
+			]
+			rewards: [{
+				id: "5D717727D451C538"
+				type: "item"
+				item: "ars_nouveau:glyph_underfoot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["Applies Silk Touch to relevant effects."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "177DF6E7B5B8A84A"
+			tasks: [{
+				id: "32798957F3D95E66"
+				type: "item"
+				item: "ars_nouveau:glyph_extract"
+			}]
+			rewards: [{
+				id: "6640523FD5D1FE01"
+				type: "item"
+				item: "ars_nouveau:glyph_accelerate"
 			}]
 		}
 	]

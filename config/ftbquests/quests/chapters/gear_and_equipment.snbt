@@ -10,6 +10,7 @@
 		{
 			x: -0.5d
 			y: 0.5d
+			description: ["Grants mana regen when an attack is blocked. Repairs from the holders mana over time."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "14D75769B9098DC7"
 			tasks: [{
@@ -23,10 +24,20 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7A453104FD23452D"
+				type: "item"
+				item: {
+					id: "ars_elemental:caster_bag"
+					Count: 1b
+					tag: { }
+				}
+			}]
 		}
 		{
 			x: 0.5d
 			y: 0.5d
+			description: ["Provides an addititional Touch form and a free amplify. Casts spells after the sword attacks a target.\\n\\nRepairs with the users mana."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "27E928F3752CA5E8"
 			tasks: [{
@@ -40,10 +51,17 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "14028FCF607C6DC0"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 857495032092348212L
+			}]
 		}
 		{
 			x: 0.5d
 			y: -0.5d
+			description: ["Provides a free Projectile -> Accelerate, allowing the user to create larger spells."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "1A2F2EDAFC7C6C66"
 			tasks: [{
@@ -55,10 +73,17 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "1D8A7C1A5356D47F"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 857495032092348212L
+			}]
 		}
 		{
 			x: -1.5d
 			y: -0.5d
+			description: ["With this focus equipped, spells that move, create, or change blocks will have their spell adjusted to target the new entity or block created.\\n\\nFor a list of spell ideas and possibilities, see the Worn Notebook entry."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "2A821F6CEDCF1FB2"
 			tasks: [{
@@ -66,10 +91,20 @@
 				type: "item"
 				item: "ars_nouveau:shapers_focus"
 			}]
+			rewards: [{
+				id: "03F4F5C065A016A5"
+				type: "item"
+				item: {
+					id: "ars_elemental:curio_bag"
+					Count: 1b
+					tag: { }
+				}
+			}]
 		}
 		{
 			x: -1.0d
 			y: -2.0d
+			description: ["Allows the user to hover and move a short distance above the ground. To activate, sneak while in the air.\\n\\nRuduces fall damage by 6 blocks."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "5A21DF68C69794F1"
 			tasks: [{
@@ -77,10 +112,17 @@
 				type: "item"
 				item: "ars_nouveau:belt_of_levitation"
 			}]
+			rewards: [{
+				id: "33FD18457E2B9C90"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 857495032092348212L
+			}]
 		}
 		{
 			x: 0.0d
 			y: -2.0d
+			description: ["Voids listed items on pickup and grants the holder Mana for each item consumed.\\n\\nUse the jar to enable it, and hold an item in the offhand to add it to the list."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "7BB0DDEF328A4A1C"
 			tasks: [{
@@ -88,10 +130,17 @@
 				type: "item"
 				item: "ars_nouveau:void_jar"
 			}]
+			rewards: [{
+				id: "195C0B65F2D1ADE4"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 857495032092348212L
+			}]
 		}
 		{
 			x: 0.5d
 			y: -3.0d
+			description: ["Discounts spells by a small amount."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "51A882C9DAF0EE4E"
 			tasks: [{
@@ -99,10 +148,17 @@
 				type: "item"
 				item: "ars_nouveau:ring_of_lesser_discount"
 			}]
+			rewards: [{
+				id: "201203E1DF88F272"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 857495032092348212L
+			}]
 		}
 		{
 			x: -0.5d
 			y: -3.0d
+			description: ["Increases mana regen."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "38C3DF3DA00EA9E6"
 			tasks: [{
@@ -110,10 +166,17 @@
 				type: "item"
 				item: "ars_nouveau:amulet_of_mana_regen"
 			}]
+			rewards: [{
+				id: "1C4A308739316297"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 857495032092348212L
+			}]
 		}
 		{
 			x: 1.5d
 			y: -0.5d
+			description: ["Fires Spell Arrows, dealing additional damage with Arrows or operating without. Provides a free Projectile, allowing the user to create larger spells.\\n\\nRepairs with the users mana."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "36B3477F77D1A0C7"
 			tasks: [{
@@ -125,10 +188,17 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "79919B79B3F05B7B"
+				type: "item"
+				item: "ars_nouveau:amplify_arrow"
+				count: 32
+			}]
 		}
 		{
 			x: 1.5d
 			y: 0.5d
+			description: ["Fires Spell Arrows like the bow, but expends their mana cost when the arrow is charged.\\n\\nRepairs with the users mana."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "5E6D6D4F39333627"
 			tasks: [{
@@ -140,10 +210,17 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "14E09E6C56303751"
+				type: "item"
+				item: "ars_nouveau:split_arrow"
+				count: 32
+			}]
 		}
 		{
 			x: -0.5d
 			y: -0.5d
+			description: ["Provides a free Self form and increases the duration of all spell effects."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "4A64F9DFBE022CB9"
 			tasks: [{
@@ -165,6 +242,7 @@
 		{
 			x: 1.0d
 			y: -2.0d
+			description: ["Spawns a light block as the user moves or provides permanent dynamic lighting if enabled.\\n\\nTo enable Dynamic Lighting, use `/ars-lights on` or enable it from your spellbook."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "02377E6F4C466FAE"
 			tasks: [{
@@ -172,16 +250,29 @@
 				type: "item"
 				item: "ars_nouveau:jar_of_light"
 			}]
+			rewards: [{
+				id: "6CE7717C0B699542"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 857495032092348212L
+			}]
 		}
 		{
 			x: -1.5d
 			y: 0.5d
+			description: ["Increases the damage of air spells. Also grants passive speed and knockback."]
 			dependencies: ["632AD43DFB1E7DB7"]
 			id: "4A63A6C7E8C2EC9D"
 			tasks: [{
 				id: "43D1A14C1C4B182A"
 				type: "item"
 				item: "ars_elemental:air_bangle"
+			}]
+			rewards: [{
+				id: "6120264506DCBCF0"
+				type: "item"
+				item: "ars_elemental:base_bangle"
+				count: 2
 			}]
 		}
 		{

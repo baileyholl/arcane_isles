@@ -118,6 +118,11 @@
 				type: "item"
 				item: "ars_caelum:ritual_conjure_island_plains"
 			}]
+			rewards: [{
+				id: "7CC66AB69B38EFF5"
+				type: "item"
+				item: "ars_elemental:lesser_earth_focus"
+			}]
 		}
 		{
 			x: 2.0d
@@ -133,6 +138,11 @@
 				type: "item"
 				item: "ars_caelum:ritual_conjure_island_sculk"
 			}]
+			rewards: [{
+				id: "0365AEC94387D1B5"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
+			}]
 		}
 		{
 			x: 1.0d
@@ -145,6 +155,11 @@
 				type: "item"
 				item: "ars_nouveau:mycelial_sourcelink"
 			}]
+			rewards: [{
+				id: "1F2FFC81BA336436"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
+			}]
 		}
 		{
 			x: 2.0d
@@ -156,6 +171,11 @@
 				id: "07AB1E10F4090A6C"
 				type: "item"
 				item: "ars_caelum:ritual_conjure_island_geode"
+			}]
+			rewards: [{
+				id: "78869E43EBDE50D7"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
 			}]
 		}
 		{
@@ -205,6 +225,11 @@
 				type: "item"
 				item: "ars_caelum:ritual_conjure_island_desert"
 			}]
+			rewards: [{
+				id: "52635A59F4D8C1D4"
+				type: "item"
+				item: "ars_elemental:lesser_fire_focus"
+			}]
 		}
 		{
 			x: 2.5d
@@ -245,6 +270,11 @@
 				id: "52CF439B0A365578"
 				type: "item"
 				item: "ars_caelum:ritual_conjure_island_end_portal"
+			}]
+			rewards: [{
+				id: "14A40D361934C912"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
 			}]
 		}
 		{
