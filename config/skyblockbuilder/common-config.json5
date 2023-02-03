@@ -132,7 +132,7 @@
   "Utility": {
   
     // Should players be able to create their own team? [default: false]
-    "createOwnTeam": false,
+    "createOwnTeam": true,
     
     // Should players be able to leave their team or invite others? [default: true]
     "selfManage": true,
@@ -205,7 +205,7 @@
     // Distance between islands in overworld [default: 8192]
     // nether the distance is 1/8
     // Range: 64 - 29999900
-    "islandDistance": 8192,
+    "islandDistance": 1000,
     
     // The offset from 0, 0 to generate the islands
     // Can be used to generate them in the middle of .mca files
