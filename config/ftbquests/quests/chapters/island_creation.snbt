@@ -110,14 +110,21 @@
 		{
 			x: -1.0d
 			y: -1.5d
-			description: ["Creates an island of grass and dirt. Starts with a radius of 7, and increased by 1 for each Source Gem added to the ritual. Converts the biome to Plains."]
+			description: ["Creates an island of grass and dirt. Starts with a radius of 7, and increased by 1 for each Source Gem added to the ritual. Converts the biome to Plains.\\n\\nAugmenting with a Frostaya will convert the area to Snowy Plains."]
 			dependencies: ["7F43851A9C6D5805"]
 			id: "5263474A41F518A2"
-			tasks: [{
-				id: "370EC74858FCA7D7"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_plains"
-			}]
+			tasks: [
+				{
+					id: "370EC74858FCA7D7"
+					type: "item"
+					item: "ars_caelum:ritual_conjure_island_plains"
+				}
+				{
+					id: "7847A0EC3627C5AF"
+					type: "item"
+					item: "minecraft:snow_block"
+				}
+			]
 			rewards: [{
 				id: "7CC66AB69B38EFF5"
 				type: "item"

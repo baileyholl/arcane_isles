@@ -81,8 +81,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 0.5d
+			x: 5.0d
+			y: 1.5d
 			description: ["Soon you will need seeds! Frostaya can be composted, assuming you haven't eaten it all."]
 			dependencies: ["5434FD35898DA564"]
 			id: "3D12F7A364A0D277"
@@ -110,6 +110,12 @@
 					item: "ars_nouveau:source_gem"
 				}
 			]
+			rewards: [{
+				id: "508C6640E9CDF70D"
+				type: "item"
+				item: "ars_nouveau:sconce"
+				count: 16
+			}]
 		}
 		{
 			title: "Acquire Source"
@@ -130,6 +136,12 @@
 					item: "ars_nouveau:source_jar"
 				}
 			]
+			rewards: [{
+				id: "122E23F55FDF44B7"
+				type: "item"
+				item: "ars_nouveau:mirrorweave"
+				count: 32
+			}]
 		}
 		{
 			title: "New Spells"
@@ -326,8 +338,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: -4.0d
+			x: 8.0d
+			y: -3.5d
 			description: ["Starbuncles can transport items, harvest sourceberries, and pick items off the ground."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "166A8594ADE733CA"
@@ -359,8 +371,8 @@
 			]
 		}
 		{
-			x: 6.5d
-			y: -5.0d
+			x: 7.5d
+			y: -4.5d
 			description: ["Drygmys provide alternatives to mob farms by generating loot from the mobs around their home. Additional items are created for the number of mobs nearby. Mobs can also be stored and harvested from Containment Jars."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "6A3154A3D6CC1B97"
@@ -369,10 +381,15 @@
 				type: "item"
 				item: "ars_nouveau:drygmy_charm"
 			}]
+			rewards: [{
+				id: "2A9FB00C9631C615"
+				type: "item"
+				item: "ars_nouveau:scryers_crystal"
+			}]
 		}
 		{
-			x: 4.0d
-			y: -4.0d
+			x: 5.0d
+			y: -3.5d
 			description: ["A Whirlisprig can generate natural materials that are placed within its home, enabling the automation of unique plants materials without harvesting them.\\n\\nThe Whirlisprig has unique happiness requirements and restriction. See the Worn Notebook."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "00BE258E0FA15BC2"
@@ -383,9 +400,9 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -5.5d
-			description: ["A Wixie can autocraft items and potions at the cost of a small amount of Source. Use a Wixie Charm on a Cauldron and use an item you wish to craft onto it.\\n\\nItems will be automatically taken from nearby chests."]
+			x: 6.5d
+			y: -5.0d
+			description: ["A Wixie can autocraft items and potions at the cost of a small amount of Source. Use a Wixie Charm on a Cauldron and use an item you wish to craft, or place them on pedestals adjacent to the wixie.\\n\\nItems will be automatically taken from nearby chests."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "09327991E8546F09"
 			tasks: [{
@@ -393,10 +410,23 @@
 				type: "item"
 				item: "ars_nouveau:wixie_charm"
 			}]
+			rewards: [
+				{
+					id: "294F3F0177560725"
+					type: "item"
+					item: "ars_nouveau:arcane_platform"
+					count: 4
+				}
+				{
+					id: "239AE7710E311714"
+					type: "item"
+					item: "ars_nouveau:scryers_crystal"
+				}
+			]
 		}
 		{
-			x: 5.5d
-			y: -4.0d
+			x: 6.5d
+			y: -3.5d
 			description: ["The Dominion Wand is used to configure relays, entities, and other automations in the mod.\\n\\nUsage of the wand is described in the entries that the wand applies to, such as Starbuncles or Relays."]
 			dependencies: ["34602A8B5EB8F541"]
 			id: "3EA4C9F408CE81EF"
@@ -411,8 +441,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -5.0d
+			x: 5.5d
+			y: -4.5d
 			description: ["Like the whirlisprig, a Siren will generate fishing loot based on its happiness. See the Worn Notebook for more information."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "5E81794FFE9B5C34"
@@ -511,8 +541,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -2.5d
+			x: 1.5d
+			y: -3.5d
 			description: ["Ars Caelum adds a variety of rituals for conjuring islands and platforms.\\n\\nThe chapter for Island Creation has been unlocked!"]
 			dependencies: ["73937DADFAF6DAEE"]
 			id: "01F235E075031B43"
@@ -555,15 +585,27 @@
 				type: "item"
 				item: "ars_nouveau:magebloom_crop"
 			}]
-			rewards: [{
-				id: "3F23327887F910E3"
-				type: "item"
-				item: "ars_nouveau:blue_sbed"
-			}]
+			rewards: [
+				{
+					id: "3F23327887F910E3"
+					type: "item"
+					item: "ars_nouveau:blue_sbed"
+				}
+				{
+					id: "060E6169E0D76A20"
+					type: "item"
+					item: "ars_nouveau:purple_sbed"
+				}
+				{
+					id: "6DEC33D03EC6B2BA"
+					type: "item"
+					item: "ars_nouveau:green_sbed"
+				}
+			]
 		}
 		{
-			x: 5.5d
-			y: -1.0d
+			x: 6.0d
+			y: -1.5d
 			description: ["Ars Nouveau and addons add a large variety of equipment for utility and combat. The section on Gear and Equipment has been unlocked!"]
 			dependencies: ["34602A8B5EB8F541"]
 			id: "75EF2966C0C149EF"
@@ -574,8 +616,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -7.0d
+			x: 6.5d
+			y: -6.5d
 			description: ["To craft potions, place a Potion Jar near a Wixie and use a potion on the cauldron. Water is supplied for free. Jars may be locked to a specific potion type by using the dominion wand on them."]
 			dependencies: ["09327991E8546F09"]
 			id: "06E806C5362559F0"
@@ -584,10 +626,16 @@
 				type: "item"
 				item: "ars_nouveau:potion_jar"
 			}]
+			rewards: [{
+				id: "1D334A5637D79878"
+				type: "item"
+				item: "ars_nouveau:potion_jar"
+				count: 3
+			}]
 		}
 		{
-			x: 7.5d
-			y: -6.0d
+			x: 8.5d
+			y: -5.5d
 			description: ["Containment Jars provide decorative and functional storage for mobs. To store a mob in a jar, perform the Ritual of Containment with a Containment Jar nearby.\\n\\nSome mobs can be interacted with while in the jar, including chickens, sheep, villagers, cows, and more. Cast Dispel on a jar to release the mob."]
 			dependencies: ["6A3154A3D6CC1B97"]
 			id: "60935DDD3F0B3E00"
@@ -611,8 +659,8 @@
 			]
 		}
 		{
-			x: 4.5d
-			y: -7.5d
+			x: 5.5d
+			y: -7.0d
 			description: ["Enables the mixing of potions into a single liquid. To use, bind two potion jars to the Melder with the dominion wand, and then bind an output jar.\\n\\nConsumes a small amount of source each combination."]
 			dependencies: ["06E806C5362559F0"]
 			id: "2C1808D5DA7F6F6E"
@@ -621,10 +669,19 @@
 				type: "item"
 				item: "ars_nouveau:potion_melder"
 			}]
+			rewards: [{
+				id: "40EA6D6B32601141"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starby_gift"
+					Count: 1b
+					tag: { }
+				}
+			}]
 		}
 		{
-			x: 5.5d
-			y: -8.0d
+			x: 6.5d
+			y: -7.5d
 			description: ["A stackable potion. Use on a Potion Jar or craft with a potion item to add a charge.\\n\\nSee the enchanted flasks for upgraded versions."]
 			dependencies: ["06E806C5362559F0"]
 			id: "065BCE40BB1890CC"
@@ -639,10 +696,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7835B78483E19614"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starby_gift"
+					Count: 1b
+					tag: { }
+				}
+			}]
 		}
 		{
-			x: 6.5d
-			y: -7.5d
+			x: 7.5d
+			y: -7.0d
 			description: ["Allows starbuncles to be bound to Potion Jars for transportation instead of items."]
 			dependencies: ["06E806C5362559F0"]
 			id: "6B3A9BA2C20E8A58"
@@ -662,8 +728,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: -6.5d
+			x: 7.5d
+			y: -6.0d
 			description: ["Generates a large amount of source based on the complexity of potion consumed. Place a Potion Jar adjacent to the Sourcelink."]
 			dependencies: ["06E806C5362559F0"]
 			id: "36FCB963CD3A43DC"
@@ -671,6 +737,15 @@
 				id: "2F7837148CEF1AF7"
 				type: "item"
 				item: "ars_nouveau:alchemical_sourcelink"
+			}]
+			rewards: [{
+				id: "2BBB35D2EA31E1E0"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starby_gift"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 		{
@@ -726,7 +801,7 @@
 		}
 		{
 			x: 8.0d
-			y: -3.5d
+			y: -1.5d
 			description: ["Filters can be added to Starbuncles, Turrets, and more. For a full list of filters and their capabilities, see the Worn Notebook."]
 			dependencies: ["557EE1C4BE8CEDA4"]
 			id: "675CAE4AA8E85044"
@@ -800,9 +875,9 @@
 				item: "ars_nouveau:glyph_aoe"
 			}]
 			rewards: [{
-				id: "18ECAF65BD7F9223"
+				id: "569BAD48FD0D2D86"
 				type: "item"
-				item: "minecraft:ender_chest"
+				item: "ars_nouveau:glyph_ender_inventory"
 			}]
 		}
 		{
@@ -851,9 +926,9 @@
 				item: "ars_nouveau:glyph_split"
 			}]
 			rewards: [{
-				id: "07068A2C4ADFEA91"
+				id: "7431501D4106A51C"
 				type: "item"
-				item: "ars_nouveau:glyph_orbit"
+				item: "ars_elemental:glyph_propagator_homing"
 			}]
 		}
 		{
@@ -866,6 +941,11 @@
 				id: "0AE9549C650B592D"
 				type: "item"
 				item: "toomanyglyphs:glyph_chaining"
+			}]
+			rewards: [{
+				id: "6D6DFB855DB12C8C"
+				type: "item"
+				item: "toomanyglyphs:glyph_filter_block"
 			}]
 		}
 		{
@@ -892,11 +972,18 @@
 					item: "ars_nouveau:glyph_self"
 				}
 			]
-			rewards: [{
-				id: "5D717727D451C538"
-				type: "item"
-				item: "ars_nouveau:glyph_underfoot"
-			}]
+			rewards: [
+				{
+					id: "5D717727D451C538"
+					type: "item"
+					item: "ars_nouveau:glyph_underfoot"
+				}
+				{
+					id: "620585685C0D5298"
+					type: "item"
+					item: "ars_nouveau:glyph_bounce"
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -913,6 +1000,57 @@
 				id: "6640523FD5D1FE01"
 				type: "item"
 				item: "ars_nouveau:glyph_accelerate"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			description: ["Allows you to bind multiple rituals to a single location. Can also be used decoratively."]
+			dependencies: ["26E668C31E63E807"]
+			id: "03FCB167C979526B"
+			tasks: [{
+				id: "7E7CE015752A81C5"
+				type: "item"
+				item: "ars_nouveau:brazier_relay"
+			}]
+			rewards: [
+				{
+					id: "61B170EAE36216EE"
+					type: "item"
+					item: "ars_nouveau:brazier_relay"
+				}
+				{
+					id: "5E9FB516B37CC39B"
+					type: "item"
+					item: "ars_nouveau:magelight_torch"
+					count: 16
+				}
+				{
+					id: "5324BA92987C5ADA"
+					type: "item"
+					item: "ars_nouveau:ritual_brazier"
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -6.0d
+			description: ["Applies potions to all nearby entities, greatly extending the value from a single potion."]
+			dependencies: ["06E806C5362559F0"]
+			id: "38C7F842939C2D2C"
+			tasks: [{
+				id: "7CAF9AA507492807"
+				type: "item"
+				item: "ars_nouveau:potion_diffuser"
+			}]
+			rewards: [{
+				id: "3DB62B46C112BFC7"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starby_gift"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]
