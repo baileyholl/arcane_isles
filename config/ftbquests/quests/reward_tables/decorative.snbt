@@ -1,0 +1,32 @@
+{
+	id: "4BE4773896EC9ACC"
+	order_index: 2
+	title: "Decorative"
+	loot_size: 1
+	rewards: [
+		{ item: "ars_nouveau:sourcestone", count: 64 }
+		{ item: "ars_nouveau:sourcestone_large_bricks", count: 64 }
+		{ item: "ars_nouveau:smooth_gilded_sourcestone_mosaic", count: 64 }
+		{ item: "ars_nouveau:smooth_sourcestone_small_bricks", count: 64 }
+		{
+			item: {
+				id: "fairylights:hanging_lights"
+				Count: 1b
+				tag: {
+					string: "fairylights:black_string"
+					pattern: [{
+						id: "fairylights:fairy_light"
+						Count: 1b
+						tag: {
+							color: 8991416
+						}
+					}]
+				}
+			}
+			count: 8
+		}
+		{ item: "ars_nouveau:smooth_sourcestone", count: 64 }
+		{ item: "mcwbridges:rope_dark_oak_bridge", count: 64 }
+		{ item: "minecraft:blackstone", count: 64 }
+	]
+}

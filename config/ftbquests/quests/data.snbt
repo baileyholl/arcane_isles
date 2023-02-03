@@ -1,5 +1,7 @@
 {
 	version: 13
+	title: "Arcane Isles"
+	icon: "ars_nouveau:archmage_spell_book"
 	default_reward_team: false
 	default_consume_items: false
 	default_autoclaim_rewards: "disabled"

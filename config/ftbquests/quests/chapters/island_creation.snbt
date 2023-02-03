@@ -87,6 +87,12 @@
 					item: "minecraft:jungle_sapling"
 				}
 			]
+			rewards: [{
+				id: "30E5A5C8212EE7DA"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 5468626932468587212L
+			}]
 		}
 		{
 			x: -2.0d
@@ -106,6 +112,12 @@
 					item: "minecraft:cactus"
 				}
 			]
+			rewards: [{
+				id: "41E7C0D272C5A679"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 5468626932468587212L
+			}]
 		}
 		{
 			x: -1.0d
@@ -249,6 +261,12 @@
 				type: "item"
 				item: "ars_nouveau:volcanic_sourcelink"
 			}]
+			rewards: [{
+				id: "156A0D70930F4AEF"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 5468626932468587212L
+			}]
 		}
 		{
 			x: 1.0d
@@ -299,6 +317,11 @@
 						"patchouli:book": "hexcasting:thehexbook"
 					}
 				}
+			}]
+			rewards: [{
+				id: "7AC6CA4ACCB5F67B"
+				type: "item"
+				item: "ars_scalaes:archwood_staff"
 			}]
 		}
 	]
