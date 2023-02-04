@@ -1,1 +1,14 @@
-{}
+{  
+"customEntries": [
+    {
+      "output": {
+        "item": "farmersdelight:onion"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      },
+      "category": "farmingforblockheads:seeds"
+    }
+	]
+}

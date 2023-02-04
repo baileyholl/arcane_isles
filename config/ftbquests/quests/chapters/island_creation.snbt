@@ -4,6 +4,7 @@
 	order_index: 1
 	filename: "island_creation"
 	title: "Island Creation"
+	icon: "ars_caelum:ritual_conjure_island_flourishing"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -64,7 +65,8 @@
 				{
 					id: "22112DFB46AAC982"
 					type: "item"
-					item: "ars_caelum:ritual_forestation"
+					icon: "ars_nouveau:ritual_forestation"
+					item: "ars_nouveau:ritual_forestation"
 				}
 				{
 					id: "13F062A144F36807"
@@ -102,14 +104,14 @@
 			id: "493F79CBA01189DF"
 			tasks: [
 				{
-					id: "339505FDB30EA345"
-					type: "item"
-					item: "ars_caelum:ritual_flowering"
-				}
-				{
 					id: "1DBBCC4CB3F1ED04"
 					type: "item"
 					item: "minecraft:cactus"
+				}
+				{
+					id: "3A1A836B0C8D88B3"
+					type: "item"
+					item: "ars_nouveau:ritual_flowering"
 				}
 			]
 			rewards: [{
@@ -127,14 +129,14 @@
 			id: "5263474A41F518A2"
 			tasks: [
 				{
-					id: "370EC74858FCA7D7"
-					type: "item"
-					item: "ars_caelum:ritual_conjure_island_plains"
-				}
-				{
 					id: "7847A0EC3627C5AF"
 					type: "item"
 					item: "minecraft:snow_block"
+				}
+				{
+					id: "0F52FB8223A9920C"
+					type: "item"
+					item: "ars_nouveau:ritual_conjure_island_plains"
 				}
 			]
 			rewards: [{
@@ -242,7 +244,7 @@
 			tasks: [{
 				id: "662A70478D10EF54"
 				type: "item"
-				item: "ars_caelum:ritual_conjure_island_desert"
+				item: "ars_nouveau:ritual_conjure_island_desert"
 			}]
 			rewards: [{
 				id: "52635A59F4D8C1D4"

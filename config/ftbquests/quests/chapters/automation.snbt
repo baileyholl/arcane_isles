@@ -4,6 +4,7 @@
 	order_index: 2
 	filename: "automation"
 	title: "Automation Tools"
+	icon: "ars_nouveau:timer_spell_turret"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
