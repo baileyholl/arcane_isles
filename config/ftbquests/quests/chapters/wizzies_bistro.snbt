@@ -1,7 +1,7 @@
 {
 	id: "2F912A1A3C4A9B2E"
-	group: ""
-	order_index: 4
+	group: "4216FE5ADC621CC5"
+	order_index: 0
 	filename: "wizzies_bistro"
 	title: "Wizzie's Bistro"
 	icon: "farmersdelight:shepherds_pie_block"
@@ -11,6 +11,7 @@
 		{
 			x: 0.5d
 			y: 0.0d
+			description: ["Exchanges emeralds for otherwise unobtainable seeds."]
 			id: "2252DFE57555188D"
 			tasks: [{
 				id: "6F44E3B034391614"
@@ -54,17 +55,6 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 1.5d
-			dependencies: ["2252DFE57555188D"]
-			id: "5AE77659B346C390"
-			tasks: [{
-				id: "356B988F6681A75B"
-				type: "item"
-				item: "farmersdelight:tomato"
-			}]
-		}
-		{
 			x: 1.5d
 			y: 1.0d
 			dependencies: ["2252DFE57555188D"]
@@ -83,7 +73,7 @@
 			tasks: [{
 				id: "0F6A737001EE53DF"
 				type: "item"
-				item: "minecraft:beetroot"
+				item: "minecraft:beetroot_seeds"
 			}]
 		}
 		{
@@ -110,7 +100,7 @@
 		}
 		{
 			x: 0.5d
-			y: -1.5d
+			y: 1.5d
 			dependencies: ["2252DFE57555188D"]
 			id: "4C78CBB94630F09D"
 			tasks: [{
@@ -121,17 +111,24 @@
 		}
 		{
 			title: "Well Done"
-			x: 0.5d
-			y: -3.5d
+			x: -2.0d
+			y: -4.5d
 			description: ["Spell Turrets can use Interact with a Knife on a Cutting Board."]
 			id: "491003FF02C996E8"
-			tasks: [{
-				id: "0B2C66524C879B54"
-				type: "item"
-				item: "farmersdelight:beef_patty"
-				count: 500L
-				consume_items: true
-			}]
+			tasks: [
+				{
+					id: "0B2C66524C879B54"
+					type: "item"
+					item: "farmersdelight:beef_patty"
+					count: 500L
+					consume_items: true
+				}
+				{
+					id: "0A6CB251A60257EE"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+			]
 			rewards: [{
 				id: "78D5A99B0ED8A48E"
 				type: "item"
@@ -243,14 +240,180 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -3.5d
-			id: "2E0AA4DB5A88C9FD"
+			x: -2.0d
+			y: -6.0d
+			id: "54A0B6678F1163A2"
 			tasks: [{
-				id: "77723CB900CC3B75"
-				type: "fluid"
-				fluid: "starbunclemania:source_fluid_flowing"
-				amount: 1000L
+				id: "3B2F007100E03F58"
+				type: "item"
+				item: "farmersdelight:barbecue_stick"
+				count: 500L
+				consume_items: true
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.5d
+			id: "026E8D6A40FC1FFC"
+			tasks: [{
+				id: "7E50168E01749786"
+				type: "item"
+				item: "farmersdelight:shepherds_pie_block"
+				count: 500L
+				consume_items: true
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			id: "38E7444FBD139299"
+			tasks: [{
+				id: "72A758B7C8F3A684"
+				type: "item"
+				item: "farmersdelight:bacon_and_eggs"
+				count: 500L
+				consume_items: true
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			description: [
+				"Honey can be collected by casting Cut on a beehive."
+				"\\n\\nGrow Oak, Birch, or Mangrove trees within two blocks of a flower for a chance at a bee nest."
+			]
+			id: "289DA60E155A3980"
+			tasks: [{
+				id: "1C929CA18447FDE2"
+				type: "item"
+				item: "supplementaries:candy"
+				count: 1000L
+				consume_items: true
+			}]
+		}
+		{
+			x: 3.0d
+			y: -7.5d
+			id: "610B23D2DAACCC75"
+			tasks: [{
+				id: "6B149BAE0DD55447"
+				type: "item"
+				item: "farmersdelight:apple_pie_slice"
+				count: 2000L
+				consume_items: true
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.0d
+			id: "12541F73237187CD"
+			tasks: [{
+				id: "476E21351D986EE5"
+				type: "item"
+				item: "farmersdelight:chocolate_pie_slice"
+				count: 2000L
+				consume_items: true
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.0d
+			id: "63AF5DCA7994BC21"
+			tasks: [{
+				id: "594D23BB1DDEBEBA"
+				type: "item"
+				item: "farmersdelight:chicken_sandwich"
+				count: 500L
+				consume_items: true
+			}]
+		}
+		{
+			x: 3.0d
+			y: -6.0d
+			id: "68DEBE675634707F"
+			tasks: [{
+				id: "6B273DB71344F2FE"
+				type: "item"
+				item: "farmersdelight:melon_popsicle"
+				count: 500L
+				consume_items: true
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			id: "08A7C42E3D59DB90"
+			tasks: [{
+				id: "6A8056B770950F62"
+				type: "item"
+				item: "farmersdelight:kelp_roll"
+				count: 500L
+				consume_items: true
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.0d
+			id: "1FB44DAB8C24037D"
+			tasks: [{
+				id: "1C9050ABBAD794EF"
+				type: "item"
+				item: "farmersdelight:rice_roll_medley_block"
+				count: 200L
+				consume_items: true
+			}]
+		}
+		{
+			title: "Who ate all the pie?"
+			icon: "ars_nouveau:glyph_grow"
+			x: 0.5d
+			y: -10.0d
+			subtitle: "Who knew wixies liked to cook so much?"
+			hide_dependency_lines: true
+			dependencies: [
+				"63AF5DCA7994BC21"
+				"08A7C42E3D59DB90"
+				"610B23D2DAACCC75"
+				"38E7444FBD139299"
+				"68DEBE675634707F"
+				"026E8D6A40FC1FFC"
+				"54A0B6678F1163A2"
+				"1FB44DAB8C24037D"
+				"289DA60E155A3980"
+				"12541F73237187CD"
+				"491003FF02C996E8"
+			]
+			id: "5E7AE8BA6EB369DF"
+			tasks: [{
+				id: "4C80379F2CD927B7"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4218A1C79551471F"
+				type: "item"
+				item: "ars_nouveau:glyph_grow"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			dependencies: ["2252DFE57555188D"]
+			id: "41BBA4609D0553B2"
+			tasks: [{
+				id: "5EF56A825FD6813D"
+				type: "item"
+				item: "minecraft:melon_seeds"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			description: ["Wizzie's Corporate has requested for absurd amounts of food! If only they could figure out how the use that cooking pot...\\n\\nRituals of Overgrowth, Turrets, and Containment Jars can be used to make cooking a breeze."]
+			id: "38EBD9D86F6F852E"
+			tasks: [{
+				id: "3E44DC9DD37577F1"
+				type: "checkmark"
+				title: "Cooking Challenges"
 			}]
 		}
 	]
