@@ -1,7 +1,7 @@
 {
 	id: "275B5E5A202C785E"
 	group: ""
-	order_index: 2
+	order_index: 1
 	filename: "island_creation"
 	title: "Island Creation"
 	icon: "ars_caelum:ritual_conjure_island_flourishing"
@@ -324,6 +324,23 @@
 				id: "7AC6CA4ACCB5F67B"
 				type: "item"
 				item: "ars_scalaes:archwood_staff"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			description: ["Summons Guardians. Can be augmented with a Sea Lantern to summon the Elder Guardian."]
+			dependencies: ["47B78DE895A1E4E2"]
+			id: "4AAA43B761A3533C"
+			tasks: [{
+				id: "45454FAC02774BE2"
+				type: "item"
+				item: "ars_caelum:ritual_elder_summon"
+			}]
+			rewards: [{
+				id: "24F9529115DE65EA"
+				type: "item"
+				item: "ars_elemental:lesser_water_focus"
 			}]
 		}
 	]

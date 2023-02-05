@@ -1,0 +1,12 @@
+{
+	id: "25B60EF3D101D165"
+	group: "4216FE5ADC621CC5"
+	order_index: 1
+	filename: "drygmy_jars"
+	title: "Drygmy Jars"
+	icon: "ars_nouveau:mob_jar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}
