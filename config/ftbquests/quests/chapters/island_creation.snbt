@@ -10,7 +10,7 @@
 	quests: [
 		{
 			x: -1.0d
-			y: 3.0d
+			y: 3.5d
 			description: ["Contains coral, sugarcane, and sea grass. Also converts the nearby area into a Warm Ocean."]
 			dependencies: ["436678048E9C48BB"]
 			id: "47B78DE895A1E4E2"
@@ -39,8 +39,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 0.0d
+			x: -1.5d
+			y: -0.5d
 			description: ["Contains moss, sweet berries, bamboo, mendosteen, and flourishing trees. Converts the area to Mangrove Swamp"]
 			dependencies: ["436678048E9C48BB"]
 			id: "7F43851A9C6D5805"
@@ -56,8 +56,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 0.0d
+			x: -3.0d
+			y: -0.5d
 			description: ["Places oak and birch trees nearby with a radius of 7, increased for each source gem added to the ritual.\\n\\nAugmenting with a Brown Mushroom will convert the area and resources to Taiga.\\n\\nAugmenting with Glow Berries will spawn a jungle."]
 			dependencies: ["7F43851A9C6D5805"]
 			id: "34CC74F94005C45D"
@@ -97,8 +97,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -1.0d
+			x: -2.5d
+			y: -1.5d
 			description: ["Spawns flowers and grass nearby with a radius of 7, increased for each source gem added.\\n\\nAugmenting with Sand will change the ritual to place cactus if possible."]
 			dependencies: ["7F43851A9C6D5805"]
 			id: "493F79CBA01189DF"
@@ -122,8 +122,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -1.5d
+			x: -1.5d
+			y: -2.0d
 			description: ["Creates an island of grass and dirt. Starts with a radius of 7, and increased by 1 for each Source Gem added to the ritual. Converts the biome to Plains.\\n\\nAugmenting with a Frostaya will convert the area to Snowy Plains."]
 			dependencies: ["7F43851A9C6D5805"]
 			id: "5263474A41F518A2"
@@ -146,8 +146,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -2.5d
+			x: 2.5d
+			y: -3.0d
 			description: [
 				"Creates an island of Sculk and Deepslate and converts the area to Deep Dark. Be warned, the Warden is near!\\n\\nPerform 14 blocks from anything else. Requires a full jar of source."
 				""
@@ -166,8 +166,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.5d
+			x: 1.5d
+			y: -2.0d
 			description: ["Consumes food to generate source, granting bonuses for Sourceberries and magical food.\\n\\nAll Sourcelinks can consume items placed into adjacent pedestals."]
 			dependencies: ["209971171B86E7E9"]
 			id: "7D3C01D14E69EA26"
@@ -183,8 +183,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -1.0d
+			x: 2.5d
+			y: -1.5d
 			description: ["Conjures a geode of Calcite, Basalt, and Amethyst. Summon 14 blocks from anything else. Requires a full jar of source."]
 			dependencies: ["209971171B86E7E9"]
 			id: "7D9EFB225A839AAD"
@@ -200,8 +200,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 0.0d
+			x: 1.5d
+			y: -0.5d
 			description: ["Contains mycelium, bastion fruit, mushrooms, source berries, and vexing trees. Converts the area to Mushroom Island."]
 			dependencies: ["436678048E9C48BB"]
 			id: "209971171B86E7E9"
@@ -217,8 +217,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -1.0d
+			x: 4.0d
+			y: -1.5d
 			description: ["Amethyst Golems can automate the collection and growing of Amethyst, and converts nearby Amethyst Blocks into Budding Amethyst.\\n\\nObtained by performing a Ritual of Awakening near a Budding Amethyst block."]
 			dependencies: ["7D9EFB225A839AAD"]
 			id: "3AD4C88E5DE9C0AF"
@@ -234,10 +234,16 @@
 					item: "ars_nouveau:ritual_awakening"
 				}
 			]
+			rewards: [{
+				id: "72AF04EDCC88DB06"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 5468626932468587212L
+			}]
 		}
 		{
-			x: 1.0d
-			y: 4.5d
+			x: 1.5d
+			y: 5.0d
 			description: ["Creates an island of Sand and Sandstone. Converts the area to Desert. Starts with a radius of 7, increased for each Source Gem applied.\\n\\nAugmenting with Terracotta will create a Badlands with red sand and terracotta."]
 			dependencies: ["28CE515EC64C90F8"]
 			id: "0946010E36BFBE7F"
@@ -253,8 +259,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 3.0d
+			x: 3.0d
+			y: 3.5d
 			description: ["Consumes burnable materials to generate source. Will convert nearby Stone into Magma and Lava. See the worn notebook for more.\\n\\nCan consume items from adjacent pedestals."]
 			dependencies: ["28CE515EC64C90F8"]
 			id: "32D0704AED5BF1D4"
@@ -271,8 +277,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 3.0d
+			x: 1.5d
+			y: 3.5d
 			description: ["Contains lava, pumpkins, granite, and blazing archwood trees."]
 			dependencies: ["436678048E9C48BB"]
 			id: "28CE515EC64C90F8"
@@ -288,8 +294,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 0.0d
+			x: 3.0d
+			y: -0.5d
 			description: ["Summons the Stronghold Portal Room. Note: The portal cannot be moved once placed. Perform far from other blocks! Requires a full jar of source."]
 			dependencies: ["209971171B86E7E9"]
 			id: "656A7A573BD36A4F"
@@ -305,8 +311,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -2.0d
+			x: 3.5d
+			y: -2.5d
 			dependencies: ["7D9EFB225A839AAD"]
 			id: "0415DA254AB79A7C"
 			tasks: [{
@@ -328,7 +334,7 @@
 		}
 		{
 			x: -1.0d
-			y: 4.5d
+			y: 5.0d
 			description: ["Summons Guardians. Can be augmented with a Sea Lantern to summon the Elder Guardian."]
 			dependencies: ["47B78DE895A1E4E2"]
 			id: "4AAA43B761A3533C"
@@ -341,6 +347,111 @@
 				id: "24F9529115DE65EA"
 				type: "item"
 				item: "ars_elemental:lesser_water_focus"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			description: ["Rapidly grows nearby plants at the cost of source."]
+			dependencies: ["7F43851A9C6D5805"]
+			id: "357D04B638638CED"
+			tasks: [{
+				id: "25B02761AD3DB2EF"
+				type: "item"
+				item: "ars_nouveau:ritual_overgrowth"
+			}]
+			rewards: [{
+				id: "166B835852F7643A"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_shards"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			description: ["Harvests nearby plants at the cost of source."]
+			dependencies: ["7F43851A9C6D5805"]
+			id: "0900E2200B13F631"
+			tasks: [{
+				id: "73F65D0F3D180037"
+				type: "item"
+				item: "ars_nouveau:ritual_harvest"
+			}]
+			rewards: [{
+				id: "5C3D1CD8C1779157"
+				type: "item"
+				item: "ars_nouveau:starbuncle_shards"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			description: ["Captures nearby mobs in Containment Jars.\\n\\nMany mobs will retain their behaviors in a jar. Catch them all!"]
+			dependencies: ["209971171B86E7E9"]
+			id: "4ABEB3A149493F58"
+			tasks: [{
+				id: "3CFAA3D5B5868EDD"
+				type: "item"
+				item: "ars_nouveau:ritual_containment"
+			}]
+			rewards: [{
+				id: "1B5B354184C68731"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5468626932468587212L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			description: ["Causes animals to breed nearby if possible. Caps at 20 nearby animals."]
+			dependencies: ["7F43851A9C6D5805"]
+			id: "1FCB9F4E2C26B84A"
+			tasks: [{
+				id: "04F1DB6266D71AEF"
+				type: "item"
+				item: "ars_nouveau:ritual_fertility"
+			}]
+			rewards: [{
+				id: "6561A918E5C14ECD"
+				type: "item"
+				item: "minecraft:goat_spawn_egg"
+				count: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			description: ["Allows nearby players to gain creative flight within 40 blocks. Consumes source periodically."]
+			dependencies: ["209971171B86E7E9"]
+			id: "54ECF3B04E5DBF77"
+			tasks: [{
+				id: "5EA3455C2941FBEC"
+				type: "item"
+				item: "ars_nouveau:ritual_flight"
+			}]
+			rewards: [{
+				id: "57DA31822B16EE31"
+				type: "item"
+				item: "ars_nouveau:ritual_binding"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.5d
+			description: ["Converts nearby mobs into experience shards but destroys drops."]
+			dependencies: ["28CE515EC64C90F8"]
+			id: "6FEFCE9E8B3FDBEA"
+			tasks: [{
+				id: "599AE65C2A1BAFDC"
+				type: "item"
+				item: "ars_nouveau:ritual_disintegration"
+			}]
+			rewards: [{
+				id: "6E7396B3D01FB555"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 5468626932468587212L
 			}]
 		}
 	]

@@ -1,7 +1,7 @@
 {
 	id: "1992F86F3BDB7666"
 	group: ""
-	order_index: 3
+	order_index: 2
 	filename: "gear_and_equipment"
 	title: "Gear and Equipment"
 	icon: "ars_nouveau:shapers_focus"
@@ -280,7 +280,6 @@
 			x: 0.0d
 			y: 1.5d
 			description: ["Many items and blocks added by Ars Nouveau and addons are not covered in these quests. See the Worn Notebook for a full list."]
-			dependencies: ["75EF2966C0C149EF"]
 			hide: true
 			id: "632AD43DFB1E7DB7"
 			tasks: [{

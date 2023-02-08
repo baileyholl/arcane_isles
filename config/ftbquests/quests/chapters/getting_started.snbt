@@ -89,15 +89,20 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -7.0d
-			description: ["Soon you will need seeds! Frostaya can be composted, assuming you haven't eaten it all."]
-			dependencies: ["5434FD35898DA564"]
+			x: 1.5d
+			y: -4.5d
+			description: ["Soon you will need seeds! Frostaya can be composted, assuming you haven't eaten it all.\\n\\nPlace Frostaya on Cascading logs to grow more."]
+			dependencies: ["0CA3766AE7DA0929"]
 			id: "3D12F7A364A0D277"
 			tasks: [{
 				id: "32C5CE6B2DA358B2"
 				type: "item"
 				item: "minecraft:bone_meal"
+			}]
+			rewards: [{
+				id: "6B677CF363824CB4"
+				type: "item"
+				item: "ars_nouveau:frostaya_pod"
 			}]
 		}
 		{
@@ -119,18 +124,19 @@
 				}
 			]
 			rewards: [{
-				id: "508C6640E9CDF70D"
+				id: "5598DB01A05AA714"
 				type: "item"
-				item: "ars_nouveau:sconce"
-				count: 16
+				item: "ars_nouveau:source_gem"
+				count: 2
 			}]
 		}
 		{
 			title: "Acquire Source"
-			x: -1.5d
-			y: -9.0d
+			x: -2.0d
+			y: -9.5d
 			description: ["Agronomic Sourcelinks generate Source when nearby plants grow and can generate from a very large distance.\\n\\nSource is exported into nearby Source Jars within 6 blocks wirelessly. "]
 			dependencies: ["76D63B3E394212ED"]
+			hide: true
 			id: "73937DADFAF6DAEE"
 			tasks: [
 				{
@@ -153,10 +159,11 @@
 		}
 		{
 			title: "New Spells"
-			x: -1.5d
+			x: -2.0d
 			y: -6.0d
 			description: ["New Glyphs can be created at the Scribes Table. To open the menu, use your spell book on the table.\\n\\nGlyphs cost EXP and items to craft. Select your glyph you wish to craft. Throw items onto the table and your glyph will be created.\\n\\nFull Glyph documentation is in the worn notebook or item tooltips."]
 			dependencies: ["5434FD35898DA564"]
+			hide: true
 			id: "7E99B255A00E8014"
 			tasks: [
 				{
@@ -188,6 +195,7 @@
 			y: -9.0d
 			description: ["The Enchanting Apparatus is a multiblock crafting structure. Recipes will consume items on nearby pedestals and a central item placed in the apparatus. Note: Pedestals from nearby Imbuement Chambers can interfere with crafting.\\n\\nTo construct, place an apparatus on top of an Arcane Core, and surround it with pedestals within 3 blocks of the apparatus."]
 			dependencies: ["76D63B3E394212ED"]
+			hide: true
 			id: "34602A8B5EB8F541"
 			tasks: [
 				{
@@ -223,9 +231,10 @@
 		}
 		{
 			x: 0.0d
-			y: -9.0d
+			y: -9.5d
 			description: ["Some recipes for the Imbuement Chamber require Arcane Pedestals placed adjacent to the chamber.\\n\\nTo craft Essences, place three pedestals near the imbuement chamber and place the items required for each essence onto the pedestal. Then place your gem in the chamber to begin crafting an essence.\\n\\nItems on the pedestal are not consumed."]
 			dependencies: ["76D63B3E394212ED"]
+			hide: true
 			id: "26E668C31E63E807"
 			tasks: [
 				{
@@ -248,8 +257,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -4.5d
+			x: -1.0d
+			y: -7.0d
 			description: ["Mana can be increased by learning new glyphs, wearing magical armor, special curios, and upgrading your spell book.\\n\\nPotions, foods, and other items can also provide a boost."]
 			dependencies: ["7E99B255A00E8014"]
 			id: "43F025AEA6544B2E"
@@ -271,7 +280,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -3.5d
 			y: -6.0d
 			description: ["Allows the usage of Tier 2 glyphs."]
 			dependencies: ["7E99B255A00E8014"]
@@ -288,7 +297,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -5.5d
 			y: -8.0d
 			description: ["Allows the usage of Tier 3 glyphs."]
 			dependencies: ["13FC7955A316CA5E"]
@@ -305,8 +314,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -10.5d
+			x: -2.0d
+			y: -11.0d
 			description: ["Relay's can be used to transfer source between other jars and relays. Basic relays can support one connection for draining, and one for importing.\\n\\nTo configure a Relay, see the documentation on the Dominion Wand and Source Relay."]
 			dependencies: ["73937DADFAF6DAEE"]
 			id: "65975BBB8CD2E37D"
@@ -322,7 +331,7 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: -4.5d
 			y: -7.0d
 			description: ["Obtained by defeating the Wilden Chimera, a highly destructive boss. Can be summoned by performing a Ritual of Summon Wilden augmented with one of each Wilden drop."]
 			dependencies: ["04F4F5A09F1527B9"]
@@ -346,8 +355,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -10.0d
+			x: 2.0d
+			y: -11.5d
 			description: ["Starbuncles can transport items, harvest sourceberries, and pick items off the ground."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "166A8594ADE733CA"
@@ -379,8 +388,8 @@
 			]
 		}
 		{
-			x: 3.5d
-			y: -11.0d
+			x: 4.0d
+			y: -11.5d
 			description: ["Drygmys provide alternatives to mob farms by generating loot from the mobs around their home. Additional items are created for the number of mobs nearby. Mobs can also be stored and harvested from Containment Jars."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "6A3154A3D6CC1B97"
@@ -404,8 +413,8 @@
 			]
 		}
 		{
-			x: 1.0d
-			y: -10.0d
+			x: 1.5d
+			y: -10.5d
 			description: ["A Whirlisprig can generate natural materials that are placed within its home, enabling the automation of unique plants materials without harvesting them.\\n\\nThe Whirlisprig has unique happiness requirements and restriction. See the Worn Notebook."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "00BE258E0FA15BC2"
@@ -422,8 +431,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -11.5d
+			x: 3.0d
+			y: -12.0d
 			description: ["A Wixie can autocraft items and potions at the cost of a small amount of Source. Use a Wixie Charm on a Cauldron and use an item you wish to craft, or place them on pedestals adjacent to the wixie.\\n\\nItems will be automatically taken from nearby chests."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "09327991E8546F09"
@@ -447,8 +456,8 @@
 			]
 		}
 		{
-			x: 2.5d
-			y: -10.0d
+			x: 3.0d
+			y: -10.5d
 			description: ["The Dominion Wand is used to configure relays, entities, and other automations in the mod.\\n\\nUsage of the wand is described in the entries that the wand applies to, such as Starbuncles or Relays."]
 			dependencies: ["34602A8B5EB8F541"]
 			id: "3EA4C9F408CE81EF"
@@ -463,8 +472,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -11.0d
+			x: 4.5d
+			y: -10.5d
 			description: ["Like the whirlisprig, a Siren will generate fishing loot based on its happiness. See the Worn Notebook for more information."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			id: "5E81794FFE9B5C34"
@@ -488,8 +497,8 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: -7.5d
+			x: 4.5d
+			y: -8.0d
 			description: ["Warp Scrolls are one use items for teleporting within the same dimension. Useful for the nether!\\n\\nUse a scroll while sneaking to set its location. Using the scroll will consume it."]
 			dependencies: ["557EE1C4BE8CEDA4"]
 			id: "7C783A5073522204"
@@ -510,8 +519,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -6.0d
+			x: 6.0d
+			y: -8.0d
 			subtitle: "Warp Portals"
 			description: ["Warp Portals can be created by building a frame of Sourcestone and throwing a warp scroll into it with a full source jar nearby.\\n\\nPortals can be any size and flat or vertical. Once a portal is created, it does not require source to warp you. Use a dominion wand on the portal to change the texture.\\n\\nPortal Frames can be made of any sourcestone variant as well as Mirrorweave."]
 			dependencies: ["7C783A5073522204"]
@@ -542,8 +551,8 @@
 			]
 		}
 		{
-			x: -1.5d
-			y: -12.0d
+			x: -2.0d
+			y: -12.5d
 			description: ["Splitter Relay's support an infinite number of connections in both directions."]
 			dependencies: ["65975BBB8CD2E37D"]
 			id: "390AF620B9A909CA"
@@ -559,8 +568,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -13.5d
+			x: -2.0d
+			y: -14.0d
 			description: ["Warper Relay's can teleport Source between other warp relays an infinite distance. Warping beyond 30 blocks has a chance to lose source in the process."]
 			dependencies: ["390AF620B9A909CA"]
 			id: "55009434AE8F5DB3"
@@ -576,8 +585,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -10.0d
+			x: -3.5d
+			y: -9.5d
 			description: ["Ars Caelum adds a variety of rituals for conjuring islands and platforms.\\n\\nThe chapter for Island Creation has been unlocked!"]
 			dependencies: ["73937DADFAF6DAEE"]
 			id: "01F235E075031B43"
@@ -593,7 +602,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 5.0d
 			y: -9.0d
 			description: ["The Alteration Table allows you to add Threads to magical armors. Threads provide a variety of buffs including max mana, elytra flight, spell damage, and more.\\n\\nEach type of magical armor has its own set of Thread Slots, check the documentation before deciding which armor to create."]
 			dependencies: ["557EE1C4BE8CEDA4"]
@@ -610,7 +619,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 3.5d
 			y: -9.0d
 			description: ["Magebloom is used for crafting magic fiber, used for a variety of items in Ars Nouveau.\\n\\nMageblooms also grant a bonus to the Agronomic Sourcelink when they grow."]
 			dependencies: ["34602A8B5EB8F541"]
@@ -639,20 +648,8 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: -8.0d
-			description: ["Ars Nouveau and addons add a large variety of equipment for utility and combat. The section on Gear and Equipment has been unlocked!"]
-			dependencies: ["34602A8B5EB8F541"]
-			id: "75EF2966C0C149EF"
-			tasks: [{
-				id: "536B0DC237A499E9"
-				type: "checkmark"
-				title: "Gear and Equipment"
-			}]
-		}
-		{
-			x: 2.5d
-			y: -13.0d
+			x: 3.0d
+			y: -13.5d
 			description: ["To craft potions, place a Potion Jar near a Wixie and use a potion on the cauldron. Water is supplied for free. Jars may be locked to a specific potion type by using the dominion wand on them."]
 			dependencies: ["09327991E8546F09"]
 			id: "06E806C5362559F0"
@@ -669,8 +666,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -12.0d
+			x: 5.0d
+			y: -12.5d
 			description: ["Containment Jars provide decorative and functional storage for mobs. To store a mob in a jar, perform the Ritual of Containment with a Containment Jar nearby.\\n\\nSome mobs can be interacted with while in the jar, including chickens, sheep, villagers, cows, and more. Cast Dispel on a jar to release the mob."]
 			dependencies: ["6A3154A3D6CC1B97"]
 			id: "60935DDD3F0B3E00"
@@ -694,8 +691,8 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: -13.5d
+			x: 2.0d
+			y: -14.5d
 			description: ["Enables the mixing of potions into a single liquid. To use, bind two potion jars to the Melder with the dominion wand, and then bind an output jar.\\n\\nConsumes a small amount of source each combination."]
 			dependencies: ["06E806C5362559F0"]
 			id: "2C1808D5DA7F6F6E"
@@ -715,8 +712,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -14.0d
+			x: 3.0d
+			y: -15.0d
 			description: ["A stackable potion. Use on a Potion Jar or craft with a potion item to add a charge.\\n\\nSee the enchanted flasks for upgraded versions."]
 			dependencies: ["06E806C5362559F0"]
 			id: "065BCE40BB1890CC"
@@ -742,8 +739,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -13.5d
+			x: 4.0d
+			y: -14.5d
 			description: ["Allows starbuncles to be bound to Potion Jars for transportation instead of items."]
 			dependencies: ["06E806C5362559F0"]
 			id: "6B3A9BA2C20E8A58"
@@ -763,8 +760,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -12.5d
+			x: 4.0d
+			y: -13.5d
 			description: ["Generates a large amount of source based on the complexity of potion consumed. Place a Potion Jar adjacent to the Sourcelink."]
 			dependencies: ["06E806C5362559F0"]
 			id: "36FCB963CD3A43DC"
@@ -784,7 +781,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 6.0d
 			y: -10.0d
 			description: ["Boosts the wearers maximum mana."]
 			dependencies: ["3672A17FB1186495"]
@@ -801,7 +798,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 6.5d
 			y: -9.0d
 			description: ["Increases movement speed and grants step assist in slot 3."]
 			dependencies: ["3672A17FB1186495"]
@@ -818,27 +815,10 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -8.0d
-			description: ["Grants a bonus looting for every slot level."]
-			dependencies: ["3672A17FB1186495"]
-			id: "41828BF18EE8BA24"
-			tasks: [{
-				id: "3D45B758D98DA361"
-				type: "item"
-				item: "ars_nouveau:thread_drygmy"
-			}]
-			rewards: [{
-				id: "497D34336AFAED0C"
-				type: "item"
-				item: "ars_nouveau:blank_thread"
-			}]
-		}
-		{
-			x: 4.0d
-			y: -8.0d
+			x: 1.0d
+			y: -12.5d
 			description: ["Filters can be added to Starbuncles, Turrets, and more. For a full list of filters and their capabilities, see the Worn Notebook."]
-			dependencies: ["557EE1C4BE8CEDA4"]
+			dependencies: ["166A8594ADE733CA"]
 			id: "675CAE4AA8E85044"
 			tasks: [{
 				id: "2783E087A9DF3946"
@@ -865,8 +845,8 @@
 			]
 		}
 		{
-			x: -3.0d
-			y: -4.5d
+			x: -6.0d
+			y: -3.5d
 			description: ["Deals damage in an area when hitting a cold or wet target."]
 			dependencies: ["04F4F5A09F1527B9"]
 			id: "65DA37464846BBEE"
@@ -882,8 +862,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -9.5d
+			x: -6.5d
+			y: -7.0d
 			description: ["Deals a large amount of damage and inflicts Shocking. Each additional stack causes the target to take additional damage."]
 			dependencies: ["6BE252B39297F0D3"]
 			id: "44415AA2F61BE609"
@@ -899,8 +879,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -5.0d
+			x: -6.0d
+			y: -4.5d
 			description: ["An extremely versatile augment. Increases the size of many effects."]
 			dependencies: ["04F4F5A09F1527B9"]
 			id: "4D7C0CC16B7E4B64"
@@ -916,8 +896,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -9.0d
+			x: -5.5d
+			y: -9.5d
 			description: ["Versatile tool for transporting yourself or others.\\n\\nHitting a target while holding a Blink Scroll will teleport them to the bound location."]
 			dependencies: ["6BE252B39297F0D3"]
 			id: "4852E9A3A6767CEE"
@@ -934,7 +914,7 @@
 		}
 		{
 			x: -6.5d
-			y: -8.0d
+			y: -9.0d
 			description: ["Casts spells in a field over time. "]
 			dependencies: ["6BE252B39297F0D3"]
 			id: "6613B977CE77A6D1"
@@ -950,8 +930,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -7.0d
+			x: -7.0d
+			y: -8.0d
 			description: ["Duplicates projectiles cast."]
 			dependencies: ["6BE252B39297F0D3"]
 			id: "33B80D2DA460583B"
@@ -967,8 +947,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -6.0d
+			x: -6.0d
+			y: -5.5d
 			description: ["Duplicates spells onto nearby similar blocks.\\n\\nVein mining!"]
 			dependencies: ["04F4F5A09F1527B9"]
 			id: "68A662E63CC0C4A9"
@@ -985,7 +965,7 @@
 		}
 		{
 			title: "Spell Essentials"
-			x: -1.5d
+			x: -2.0d
 			y: -7.5d
 			description: ["Some essential glyphs for an aspiring mage.\\n\\nEvery glyph increases your mana regen. Learn them all!"]
 			dependencies: ["7E99B255A00E8014"]
@@ -1021,8 +1001,8 @@
 			]
 		}
 		{
-			x: -3.0d
-			y: -7.5d
+			x: -5.0d
+			y: -5.5d
 			description: ["Applies Silk Touch to relevant effects."]
 			dependencies: ["04F4F5A09F1527B9"]
 			id: "177DF6E7B5B8A84A"
@@ -1039,7 +1019,7 @@
 		}
 		{
 			x: 0.0d
-			y: -10.5d
+			y: -11.0d
 			description: ["Allows you to bind multiple rituals to a single location. Can also be used decoratively."]
 			dependencies: ["26E668C31E63E807"]
 			id: "03FCB167C979526B"
@@ -1068,8 +1048,8 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: -12.5d
+			x: 2.0d
+			y: -13.5d
 			description: ["Applies potions to all nearby entities, greatly extending the value from a single potion."]
 			dependencies: ["06E806C5362559F0"]
 			id: "38C7F842939C2D2C"
@@ -1133,6 +1113,339 @@
 					item: "ars_nouveau:ritual_brazier"
 				}
 			]
+		}
+		{
+			x: 2.0d
+			y: -7.5d
+			description: ["Spell Turrets can cast spells at the cost of Source. To set a spell, use your book on the turret while sneaking, or use Spell Parchment.\\n\\nBasic turrets need redstone and a nearby source jar to activate."]
+			dependencies: ["76D63B3E394212ED"]
+			hide: true
+			id: "55610EA99C268B52"
+			tasks: [{
+				id: "36E6265C6BB77905"
+				type: "item"
+				item: "ars_nouveau:basic_spell_turret"
+			}]
+			rewards: [
+				{
+					id: "563C8F317DF0E340"
+					type: "item"
+					item: "ars_nouveau:basic_spell_turret"
+					count: 5
+				}
+				{
+					id: "09873F358A638555"
+					type: "item"
+					item: "minecraft:observer"
+					count: 5
+				}
+				{
+					id: "547E229A99BDBF1B"
+					type: "random"
+					table_id: 4542458237970434754L
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -6.0d
+			description: ["Cannot be moved by pistons, but can be set to face a block at any angle using the Dominion Wand.\\n\\nAccepts Prism Lenses."]
+			dependencies: ["1FE9F44B1CEE2D5A"]
+			id: "216BE3B75FE7DB74"
+			tasks: [{
+				id: "6405B677176D7B19"
+				type: "item"
+				item: "ars_elemental:advanced_prism"
+			}]
+			rewards: [
+				{
+					id: "7B8104B1B7CC1079"
+					type: "item"
+					item: "ars_elemental:rainbow_prism_lens"
+				}
+				{
+					id: "54BE023D714A3899"
+					type: "item"
+					item: "ars_nouveau:void_prism"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -7.5d
+			description: ["Redirects a spell projectile in the direction the prism is facing.\\n\\nCan be moved with a piston for making elaborate redstone contraptions."]
+			dependencies: ["55610EA99C268B52"]
+			id: "1FE9F44B1CEE2D5A"
+			tasks: [{
+				id: "11BB3FD740740B20"
+				type: "item"
+				item: "ars_nouveau:spell_prism"
+			}]
+			rewards: [
+				{
+					id: "07EA6249949D1F08"
+					type: "item"
+					item: "ars_nouveau:spell_prism"
+					count: 5
+				}
+				{
+					id: "70E88E482A00F454"
+					type: "item"
+					item: "minecraft:piston"
+					count: 5
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			description: ["Casts a spell on a configurable timer. Redstone will disable casting.\\n\\nCasts Projectile and Redstone glyphs at a discount."]
+			dependencies: ["55610EA99C268B52"]
+			id: "241BC843A63F89EA"
+			tasks: [{
+				id: "10E190585E05DBAA"
+				type: "item"
+				item: "ars_nouveau:timer_spell_turret"
+			}]
+			rewards: [
+				{
+					id: "21B7EEAD0157354A"
+					type: "item"
+					item: "ars_nouveau:timer_spell_turret"
+				}
+				{
+					id: "67B053050D3AFDC8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4542458237970434754L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -6.0d
+			description: ["Casts all spells at a great discount."]
+			dependencies: ["55610EA99C268B52"]
+			id: "6E97B44CD3770C45"
+			tasks: [{
+				id: "798D169819B7106C"
+				type: "item"
+				item: "ars_nouveau:spell_turret"
+			}]
+			rewards: [
+				{
+					id: "64612D34757A0DAD"
+					type: "item"
+					item: "ars_nouveau:spell_turret"
+				}
+				{
+					id: "250B6AE9F7A056D2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4542458237970434754L
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -7.0d
+			description: ["A multi-use warp scroll that can be used cross dimensionally.\\n\\nBuilds a temporary portal on use. Using in a Warp Portal will consume the scroll but create a cross dimensional portal."]
+			dependencies: ["7C783A5073522204"]
+			id: "4BB15955D2F4159A"
+			tasks: [{
+				id: "5C0D64244CCC27F9"
+				type: "item"
+				item: {
+					id: "ars_nouveau:stable_warp_scroll"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4BE233382FA73F74"
+				type: "item"
+				item: {
+					id: "ars_nouveau:stable_warp_scroll"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.5d
+			description: ["Picks up nearby items and deposits them into an inventory or chest."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "158F8105B22C9A4A"
+			tasks: [{
+				id: "5F1BAE0EA18F1451"
+				type: "item"
+				item: "ars_nouveau:glyph_pickup"
+			}]
+			rewards: [{
+				id: "08520732922EEABB"
+				type: "item"
+				item: "ars_nouveau:glyph_toss"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			description: ["Shears animals or deals a half heart of damage. Amplify will simulate an axe, useful for logs!"]
+			dependencies: ["7E99B255A00E8014"]
+			id: "3C58308BBF04F5A6"
+			tasks: [{
+				id: "000578F9B3D37718"
+				type: "item"
+				item: "ars_nouveau:glyph_cut"
+			}]
+			rewards: [{
+				id: "46D116ECE495115B"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			description: ["Interacts with items and blocks. Turrets can simulate using items from nearby chests, useful for milk or other automations."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "5D28B1CBD1DFAC03"
+			tasks: [{
+				id: "5BE38B841CC9EA16"
+				type: "item"
+				item: "ars_nouveau:glyph_interact"
+			}]
+			rewards: [{
+				id: "50FDB356A7D95CB3"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			description: ["Summons an invisible redstone block at the hit location."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "3ACF028EB8BA7F3D"
+			tasks: [{
+				id: "56816F9044CC6A1C"
+				type: "item"
+				item: "ars_nouveau:glyph_redstone_signal"
+			}]
+			rewards: [{
+				id: "4C10106F9827FAD0"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			description: ["Harvests crops. Because projectiles pass through plants, Sensitive can be added to target them. Alternatively, use Touch."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "5427188DBF65F303"
+			tasks: [{
+				id: "17070BEF2A74AC87"
+				type: "item"
+				item: "ars_nouveau:glyph_harvest"
+			}]
+			rewards: [{
+				id: "122A6F94F0A4A6E4"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			description: ["Runes cast spells on entities that touch them. Permanent runes can be created with Runic Chalk. Useful for automating actions on items."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "514FA5FA8A6D09AB"
+			tasks: [{
+				id: "007E77231CFECCAE"
+				type: "item"
+				item: "ars_nouveau:glyph_rune"
+			}]
+			rewards: [{
+				id: "630BA9879AE05DF0"
+				type: "item"
+				item: {
+					id: "ars_nouveau:runic_chalk"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.5d
+			description: ["Smelts items and blocks."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "6F4662152C83A94A"
+			tasks: [{
+				id: "516B7B107073A1A6"
+				type: "item"
+				item: "ars_nouveau:glyph_smelt"
+			}]
+			rewards: [{
+				id: "3DB3D12BD4C7363A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			description: ["Swaps a block for one in your inventory."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "682FD115FB66C96B"
+			tasks: [{
+				id: "31A1C505D6C889A7"
+				type: "item"
+				item: "ars_nouveau:glyph_exchange"
+			}]
+			rewards: [{
+				id: "7E63BC409C0519E9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			description: ["Breaks blocks."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "69ECEC9231F14A5F"
+			tasks: [{
+				id: "5A46DC601C570781"
+				type: "item"
+				item: "ars_nouveau:glyph_break"
+			}]
+			rewards: [{
+				id: "6D7DF9E7BB46E949"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			description: ["Breaks entire trees at once."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "47B6EE74B546978E"
+			tasks: [{
+				id: "2ECDADA2452A5A93"
+				type: "item"
+				item: "ars_nouveau:glyph_fell"
+			}]
+			rewards: [{
+				id: "097491FF67F5DA21"
+				type: "xp"
+				xp: 100
+			}]
 		}
 	]
 	quest_links: [ ]
