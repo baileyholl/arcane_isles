@@ -133,7 +133,7 @@
 		{
 			title: "Acquire Source"
 			x: -2.0d
-			y: -9.5d
+			y: -9.0d
 			description: ["Agronomic Sourcelinks generate Source when nearby plants grow and can generate from a very large distance.\\n\\nSource is exported into nearby Source Jars within 6 blocks wirelessly. "]
 			dependencies: ["76D63B3E394212ED"]
 			hide: true
@@ -231,7 +231,7 @@
 		}
 		{
 			x: 0.0d
-			y: -9.5d
+			y: -9.0d
 			description: ["Some recipes for the Imbuement Chamber require Arcane Pedestals placed adjacent to the chamber.\\n\\nTo craft Essences, place three pedestals near the imbuement chamber and place the items required for each essence onto the pedestal. Then place your gem in the chamber to begin crafting an essence.\\n\\nItems on the pedestal are not consumed."]
 			dependencies: ["76D63B3E394212ED"]
 			hide: true
@@ -315,7 +315,7 @@
 		}
 		{
 			x: -2.0d
-			y: -11.0d
+			y: -10.5d
 			description: ["Relay's can be used to transfer source between other jars and relays. Basic relays can support one connection for draining, and one for importing.\\n\\nTo configure a Relay, see the documentation on the Dominion Wand and Source Relay."]
 			dependencies: ["73937DADFAF6DAEE"]
 			id: "65975BBB8CD2E37D"
@@ -552,7 +552,7 @@
 		}
 		{
 			x: -2.0d
-			y: -12.5d
+			y: -12.0d
 			description: ["Splitter Relay's support an infinite number of connections in both directions."]
 			dependencies: ["65975BBB8CD2E37D"]
 			id: "390AF620B9A909CA"
@@ -569,7 +569,7 @@
 		}
 		{
 			x: -2.0d
-			y: -14.0d
+			y: -13.5d
 			description: ["Warper Relay's can teleport Source between other warp relays an infinite distance. Warping beyond 30 blocks has a chance to lose source in the process."]
 			dependencies: ["390AF620B9A909CA"]
 			id: "55009434AE8F5DB3"
@@ -586,7 +586,7 @@
 		}
 		{
 			x: -3.5d
-			y: -9.5d
+			y: -9.0d
 			description: ["Ars Caelum adds a variety of rituals for conjuring islands and platforms.\\n\\nThe chapter for Island Creation has been unlocked!"]
 			dependencies: ["73937DADFAF6DAEE"]
 			id: "01F235E075031B43"
@@ -644,6 +644,11 @@
 					id: "6DEC33D03EC6B2BA"
 					type: "item"
 					item: "ars_nouveau:green_sbed"
+				}
+				{
+					id: "61FBE92F65978E3E"
+					type: "item"
+					item: "minecraft:purple_bed"
 				}
 			]
 		}
@@ -1019,7 +1024,7 @@
 		}
 		{
 			x: 0.0d
-			y: -11.0d
+			y: -10.5d
 			description: ["Allows you to bind multiple rituals to a single location. Can also be used decoratively."]
 			dependencies: ["26E668C31E63E807"]
 			id: "03FCB167C979526B"

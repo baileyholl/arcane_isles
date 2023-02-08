@@ -259,8 +259,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 3.5d
+			x: 0.5d
+			y: 4.5d
 			description: ["Consumes burnable materials to generate source. Will convert nearby Stone into Magma and Lava. See the worn notebook for more.\\n\\nCan consume items from adjacent pedestals."]
 			dependencies: ["28CE515EC64C90F8"]
 			id: "32D0704AED5BF1D4"
@@ -472,6 +472,42 @@
 					item: "ars_elemental:flashpine_pod"
 				}
 			]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			description: ["Grants speed to all nearby starbuncles."]
+			dependencies: ["3C449AC9D8DC450F"]
+			id: "254B58746BE53DF3"
+			tasks: [{
+				id: "1740B3C4A2D046E6"
+				type: "item"
+				item: "ars_elemental:ritual_squirrels"
+			}]
+			rewards: [{
+				id: "1577486EE6D75678"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 4542458237970434754L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			description: ["Repels all nearby mobs."]
+			dependencies: ["3C449AC9D8DC450F"]
+			id: "2B06DFE629D651D9"
+			tasks: [{
+				id: "5DBA0B3F6ABF583C"
+				type: "item"
+				item: "ars_elemental:ritual_repulsion"
+			}]
+			rewards: [{
+				id: "097A89877C5E4F12"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 5468626932468587212L
+			}]
 		}
 	]
 	quest_links: [ ]
