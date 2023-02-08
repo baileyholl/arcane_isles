@@ -454,6 +454,25 @@
 				table_id: 5468626932468587212L
 			}]
 		}
+		{
+			x: 2.5d
+			y: 2.5d
+			description: ["Flashpines can be acquired by imbueing a blazing archwood sapling and pod with lightning rods."]
+			dependencies: ["28CE515EC64C90F8"]
+			id: "3C449AC9D8DC450F"
+			tasks: [
+				{
+					id: "0E7D1584594DD487"
+					type: "item"
+					item: "ars_elemental:yellow_archwood_sapling"
+				}
+				{
+					id: "28B7194607796456"
+					type: "item"
+					item: "ars_elemental:flashpine_pod"
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }

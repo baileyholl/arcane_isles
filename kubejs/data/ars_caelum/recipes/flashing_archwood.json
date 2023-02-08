@@ -1,0 +1,30 @@
+{
+  "type": "ars_nouveau:enchanting_apparatus",
+  "keepNbtOfReagent": false,
+  "output": {
+    "item": "ars_elemental:yellow_archwood_sapling"
+  },
+  "pedestalItems": [
+    {
+      "item": {
+        "item": "minecraft:lightning_rod"
+      }
+    },
+    {
+      "item": {
+        "item": "minecraft:lightning_rod"
+      }
+    },
+    {
+      "item": {
+        "item": "minecraft:lightning_rod"
+      }
+    }
+  ],
+  "reagent": [
+    {
+      "item": "ars_nouveau:red_archwood_sapling"
+    }
+  ],
+  "sourceCost": 0
+}
