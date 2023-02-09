@@ -132,7 +132,7 @@
 		}
 		{
 			title: "Acquire Source"
-			x: -2.0d
+			x: -1.5d
 			y: -9.0d
 			description: ["Agronomic Sourcelinks generate Source when nearby plants grow and can generate from a very large distance.\\n\\nSource is exported into nearby Source Jars within 6 blocks wirelessly. "]
 			dependencies: ["76D63B3E394212ED"]
@@ -231,7 +231,7 @@
 		}
 		{
 			x: 0.0d
-			y: -9.0d
+			y: -9.5d
 			description: ["Some recipes for the Imbuement Chamber require Arcane Pedestals placed adjacent to the chamber.\\n\\nTo craft Essences, place three pedestals near the imbuement chamber and place the items required for each essence onto the pedestal. Then place your gem in the chamber to begin crafting an essence.\\n\\nItems on the pedestal are not consumed."]
 			dependencies: ["76D63B3E394212ED"]
 			hide: true
@@ -314,8 +314,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -10.5d
+			x: -2.5d
+			y: -10.0d
 			description: ["Relay's can be used to transfer source between other jars and relays. Basic relays can support one connection for draining, and one for importing.\\n\\nTo configure a Relay, see the documentation on the Dominion Wand and Source Relay."]
 			dependencies: ["73937DADFAF6DAEE"]
 			id: "65975BBB8CD2E37D"
@@ -551,8 +551,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: -12.0d
+			x: -2.5d
+			y: -11.5d
 			description: ["Splitter Relay's support an infinite number of connections in both directions."]
 			dependencies: ["65975BBB8CD2E37D"]
 			id: "390AF620B9A909CA"
@@ -568,8 +568,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -13.5d
+			x: -2.5d
+			y: -13.0d
 			description: ["Warper Relay's can teleport Source between other warp relays an infinite distance. Warping beyond 30 blocks has a chance to lose source in the process."]
 			dependencies: ["390AF620B9A909CA"]
 			id: "55009434AE8F5DB3"
@@ -644,11 +644,6 @@
 					id: "6DEC33D03EC6B2BA"
 					type: "item"
 					item: "ars_nouveau:green_sbed"
-				}
-				{
-					id: "61FBE92F65978E3E"
-					type: "item"
-					item: "minecraft:purple_bed"
 				}
 			]
 		}
@@ -1007,7 +1002,7 @@
 		}
 		{
 			x: -5.0d
-			y: -5.5d
+			y: -2.5d
 			description: ["Applies Silk Touch to relevant effects."]
 			dependencies: ["04F4F5A09F1527B9"]
 			id: "177DF6E7B5B8A84A"
@@ -1023,8 +1018,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -10.5d
+			x: -1.0d
+			y: -10.0d
 			description: ["Allows you to bind multiple rituals to a single location. Can also be used decoratively."]
 			dependencies: ["26E668C31E63E807"]
 			id: "03FCB167C979526B"
@@ -1403,7 +1398,7 @@
 		}
 		{
 			x: -4.0d
-			y: -4.5d
+			y: -2.5d
 			description: ["Swaps a block for one in your inventory."]
 			dependencies: ["04F4F5A09F1527B9"]
 			id: "682FD115FB66C96B"
@@ -1450,6 +1445,58 @@
 				id: "097491FF67F5DA21"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			description: ["Allows the player to glide as if they were wearing an elytra.\\n\\nFly around your island! Forgiving void will catch you!"]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "619B653F5FE6A47B"
+			tasks: [{
+				id: "48811D4DB5FF652C"
+				type: "item"
+				item: "ars_nouveau:glyph_glide"
+			}]
+			rewards: [{
+				id: "071ECABFADDBEE4B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.5d
+			description: ["Amplifies the power of most spells."]
+			dependencies: ["04F4F5A09F1527B9"]
+			id: "537E72FF019B1814"
+			tasks: [{
+				id: "4CFE9073C9E040FB"
+				type: "item"
+				item: "ars_nouveau:glyph_amplify"
+			}]
+			rewards: [{
+				id: "13E21733FEF99091"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -11.0d
+			description: ["Essences can convert and craft a variety of items. Check JEI for all recipes.\\n\\nCraft wheat seeds with a Manipulation Essence for Flax Seeds."]
+			dependencies: ["26E668C31E63E807"]
+			id: "543670F7911CB03D"
+			tasks: [{
+				id: "69E3A2F61C0657A5"
+				type: "item"
+				item: "supplementaries:flax_seeds"
+			}]
+			rewards: [{
+				id: "0D49D50405D43DCE"
+				type: "item"
+				item: "supplementaries:flax_seeds"
+				count: 2
 			}]
 		}
 	]

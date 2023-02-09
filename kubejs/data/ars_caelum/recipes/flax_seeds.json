@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },    {
+      "item": "ars_nouveau:manipulation_essence"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "supplementaries:flax_seeds"
+  }
+}

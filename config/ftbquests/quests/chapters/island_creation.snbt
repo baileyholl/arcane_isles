@@ -509,6 +509,24 @@
 				table_id: 5468626932468587212L
 			}]
 		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["Heals players and cures villager zombies, granting a discount to trades."]
+			dependencies: ["7F43851A9C6D5805"]
+			id: "0E417C1C8453A261"
+			tasks: [{
+				id: "5FE7627E84410E8B"
+				type: "item"
+				item: "ars_nouveau:ritual_restoration"
+			}]
+			rewards: [{
+				id: "0FAC024C8691C5C3"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 4542458237970434754L
+			}]
+		}
 	]
 	quest_links: [ ]
 }
