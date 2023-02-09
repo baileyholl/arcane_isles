@@ -90,9 +90,22 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
     "local",
     "packmenu")
 
-$CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @()
+$CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
+    "extremesoundmuffler-client.toml", 
+    "appleskin-client.toml",
+    "cosmeticarmorreworked-client.toml",
+    "curios-client.toml",
+    "fairylights-client.toml",
+    "farmersdelight-client.toml",
+    "hexcasting-client.toml",
+    "patchouli-client.toml",
+    "pehkui-client.toml",
+    "sidebar_buttons.json",
+    "sophisticatedcore-client.toml",
+    "supplementaries-client.toml",
+    "forge-client.toml")
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "resourcepacks")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbchunks", "config/roughlyenoughitems", "resourcepacks")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
