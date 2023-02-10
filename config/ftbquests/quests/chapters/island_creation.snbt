@@ -311,8 +311,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -2.0d
+			x: 3.5d
+			y: -2.5d
 			description: ["Combining Amethyst with a book has curious results."]
 			dependencies: ["7D9EFB225A839AAD"]
 			id: "0415DA254AB79A7C"
