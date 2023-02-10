@@ -1,0 +1,358 @@
+{
+	id: "12B9EFC8C84658B1"
+	group: ""
+	order_index: 3
+	filename: "hex_casting"
+	title: "Hex Casting"
+	icon: "hexcasting:creative_unlocker"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The First Step"
+			icon: "minecraft:ender_eye"
+			x: -11.0d
+			y: 0.5d
+			description: [
+				"For you, magic is a vital force eager to satisfy your whim. You fulfill"
+				"the contract, and Nature obeys you. But you know that there has to"
+				"be something more, something deeper about the nature of the world."
+				""
+				"Inside your Hex Notebook, you believe there are answers. What is"
+				"this mysterious power resonating inside it? Sometimes, you feel a"
+				"presence watching you, like eyes peeking around the edge of your"
+				"geode. But every time you look, there's nothing there."
+				""
+				"Well, you have nothing but time to investigate!"
+			]
+			dependencies: ["0415DA254AB79A7C"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "357AE79D35750B0B"
+			tasks: [{
+				id: "37A675B6217765A0"
+				type: "checkmark"
+				title: "The First Facet"
+			}]
+		}
+		{
+			title: "A Tool For Thought"
+			icon: "ars_scalaes:archwood_staff"
+			x: -9.5d
+			y: 0.5d
+			description: [
+				"The book implies you need some sort of tool to understand the forces"
+				"it describes. It details many types of staves, made from oak and spruce."
+				"Materials rather scarce in an endless sea of sky."
+				""
+				"But maybe you can make due with Archwood?"
+			]
+			dependencies: ["357AE79D35750B0B"]
+			hide: true
+			id: "73A44A13E4C8E055"
+			tasks: [{
+				id: "59798A0E8845C2E6"
+				type: "item"
+				item: "ars_scalaes:archwood_staff"
+			}]
+			rewards: [{
+				id: "566E609CB35CD028"
+				type: "item"
+				item: "hexcasting:amethyst_dust"
+				count: 32
+			}]
+		}
+		{
+			title: "Tutorial: Your First Spell"
+			icon: "ars_nouveau:glyph_break"
+			x: -10.0d
+			y: 2.0d
+			description: [
+				"One of the best effects Hex Casting gives you early on is \"Break\", which lets you break a block just by looking at it. Try casting the spell by drawing these patterns in seqence:"
+				""
+				"  Mind's Reflection"
+				"  Compass' Purification"
+				"  Mind's Reflection"
+				"  Alidade's Purification"
+				"  Archer's Distillation"
+				"  Break Block"
+				""
+				"(Remember, you need to be looking at a breakable block within 32 blocks of your location"
+				"and carrying some amethyst, or this won't work!)"
+			]
+			dependencies: [
+				"73A44A13E4C8E055"
+				"56568E78096DCFD8"
+			]
+			hide: true
+			optional: true
+			id: "06C934753EBBCFE8"
+			tasks: [{
+				id: "5AFBE9C5B5DFB4AD"
+				type: "checkmark"
+				title: "I've written it!"
+			}]
+		}
+		{
+			title: "Optional: Tutorial Quests"
+			x: -11.5d
+			y: 2.0d
+			description: [
+				"This tutorial quest line contains no concrete rewards. It is meant to"
+				"help novice Hex Casters understand the mod by offering advice on how "
+				"to use the mod in this pack."
+				""
+				"Hexcasting is a deep mod, akin to Psi, and it may take practice and time"
+				"to understand it. That's expected. You can safely ignore it entirely, but"
+				"you might miss out on some fun interactions and unusual builds. That's"
+				"your call!"
+				""
+				"Remember, Hexcasting has its own discord and github for help and bugs."
+				""
+				"Good luck!"
+			]
+			dependencies: ["357AE79D35750B0B"]
+			hide: true
+			id: "56568E78096DCFD8"
+			tasks: [{
+				id: "6374AFCB47EC8FC6"
+				type: "checkmark"
+				title: "Enable Tutorial Quests"
+			}]
+		}
+		{
+			title: "There Has To Be A Better Way!"
+			x: -8.0d
+			y: 0.5d
+			description: [
+				"Finally, you can break blocks with this magic! But... it seems quite laborious. Even worse, the notebook says this is incredibly inefficient."
+				""
+				"Fortunately, the notebook offers a solution. You can make a Cypher and inscribe a spell into it. Then, not only will your spell be 8x more efficient but you won't have to draw out patterns in the air anymore!"
+				""
+				"All it takes is a bit of amethyst dust and copper to make the body for this marvelous timesaver. You should do that right now!"
+			]
+			dependencies: ["73A44A13E4C8E055"]
+			id: "54650ACFCA4F48F5"
+			tasks: [{
+				id: "51823417E6B25D05"
+				type: "item"
+				item: "hexcasting:cypher"
+			}]
+		}
+		{
+			title: "Tutorial: How to make Cyphers"
+			x: -8.5d
+			y: 2.0d
+			description: [
+				"To make a cypher you first must use Scout's Distillation to find a stack of Amethyst (dust is fine, drop the whole stack with your mouse or control-Q) you dropped on the ground. Then, without clearing the hex grid, write the following spell. Space may get tight, so think ahead."
+				""
+				"Remember to hold the cypher in your offhand as you cast it. All the crafting spells look for an item in your off hand!"
+				""
+				"  Introspection"
+				"  (Write your spell here)"
+				"  Retrospection"
+				"  Create Cypher"
+				""
+				"If all goes well, you should have a Cypher!"
+			]
+			dependencies: [
+				"06C934753EBBCFE8"
+				"54650ACFCA4F48F5"
+			]
+			hide: true
+			id: "05075DC105963B0F"
+			tasks: [{
+				id: "4B1F2615951F396C"
+				type: "checkmark"
+				title: "I've made it!"
+			}]
+		}
+		{
+			title: "A Better Better Way"
+			x: -8.0d
+			y: -0.5d
+			description: [
+				"You Cypher is useful, but it's rather tedious having to remake it over and over again. But if you make the same design with iron, you think it could survive being refilled. No more remaking the same cypher over and over!"
+				""
+				""
+				""
+			]
+			dependencies: ["54650ACFCA4F48F5"]
+			hide: true
+			id: "3B8565E1A9763020"
+			tasks: [{
+				id: "20CD4E641323365D"
+				type: "item"
+				item: "hexcasting:trinket"
+			}]
+		}
+		{
+			title: "Better Doesn't Mean \"Safer\""
+			x: -8.0d
+			y: -1.5d
+			description: [
+				"With more esoteric materials, you journal explains that you can make a more sophisticated device."
+				""
+				"This one comes with a perk, and a danger. An Artifact first uses its internal store of Media, but if it runs out it pulls from you."
+				""
+				"This is great up until the moment it isn't."
+				""
+				""
+			]
+			dependencies: ["3B8565E1A9763020"]
+			hide: true
+			id: "3DB7F1B23F02DF01"
+			tasks: [{
+				id: "581D5246F3EB83FF"
+				type: "item"
+				item: "hexcasting:artifact"
+			}]
+			rewards: [{
+				id: "08987FB89795BC89"
+				type: "item"
+				item: "minecraft:music_disc_otherside"
+			}]
+		}
+		{
+			title: "A Bold Insight"
+			icon: "hexcasting:scroll"
+			x: -6.5d
+			y: 0.5d
+			description: [
+				"You notice an enigmatic section in the notebook about Great Spells, and it occurs to you that with enough time and patience and sacrifical amethyst you could probably brute force one of the easy patterns."
+				""
+				"\"Create Lava\" doesn't look to hard, and it would be handy to have lava..."
+			]
+			dependencies: ["54650ACFCA4F48F5"]
+			hide: true
+			id: "50DE947731A92253"
+			tasks: [
+				{
+					id: "4E1E0E6C03828FCE"
+					type: "item"
+					item: "hexcasting:charged_amethyst"
+					count: 16L
+				}
+				{
+					id: "1BC04536AA2A663D"
+					type: "item"
+					item: "hexcasting:scroll_medium"
+				}
+			]
+			rewards: [{
+				id: "5D7FE7F04C2D1070"
+				type: "command"
+				title: "An Amazing Insight!"
+				icon: "hexcasting:scroll"
+				command: "/hexcasting patterns give hexcasting:create_lava @p"
+				player_command: false
+			}]
+		}
+		{
+			title: "Failure, or success?"
+			x: -5.0d
+			y: 0.5d
+			description: [
+				"It didn't work."
+				""
+				"You're sure you felt it. You're sure. You're sure! Go back and re-read your notebook. You're SURE!"
+				""
+				"Curiously, you seem to be able to use your own life force as Media energy now. It hurts, but for simple conjuring it's little more than a pinprick sensation between the eyes."
+				""
+				"(Hint: Check your notebook, or use the tutorial quests to progress in the mod)."
+			]
+			dependencies: ["50DE947731A92253"]
+			hide: false
+			invisible: true
+			invisible_until_tasks: 1
+			id: "6C1B40E37B54E90A"
+			tasks: [{
+				id: "09386C5496BDC372"
+				type: "advancement"
+				title: "But wait..."
+				advancement: "hexcasting:y_u_no_cast_angy"
+				criterion: ""
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			description: [
+				"It's all so clear now. It's all so clear. You could never see through the clouds because they're too clear."
+				""
+				"Too clear. "
+				""
+				"You need some villagers. You need them quickly. There's so much work to be done."
+			]
+			dependencies: ["6C1B40E37B54E90A"]
+			invisible: true
+			invisible_until_tasks: 1
+			id: "10CA6FEAD2E43050"
+			tasks: [{
+				id: "7C7319F625399E19"
+				type: "advancement"
+				title: "The Edge of Knowledge"
+				advancement: "hexcasting:enlightenment"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2CBF8706ED828F50"
+				type: "command"
+				title: "Nothing... is holding you back."
+				icon: "hexcasting:scroll"
+				command: "/hexcasting patterns give hexcasting:flight @p"
+				player_command: false
+			}]
+		}
+		{
+			title: "Hint: Open only if needed."
+			x: -5.5d
+			y: 2.0d
+			description: [
+				"The Hex Journal really does tell you how to progress, but it's subtle."
+				""
+				"You can cast with health now. Every dust is half a heart, so your life bar should give you 20 dust. You need to cast a spell that will get you as close to death as possible (half a heart) without dying."
+				""
+				"Crafting this spell is up to you. You have several spells that have a variable cost in your notebook. You just need to make a spell that costs exactly 19 dust."
+			]
+			dependencies: [
+				"6C1B40E37B54E90A"
+				"05075DC105963B0F"
+			]
+			hide: true
+			id: "63CFD5A021FF32FB"
+			tasks: [{
+				id: "38368C29B65BEE5E"
+				type: "checkmark"
+				title: "I understand."
+			}]
+		}
+		{
+			title: "Memory is Overrated"
+			x: -7.0d
+			y: 2.0d
+			description: [
+				"It's not too hard to make a cypher once you get the hang of it, but if you want to make more sophisticated spells, you run out of room on your grid."
+				""
+				"The Hex Journal says that focuses are the solution to this. They let you encode lists of patterns into a rewritable object."
+				""
+				"Make sure to read the section on \"Reading and Writing\" Patterns carefully. Focuses are very versatile, can can be read from your offhand, when dropped in world, or when placed in item frames. You can make shockingly sophisticated things with them!"
+				""
+			]
+			dependencies: ["54650ACFCA4F48F5"]
+			hide: true
+			id: "6083DEDE155373EF"
+			tasks: [{
+				id: "2CA47797886EB380"
+				type: "item"
+				item: "hexcasting:focus"
+			}]
+			rewards: [{
+				id: "29CAC6F618FD3280"
+				type: "item"
+				item: "hexcasting:focus"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
