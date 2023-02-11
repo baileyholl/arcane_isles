@@ -26,18 +26,38 @@
 			title: "This is Awkward"
 			x: 4.0d
 			y: 0.5d
-			description: ["Awkward potions can be created with Abjuration Essence in place of Nether Wart!"]
+			description: ["Obtain a full Potion Jar of Awkward Potion.\\n\\nPotion Jar quests will require a full jar in your inventory.\\n\\nAwkward potions can be created with Abjuration Essence in place of Nether Wart!"]
 			id: "7D43A6D61D4DDA4B"
 			tasks: [{
 				id: "3DF78BD82135E524"
 				type: "item"
-				item: {
+				title: "Awkward Potion"
+				icon: {
 					id: "ars_nouveau:potion_jar"
 					Count: 1b
 					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
 						BlockEntityTag: {
 							potionData: {
-								Potion: "minecraft:awkward"
+								includedPotions: [
+									"ars_nouveau:mana_regen_potion_strong"
+									"ars_nouveau:spell_damage_potion_strong"
+								]
+								CustomPotionEffects: [{
+									"forge:id": "ars_nouveau:mana_regen"
+									Ambient: 0b
+									CurativeItems: [{
+										id: "minecraft:milk_bucket"
+										Count: 1b
+									}]
+									ShowIcon: 1b
+									ShowParticles: 1b
+									Duration: 3600
+									Id: 37
+									Amplifier: 1b
+								}]
+								Potion: "ars_nouveau:spell_damage_potion_strong"
 							}
 							Items: [ ]
 							currentFill: 10000
@@ -46,18 +66,48 @@
 						}
 					}
 				}
+				item: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "minecraft:awkward"
+						fill: 10000
+					}
+				}
 				match_nbt: true
+				weak_nbt_match: true
 			}]
-			rewards: [{
-				id: "3E36E1B6E96F7FDA"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 4542458237970434754L
-			}]
+			rewards: [
+				{
+					id: "69D5E9E841542E77"
+					type: "item"
+					item: {
+						id: "ars_nouveau:potion_jar"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								potionData: {
+									Potion: "minecraft:awkward"
+								}
+								Items: [ ]
+								currentFill: 10000
+								id: "ars_nouveau:potion_jar"
+								locked: 0b
+							}
+						}
+					}
+				}
+				{
+					id: "2788F562D5236EB8"
+					type: "item"
+					item: "ars_nouveau:potion_diffuser"
+				}
+			]
 		}
 		{
 			x: 3.0d
-			y: -1.0d
+			y: -0.5d
+			description: ["Using an arrow on a potion jar will apply the potion."]
 			id: "00550D97454ACDCF"
 			tasks: [{
 				id: "17EB09CFE0AD7EBD"
@@ -71,6 +121,493 @@
 				}
 				count: 64L
 			}]
+			rewards: [
+				{
+					id: "76ED5E011A1D468D"
+					type: "item"
+					item: {
+						id: "minecraft:tipped_arrow"
+						Count: 1b
+						tag: {
+							Potion: "ars_nouveau:blasting_potion_strong"
+						}
+					}
+					count: 64
+				}
+				{
+					id: "6B39618FB00A131F"
+					type: "item"
+					item: {
+						id: "minecraft:tipped_arrow"
+						Count: 1b
+						tag: {
+							Potion: "ars_nouveau:blasting_potion_strong"
+						}
+					}
+					count: 64
+				}
+			]
+		}
+		{
+			title: "Spell Damage II \\& Mana Regen II"
+			icon: {
+				id: "ars_nouveau:potion_jar"
+				Count: 1b
+				tag: {
+					potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:spell_damage_potion_strong"
+					fill: 10000
+					BlockEntityTag: {
+						potionData: {
+							includedPotions: [
+								"ars_nouveau:mana_regen_potion_strong"
+								"ars_nouveau:spell_damage_potion_strong"
+							]
+							CustomPotionEffects: [{
+								"forge:id": "ars_nouveau:mana_regen"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 3600
+								Id: 37
+								Amplifier: 1b
+							}]
+							Potion: "ars_nouveau:spell_damage_potion_strong"
+						}
+						Items: [ ]
+						currentFill: 10000
+						id: "ars_nouveau:potion_jar"
+						locked: 0b
+					}
+				}
+			}
+			x: 4.0d
+			y: -1.0d
+			subtitle: "Novice Brew"
+			description: ["Acquire a full Potion Jar:\\nSpell Damage II\\nMana Regeneration II"]
+			id: "211CFD462B22F863"
+			tasks: [{
+				id: "0134C5BDC74AA49F"
+				type: "item"
+				title: "Mage's Brew"
+				icon: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+						BlockEntityTag: {
+							potionData: {
+								includedPotions: [
+									"ars_nouveau:mana_regen_potion_strong"
+									"ars_nouveau:spell_damage_potion_strong"
+								]
+								CustomPotionEffects: [{
+									"forge:id": "ars_nouveau:mana_regen"
+									Ambient: 0b
+									CurativeItems: [{
+										id: "minecraft:milk_bucket"
+										Count: 1b
+									}]
+									ShowIcon: 1b
+									ShowParticles: 1b
+									Duration: 3600
+									Id: 37
+									Amplifier: 1b
+								}]
+								Potion: "ars_nouveau:spell_damage_potion_strong"
+							}
+							Items: [ ]
+							currentFill: 10000
+							id: "ars_nouveau:potion_jar"
+							locked: 0b
+						}
+					}
+				}
+				item: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "5D32FD12A7924B86"
+				type: "item"
+				item: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+						BlockEntityTag: {
+							potionData: {
+								includedPotions: [
+									"ars_nouveau:mana_regen_potion_strong"
+									"ars_nouveau:spell_damage_potion_strong"
+								]
+								CustomPotionEffects: [{
+									"forge:id": "ars_nouveau:mana_regen"
+									Ambient: 0b
+									CurativeItems: [{
+										id: "minecraft:milk_bucket"
+										Count: 1b
+									}]
+									ShowIcon: 1b
+									ShowParticles: 1b
+									Duration: 3600
+									Id: 37
+									Amplifier: 1b
+								}]
+								Potion: "ars_nouveau:spell_damage_potion_strong"
+							}
+							Items: [ ]
+							currentFill: 10000
+							id: "ars_nouveau:potion_jar"
+							locked: 0b
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Mage's Brew"
+			x: 4.0d
+			y: -2.5d
+			description: ["Full Jar:\\nSpell Damage II\\nMana Regeneration II\\nRecovery II"]
+			id: "792C10430DB25F8F"
+			tasks: [{
+				id: "18FBE615ED419CD6"
+				type: "item"
+				title: "Mage's Brew"
+				icon: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:recovery_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+						BlockEntityTag: {
+							potionData: {
+								includedPotions: [
+									"ars_nouveau:mana_regen_potion_strong"
+									"ars_nouveau:recovery_potion_strong"
+									"ars_nouveau:spell_damage_potion_strong"
+								]
+								CustomPotionEffects: [
+									{
+										"forge:id": "ars_nouveau:mana_regen"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 3600
+										Id: 37
+										Amplifier: 1b
+									}
+									{
+										"forge:id": "ars_nouveau:recovery"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 3600
+										Id: 49
+										Amplifier: 1b
+									}
+								]
+								Potion: "ars_nouveau:spell_damage_potion_strong"
+							}
+							Items: [ ]
+							currentFill: 10000
+							id: "ars_nouveau:potion_jar"
+							locked: 0b
+						}
+					}
+				}
+				item: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:recovery_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "26DA9329DDF9213B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:recovery_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+						BlockEntityTag: {
+							potionData: {
+								includedPotions: [
+									"ars_nouveau:mana_regen_potion_strong"
+									"ars_nouveau:recovery_potion_strong"
+									"ars_nouveau:spell_damage_potion_strong"
+								]
+								CustomPotionEffects: [
+									{
+										"forge:id": "ars_nouveau:mana_regen"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 3600
+										Id: 37
+										Amplifier: 1b
+									}
+									{
+										"forge:id": "ars_nouveau:recovery"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 3600
+										Id: 49
+										Amplifier: 1b
+									}
+								]
+								Potion: "ars_nouveau:spell_damage_potion_strong"
+							}
+							Items: [ ]
+							currentFill: 10000
+							id: "ars_nouveau:potion_jar"
+							locked: 0b
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Archmage's Brew"
+			x: 4.0d
+			y: -4.0d
+			shape: "diamond"
+			description: ["Spell Damage II\\nMana Regeneration II\\nRecovery II\\nShielding II"]
+			size: 1.3d
+			id: "4CD48B0EFCF43477"
+			tasks: [{
+				id: "146B5CA6EAC8C22F"
+				type: "item"
+				title: "Archmage's Brew"
+				icon: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:recovery_potion_strong,ars_nouveau:shielding_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+						BlockEntityTag: {
+							potionData: {
+								includedPotions: [
+									"ars_nouveau:shielding_potion_strong"
+									"ars_nouveau:mana_regen_potion_strong"
+									"ars_nouveau:recovery_potion_strong"
+									"ars_nouveau:spell_damage_potion_strong"
+								]
+								CustomPotionEffects: [
+									{
+										"forge:id": "ars_nouveau:mana_regen"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 3600
+										Id: 37
+										Amplifier: 1b
+									}
+									{
+										"forge:id": "ars_nouveau:shielding"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 3600
+										Id: 52
+										Amplifier: 1b
+									}
+									{
+										"forge:id": "ars_nouveau:recovery"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 3600
+										Id: 49
+										Amplifier: 1b
+									}
+								]
+								Potion: "ars_nouveau:spell_damage_potion_strong"
+							}
+							Items: [ ]
+							currentFill: 10000
+							id: "ars_nouveau:potion_jar"
+							locked: 0b
+						}
+					}
+				}
+				item: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:recovery_potion_strong,ars_nouveau:shielding_potion_strong,ars_nouveau:spell_damage_potion_strong"
+						fill: 10000
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [
+				{
+					id: "7C6FDA9C95AEBED5"
+					type: "item"
+					item: {
+						id: "ars_nouveau:potion_jar"
+						Count: 1b
+						tag: {
+							potionNames: "ars_nouveau:mana_regen_potion_strong,ars_nouveau:recovery_potion_strong,ars_nouveau:shielding_potion_strong,ars_nouveau:spell_damage_potion_strong"
+							fill: 10000
+							BlockEntityTag: {
+								potionData: {
+									includedPotions: [
+										"ars_nouveau:shielding_potion_strong"
+										"ars_nouveau:mana_regen_potion_strong"
+										"ars_nouveau:recovery_potion_strong"
+										"ars_nouveau:spell_damage_potion_strong"
+									]
+									CustomPotionEffects: [
+										{
+											"forge:id": "ars_nouveau:mana_regen"
+											Ambient: 0b
+											CurativeItems: [{
+												id: "minecraft:milk_bucket"
+												Count: 1b
+											}]
+											ShowIcon: 1b
+											ShowParticles: 1b
+											Duration: 3600
+											Id: 37
+											Amplifier: 1b
+										}
+										{
+											"forge:id": "ars_nouveau:shielding"
+											Ambient: 0b
+											CurativeItems: [{
+												id: "minecraft:milk_bucket"
+												Count: 1b
+											}]
+											ShowIcon: 1b
+											ShowParticles: 1b
+											Duration: 3600
+											Id: 52
+											Amplifier: 1b
+										}
+										{
+											"forge:id": "ars_nouveau:recovery"
+											Ambient: 0b
+											CurativeItems: [{
+												id: "minecraft:milk_bucket"
+												Count: 1b
+											}]
+											ShowIcon: 1b
+											ShowParticles: 1b
+											Duration: 3600
+											Id: 49
+											Amplifier: 1b
+										}
+									]
+									Potion: "ars_nouveau:spell_damage_potion_strong"
+								}
+								Items: [ ]
+								currentFill: 10000
+								id: "ars_nouveau:potion_jar"
+								locked: 0b
+							}
+						}
+					}
+				}
+				{
+					id: "2D3D9A5AFB31FAA9"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "Light up the sky"
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Xacris's Firework Display"
+										recipe: {
+											size: 10
+											part0: "ars_nouveau:glyph_projectile"
+											part1: "ars_nouveau:glyph_wall"
+											part2: "ars_nouveau:glyph_sensitive"
+											part3: "ars_nouveau:glyph_aoe"
+											part4: "ars_nouveau:glyph_firework"
+											part5: "ars_nouveau:glyph_extend_time"
+											part6: "ars_nouveau:glyph_extend_time"
+											part7: "ars_nouveau:glyph_extend_time"
+											part8: "ars_nouveau:glyph_extend_time"
+											part9: "ars_nouveau:glyph_amplify"
+										}
+										spellColor: {
+											r: 25
+											b: 255
+											g: 255
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Xacris's Firework Display\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 	]
 	quest_links: [ ]

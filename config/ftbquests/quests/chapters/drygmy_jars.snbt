@@ -11,6 +11,20 @@
 		x: 13.5d
 		y: 0.5d
 		id: "531F88E84D4FF647"
+		tasks: [{
+			id: "0BBCF8415D07CD91"
+			type: "item"
+			item: {
+				id: "ars_nouveau:mob_jar"
+				Count: 1b
+				tag: {
+					entityId: "minecraft:sheep"
+				}
+			}
+			only_from_crafting: false
+			match_nbt: true
+			weak_nbt_match: true
+		}]
 	}]
 	quest_links: [ ]
 }
