@@ -3,7 +3,7 @@
 	group: "4216FE5ADC621CC5"
 	order_index: 2
 	filename: "potions"
-	title: "Potions"
+	title: "Mixed Brews"
 	icon: {
 		id: "ars_nouveau:potion_jar"
 		Count: 1b

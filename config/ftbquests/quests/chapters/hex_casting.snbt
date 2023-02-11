@@ -191,7 +191,7 @@
 			x: -8.0d
 			y: -1.5d
 			description: [
-				"With more esoteric materials, you journal explains that you can make a more sophisticated device."
+				"With more esoteric materials, your journal explains that you can make a more sophisticated device."
 				""
 				"This one comes with a perk, and a danger. An Artifact first uses its internal store of Media, but if it runs out it pulls from you."
 				""
