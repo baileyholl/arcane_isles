@@ -7,14 +7,2025 @@
 	icon: "ars_nouveau:mob_jar"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		title: "Sheep"
-		x: 13.5d
-		y: 0.5d
-		id: "531F88E84D4FF647"
-		tasks: [{
-			id: "0BBCF8415D07CD91"
-			type: "item"
+	quests: [
+		{
+			title: "Sheep"
+			x: 13.5d
+			y: 0.5d
+			description: ["Can be sheared and will eat grass below the jar."]
+			id: "531F88E84D4FF647"
+			tasks: [{
+				id: "0BBCF8415D07CD91"
+				type: "item"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								ForgeData: { }
+								Attributes: [
+									{
+										Base: 0.08d
+										Name: "forge:entity_gravity"
+									}
+									{
+										Base: 0.23000000417232513d
+										Name: "minecraft:generic.movement_speed"
+									}
+									{
+										Base: 16.0d
+										Modifiers: [{
+											Operation: 1
+											UUID: [I;
+												563790330
+												37438201
+												-1894552310
+												452987775
+											]
+											Amount: 0.07472076621991887d
+											Name: "Random spawn bonus"
+										}]
+										Name: "minecraft:generic.follow_range"
+									}
+									{
+										Base: 0.0d
+										Name: "forge:step_height_addition"
+									}
+								]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:sheep"
+								UUID: [I;
+									564833141
+									-1838726584
+									-1536574378
+									-1118992172
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									-0.0784000015258789d
+									0.0d
+								]
+								Health: 8.0f
+								Color: 0b
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 1b
+								Rotation: [
+									321.9841f
+									-20.427471f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									11.40946198308921d
+									65.0d
+									31.729870420990704d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								Sheared: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:sheep"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:sheep"
+					}
+				}
+				only_from_crafting: false
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "416164FBC3A1B69F"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								variant: "minecraft:temperate"
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:frog"
+								UUID: [I;
+									-1250089433
+									-734443531
+									-1233651226
+									496066872
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									0.4162408f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:frog"
+					}
+				}
+			}]
+		}
+		{
+			title: "Enderman"
+			x: 13.5d
+			y: -0.5d
+			id: "2151F8A2AE519988"
+			tasks: [{
+				id: "48771728FCEB14DA"
+				type: "item"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:enderman"
+								UUID: [I;
+									-2002885609
+									1717194185
+									-1329735376
+									-245093712
+								]
+								AngerTime: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 40.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									1.4809865f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:enderman"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:enderman"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "007AC0832844B9D1"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								DarkTicksRemaining: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:glow_squid"
+								UUID: [I;
+									1026180898
+									569920709
+									-1179441018
+									115985797
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									1.4107625f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:glow_squid"
+					}
+				}
+			}]
+		}
+		{
+			x: 15.0d
+			y: 2.5d
+			description: ["Using a Ritual of Containment, capture mobs in jars. Drygmys can harvest items from these mobs.\\n\\nSome mobs keep their in-world behaviors as well. See each section for more info."]
+			id: "1510DABCF2219AE1"
+			tasks: [{
+				id: "20353FE1706E5861"
+				type: "item"
+				item: "ars_nouveau:mob_jar"
+			}]
+			rewards: [{
+				id: "49B482187B13CA2F"
+				type: "item"
+				item: "ars_nouveau:mob_jar"
+				count: 4
+			}]
+		}
+		{
+			title: "Elder Guardian"
+			x: 13.5d
+			y: -2.5d
+			description: ["Grants prismarine and sponge with a drygmy."]
+			id: "1B9E12E8BDEA0654"
+			tasks: [{
+				id: "25EBB0A42514FBA3"
+				type: "item"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 1b
+								id: "minecraft:elder_guardian"
+								UUID: [I;
+									827201671
+									857555700
+									-1150025552
+									1697348912
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 80.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									0.2772554f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:elder_guardian"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:elder_guardian"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "799F1C34922235EA"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:axolotl"
+								UUID: [I;
+									-1629708799
+									1865894290
+									-2021398481
+									-1252618899
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								FromBucket: 0b
+								Health: 14.0f
+								LeftHanded: 0b
+								Air: 6000s
+								OnGround: 0b
+								Rotation: [
+									0.5937329f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								Variant: 0
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:axolotl"
+					}
+				}
+			}]
+		}
+		{
+			x: 16.5d
+			y: -0.5d
+			description: ["Villagers in jars can be traded with."]
+			id: "101651EBF9B78CD9"
+			tasks: [{
+				id: "357E38A7087D9A8B"
+				type: "item"
+				title: "Villager"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								ForgeData: { }
+								Attributes: [ ]
+								FoodLevel: 0b
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								Gossips: [ ]
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								LastRestock: 2486409L
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								Xp: 0
+								LastGossipDecay: 0L
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:villager"
+								UUID: [I;
+									406710890
+									718358097
+									-2012952180
+									549519443
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 20.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									4.2734494f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								RestocksToday: 0
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 1b
+								VillagerData: {
+									profession: "minecraft:none"
+									type: "minecraft:plains"
+									level: 1
+								}
+								HurtTime: 0s
+								Inventory: [ ]
+							}
+						}
+						entityId: "minecraft:villager"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:villager"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "38165A97BE9DFAB0"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Motion: [
+									-2.2977671225922253E-4d
+									-0.12d
+									5.2114165318764255E-5d
+								]
+								Health: 5s
+								Invulnerable: 0b
+								Air: 300s
+								OnGround: 1b
+								PortalCooldown: 0
+								Rotation: [
+									238.07007f
+									0.0f
+								]
+								Thrower: [I;
+									2093223303
+									1772373478
+									-1613092354
+									-649206605
+								]
+								FallDistance: 0.0f
+								Item: {
+									id: "minecraft:emerald_block"
+									Count: 1b
+								}
+								CanUpdate: 1b
+								Pos: [
+									10.68734807663706d
+									65.0d
+									31.22316181479989d
+								]
+								PickupDelay: 6s
+								Fire: -1s
+								ForgeCaps: { }
+								id: "minecraft:item"
+								UUID: [I;
+									2030238995
+									-1347138155
+									-2094498064
+									2096891355
+								]
+								Lifespan: 6000
+								Age: 34s
+							}
+						}
+						entityId: "minecraft:item"
+					}
+				}
+			}]
+		}
+		{
+			x: 15.5d
+			y: -3.5d
+			description: ["Will provide Broken Disc fragments with a drygmy. Useful for Hex Casting!"]
+			id: "7F29790D1E706DE1"
+			tasks: [{
+				id: "04037310DF79C9BD"
+				type: "item"
+				title: "Warden"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								listener: {
+									range: 16
+									event_delay: 0
+									source: {
+										y_offset: 2.4650002f
+										type: "minecraft:entity"
+										source_entity: [I;
+											-37599824
+											1746880407
+											-1369257587
+											1266721910
+										]
+									}
+									event_distance: 0.0f
+								}
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								anger: {
+									suspects: [ ]
+								}
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:warden"
+								UUID: [I;
+									-37599824
+									1746880407
+									-1369257587
+									1266721910
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 500.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									0.21767403f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:warden"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:warden"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "2D0D0F62B70AAAED"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Size: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:phantom"
+								UUID: [I;
+									437497216
+									903694243
+									-2015220845
+									-1162165850
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 20.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									0.7364105f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								AX: 0
+								AY: 0
+								CanPickUpLoot: 0b
+								AZ: 0
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:phantom"
+					}
+				}
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.5d
+			description: ["Can be milked. Combine with Interact for automations."]
+			id: "6C37AA1E3425BC61"
+			tasks: [{
+				id: "23864EF8847691D7"
+				type: "item"
+				title: "Cow"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:cow"
+								UUID: [I;
+									-797420675
+									-335527096
+									-1809116314
+									-1229042919
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									2.6104722f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:cow"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:cow"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "3DBEE639A1FA2A0A"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Crouching: 0b
+								Sitting: 0b
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:fox"
+								UUID: [I;
+									-934185104
+									-1027651422
+									-2089544595
+									199681847
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									1.1512158f
+									0.0f
+								]
+								Trusted: [ ]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Type: "red"
+								Sleeping: 0b
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 1b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:fox"
+					}
+				}
+			}]
+		}
+		{
+			x: 16.5d
+			y: 0.5d
+			description: ["Drops eggs around the jar."]
+			id: "399B29DE23ECB6FC"
+			tasks: [{
+				id: "182BC98C3C8F377E"
+				type: "item"
+				title: "Chicken"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								IsChickenJockey: 0b
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								ForgeData: { }
+								Attributes: [
+									{
+										Base: 0.0d
+										Name: "forge:step_height_addition"
+									}
+									{
+										Base: 0.25d
+										Name: "minecraft:generic.movement_speed"
+									}
+									{
+										Base: 16.0d
+										Modifiers: [{
+											Operation: 1
+											UUID: [I;
+												442810618
+												1521895051
+												-1540763494
+												-2098472960
+											]
+											Amount: -0.057283526258793745d
+											Name: "Random spawn bonus"
+										}]
+										Name: "minecraft:generic.follow_range"
+									}
+									{
+										Base: 0.08d
+										Name: "forge:entity_gravity"
+									}
+								]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:chicken"
+								UUID: [I;
+									1099601789
+									-523678669
+									-1639659605
+									58341018
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									-0.0784000015258789d
+									0.0d
+								]
+								Health: 4.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 1b
+								Rotation: [
+									337.61987f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								EggLayTime: 4461
+								Pos: [
+									17.799999997019768d
+									65.0d
+									28.799999997019768d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:chicken"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:chicken"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "356A13102A4A5249"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								TreasurePosZ: 0
+								TreasurePosY: 0
+								CanUpdate: 1b
+								TreasurePosX: 0
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:dolphin"
+								UUID: [I;
+									314215354
+									13058993
+									-1358471589
+									771823244
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								Moistness: 2400
+								LeftHanded: 0b
+								Air: 4800s
+								OnGround: 0b
+								GotFish: 0b
+								Rotation: [
+									3.3930452f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 1b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:dolphin"
+					}
+				}
+			}]
+		}
+		{
+			title: "Lightning"
+			icon: {
+				id: "ars_nouveau:mob_jar"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						Items: [ ]
+						id: "ars_nouveau:mob_jar"
+						entityTag: {
+							Motion: [
+								0.0d
+								0.0d
+								0.0d
+							]
+							Invulnerable: 0b
+							Air: 300s
+							OnGround: 0b
+							PortalCooldown: 0
+							Rotation: [
+								0.0f
+								0.0f
+							]
+							FallDistance: 0.0f
+							CanUpdate: 1b
+							Pos: [
+								10.53797612294811d
+								65.0d
+								32.86794439120452d
+							]
+							Fire: 162s
+							id: "ars_nouveau:an_lightning"
+							UUID: [I;
+								1991476363
+								-602256844
+								-1424106064
+								-1800857465
+							]
+						}
+					}
+					entityId: "ars_nouveau:an_lightning"
+				}
+			}
+			x: 16.5d
+			y: -2.5d
+			description: [
+				"Capture lightning in a bottle. Must be lightning cast from a Spell."
+				"Can be used as a fancy light."
+			]
+			id: "527350718CBDC308"
+			tasks: [{
+				id: "7DFFC547D53C2AB3"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "ars_nouveau:an_lightning"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "09E256307A9FD4D6"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:blaze"
+								UUID: [I;
+									1985032390
+									-1697429006
+									-1771663433
+									937493902
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 20.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									2.9417953f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:blaze"
+					}
+				}
+			}]
+		}
+		{
+			x: 14.5d
+			y: 0.5d
+			id: "3E84F20A02691A54"
+			tasks: [{
+				id: "46367967EAC2BB4F"
+				type: "item"
+				title: "Pig"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								Saddle: 0b
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:pig"
+								UUID: [I;
+									-6577874
+									1520713986
+									-1550295371
+									1447574119
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									0.52491564f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:pig"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:pig"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "67106E84D7045F92"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Sitting: 0b
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								variant: "minecraft:black"
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:cat"
+								UUID: [I;
+									-672006222
+									-367245144
+									-1678178636
+									1377104441
+								]
+								Age: 0
+								CollarColor: 14b
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									3.5697472f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:cat"
+					}
+				}
+			}]
+		}
+		{
+			x: 14.5d
+			y: -3.5d
+			description: ["Use a bottle to obtain Dragon's Breath"]
+			id: "34B266AE6CC15AAF"
+			tasks: [{
+				id: "22D8B1ABAE63D708"
+				type: "item"
+				title: "Ender Dragon"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								FallFlying: 0b
+								Invulnerable: 0b
+								AbsorptionAmount: 0.0f
+								PortalCooldown: 0
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:ender_dragon"
+								UUID: [I;
+									709794495
+									-1628422038
+									-1496367236
+									1008486432
+								]
+								Fuse: 30s
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 20.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								ignited: 0b
+								Rotation: [
+									5.9972486f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								Fire: -1s
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+								ExplosionRadius: 3b
+							}
+						}
+						entityId: "minecraft:ender_dragon"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:ender_dragon"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "23218F92B3549A8C"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:ghast"
+								UUID: [I;
+									1260871220
+									-1518451505
+									-1928430447
+									1435106560
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								ExplosionPower: 1b
+								Rotation: [
+									4.8213844f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:ghast"
+					}
+				}
+			}]
+		}
+		{
+			x: 13.5d
+			y: -1.5d
+			description: ["Useful for obtaining potion ingredients with a drygmy."]
+			id: "0462CC7B7C37A3BE"
+			tasks: [{
+				id: "7E951C0A02904BD3"
+				type: "item"
+				title: "Witch"
+				icon: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								CanJoinRaid: 0b
+								Attributes: [ ]
+								PatrolLeader: 0b
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:witch"
+								UUID: [I;
+									1426223218
+									2128561717
+									-1258571653
+									1392651610
+								]
+								Patrolling: 0b
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Health: 26.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									6.007438f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								Wave: 0
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:witch"
+					}
+				}
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:witch"
+					}
+				}
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "74203CFB82F953B5"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Attributes: [ ]
+								Invulnerable: 0b
+								FallFlying: 0b
+								ForcedAge: 0
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								InLove: 0
+								CanUpdate: 1b
+								DeathTime: 0s
+								IsScreamingGoat: 0b
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:goat"
+								UUID: [I;
+									969094630
+									-1735704560
+									-1847473595
+									319566485
+								]
+								Age: 0
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								HasLeftHorn: 1b
+								HasRightHorn: 1b
+								Health: 10.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									1.480651f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:goat"
+					}
+				}
+			}]
+		}
+		{
+			title: "Piglin"
 			icon: {
 				id: "ars_nouveau:mob_jar"
 				Count: 1b
@@ -27,43 +2038,16 @@
 								memories: { }
 							}
 							HurtByTimestamp: 0
-							ForgeData: { }
-							Attributes: [
-								{
-									Base: 0.08d
-									Name: "forge:entity_gravity"
-								}
-								{
-									Base: 0.23000000417232513d
-									Name: "minecraft:generic.movement_speed"
-								}
-								{
-									Base: 16.0d
-									Modifiers: [{
-										Operation: 1
-										UUID: [I;
-											563790330
-											37438201
-											-1894552310
-											452987775
-										]
-										Amount: 0.07472076621991887d
-										Name: "Random spawn bonus"
-									}]
-									Name: "minecraft:generic.follow_range"
-								}
-								{
-									Base: 0.0d
-									Name: "forge:step_height_addition"
-								}
-							]
+							Attributes: [{
+								Base: 0.3499999940395355d
+								Name: "minecraft:generic.movement_speed"
+							}]
+							TimeInOverworld: 0
 							Invulnerable: 0b
 							FallFlying: 0b
-							ForcedAge: 0
 							PortalCooldown: 0
 							AbsorptionAmount: 0.0f
 							FallDistance: 0.0f
-							InLove: 0
 							CanUpdate: 1b
 							DeathTime: 0s
 							HandDropChances: [
@@ -71,27 +2055,25 @@
 								0.085f
 							]
 							PersistenceRequired: 0b
-							id: "minecraft:sheep"
+							id: "minecraft:piglin"
 							UUID: [I;
-								564833141
-								-1838726584
-								-1536574378
-								-1118992172
+								201657979
+								-499040135
+								-1160869726
+								-137049819
 							]
-							Age: 0
 							Motion: [
 								0.0d
-								-0.0784000015258789d
+								0.0d
 								0.0d
 							]
-							Health: 8.0f
-							Color: 0b
+							Health: 16.0f
 							LeftHanded: 0b
 							Air: 300s
-							OnGround: 1b
+							OnGround: 0b
 							Rotation: [
-								321.9841f
-								-20.427471f
+								5.331866f
+								0.0f
 							]
 							HandItems: [
 								{ }
@@ -104,9 +2086,9 @@
 								0.085f
 							]
 							Pos: [
-								11.40946198308921d
-								65.0d
-								31.729870420990704d
+								0.0d
+								0.0d
+								0.0d
 							]
 							Fire: -1s
 							ArmorItems: [
@@ -115,25 +2097,256 @@
 								{ }
 								{ }
 							]
-							CanPickUpLoot: 0b
-							Sheared: 0b
+							CanPickUpLoot: 1b
 							HurtTime: 0s
+							Inventory: [ ]
 						}
 					}
-					entityId: "minecraft:sheep"
+					entityId: "minecraft:piglin"
 				}
 			}
-			item: {
-				id: "ars_nouveau:mob_jar"
-				Count: 1b
-				tag: {
-					entityId: "minecraft:sheep"
+			x: 16.5d
+			y: -1.5d
+			description: ["A Piglin in a Jar will trade like a normal piglin. Just throw gold at the jar!"]
+			id: "097C84701A6CE532"
+			tasks: [{
+				id: "528E51957D26C6F3"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						entityId: "minecraft:piglin"
+					}
 				}
-			}
-			only_from_crafting: false
-			match_nbt: true
-			weak_nbt_match: true
-		}]
-	}]
+				match_nbt: true
+				weak_nbt_match: true
+			}]
+			rewards: [{
+				id: "46E906029A7E424B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Brain: {
+									memories: { }
+								}
+								HurtByTimestamp: 0
+								Size: 0
+								Attributes: [
+									{
+										Base: 0.30000001192092896d
+										Name: "minecraft:generic.movement_speed"
+									}
+									{
+										Base: 3.0d
+										Name: "minecraft:generic.armor"
+									}
+									{
+										Base: 1.0d
+										Name: "minecraft:generic.max_health"
+									}
+									{
+										Base: 1.0d
+										Name: "minecraft:generic.attack_damage"
+									}
+								]
+								Invulnerable: 0b
+								FallFlying: 0b
+								PortalCooldown: 0
+								AbsorptionAmount: 0.0f
+								FallDistance: 0.0f
+								CanUpdate: 1b
+								DeathTime: 0s
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								PersistenceRequired: 0b
+								id: "minecraft:magma_cube"
+								UUID: [I;
+									911380539
+									-238072714
+									-1761196216
+									-1048063256
+								]
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								wasOnGround: 0b
+								Health: 1.0f
+								LeftHanded: 0b
+								Air: 300s
+								OnGround: 0b
+								Rotation: [
+									2.4070976f
+									0.0f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								Pos: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								Fire: -1s
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								CanPickUpLoot: 0b
+								HurtTime: 0s
+							}
+						}
+						entityId: "minecraft:magma_cube"
+					}
+				}
+			}]
+		}
+		{
+			x: 15.0d
+			y: -1.5d
+			description: ["Capture some mobs with unique jar behaviors."]
+			dependencies: [
+				"0462CC7B7C37A3BE"
+				"34B266AE6CC15AAF"
+				"097C84701A6CE532"
+				"101651EBF9B78CD9"
+				"3E84F20A02691A54"
+				"7F29790D1E706DE1"
+				"399B29DE23ECB6FC"
+				"527350718CBDC308"
+				"1B9E12E8BDEA0654"
+				"2151F8A2AE519988"
+				"6C37AA1E3425BC61"
+				"531F88E84D4FF647"
+			]
+			id: "2866FF7BFC58646A"
+			tasks: [{
+				id: "18542AA66B446272"
+				type: "checkmark"
+				title: "Tiny Home"
+			}]
+			rewards: [{
+				id: "38F9B5BE4C79DF68"
+				type: "item"
+				item: {
+					id: "ars_nouveau:mob_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Items: [ ]
+							id: "ars_nouveau:mob_jar"
+							entityTag: {
+								Motion: [
+									1.962601141863566E-4d
+									-0.08d
+									-1.1807378094782172E-4d
+								]
+								Health: 5s
+								Invulnerable: 0b
+								Air: 300s
+								OnGround: 1b
+								PortalCooldown: 0
+								Rotation: [
+									350.55383f
+									0.0f
+								]
+								FallDistance: 0.0f
+								Item: {
+									id: "minecraft:purple_shulker_box"
+									Count: 1b
+									tag: {
+										BlockEntityTag: {
+											Items: [{
+												Slot: 0b
+												id: "ars_nouveau:caster_tome"
+												Count: 1b
+												tag: {
+													"ars_nouveau:caster": {
+														flavor: "Builds a small hut around the user."
+														hidden_recipe: ""
+														is_hidden: 0b
+														current_slot: 0
+														spell_count: 1
+														spells: {
+															spell0: {
+																name: "Xacris' Tiny Hut"
+																recipe: {
+																	size: 8
+																	part0: "ars_nouveau:glyph_underfoot"
+																	part1: "ars_nouveau:glyph_phantom_block"
+																	part2: "ars_nouveau:glyph_aoe"
+																	part3: "ars_nouveau:glyph_aoe"
+																	part4: "ars_nouveau:glyph_aoe"
+																	part5: "ars_nouveau:glyph_pierce"
+																	part6: "ars_nouveau:glyph_pierce"
+																	part7: "ars_nouveau:glyph_pierce"
+																}
+																spellColor: {
+																	r: 255
+																	b: 180
+																	g: 25
+																}
+																sound: {
+																	volume: 1.0f
+																	pitch: 1.0f
+																	soundTag: { }
+																}
+															}
+														}
+													}
+													display: {
+														Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Xacris' Tiny Hut\"}"
+													}
+												}
+											}]
+											id: "minecraft:shulker_box"
+										}
+									}
+								}
+								CanUpdate: 1b
+								Pos: [
+									13.19803710865808d
+									65.0d
+									34.05367988158128d
+								]
+								PickupDelay: 0s
+								Fire: -1s
+								ForgeCaps: { }
+								id: "minecraft:item"
+								UUID: [I;
+									2071580108
+									-459061799
+									-1123905270
+									-197687368
+								]
+								Lifespan: 6000
+								Age: 32s
+							}
+						}
+						entityId: "minecraft:item"
+					}
+				}
+			}]
+		}
+	]
 	quest_links: [ ]
 }

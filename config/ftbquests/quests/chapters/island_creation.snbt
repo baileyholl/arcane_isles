@@ -523,6 +523,35 @@
 				table_id: 4542458237970434754L
 			}]
 		}
+		{
+			x: -2.5d
+			y: 3.5d
+			description: ["Conjures a magical village island. Perform this ritual 14 blocks from any other blocks."]
+			dependencies: ["47B78DE895A1E4E2"]
+			id: "7857457A228595D9"
+			tasks: [{
+				id: "1AC029DAC161FD3F"
+				type: "item"
+				item: "ars_caelum:ritual_conjure_island_village"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			dependencies: ["656A7A573BD36A4F"]
+			id: "4B5ECEA5395D968C"
+			tasks: [{
+				id: "1F958EDF4FA0E45D"
+				type: "advancement"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "25F0B78CFE7EC0D6"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
