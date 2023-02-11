@@ -1,0 +1,77 @@
+{
+	id: "59884E3D5351AFD4"
+	group: "4216FE5ADC621CC5"
+	order_index: 2
+	filename: "potions"
+	title: "Potions"
+	icon: {
+		id: "ars_nouveau:potion_jar"
+		Count: 1b
+		tag: {
+			BlockEntityTag: {
+				potionData: {
+					Potion: "minecraft:awkward"
+				}
+				Items: [ ]
+				currentFill: 10000
+				id: "ars_nouveau:potion_jar"
+				locked: 0b
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "This is Awkward"
+			x: 4.0d
+			y: 0.5d
+			description: ["Awkward potions can be created with Abjuration Essence in place of Nether Wart!"]
+			id: "7D43A6D61D4DDA4B"
+			tasks: [{
+				id: "3DF78BD82135E524"
+				type: "item"
+				item: {
+					id: "ars_nouveau:potion_jar"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							potionData: {
+								Potion: "minecraft:awkward"
+							}
+							Items: [ ]
+							currentFill: 10000
+							id: "ars_nouveau:potion_jar"
+							locked: 0b
+						}
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "3E36E1B6E96F7FDA"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 4542458237970434754L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			id: "00550D97454ACDCF"
+			tasks: [{
+				id: "17EB09CFE0AD7EBD"
+				type: "item"
+				item: {
+					id: "minecraft:tipped_arrow"
+					Count: 1b
+					tag: {
+						Potion: "ars_nouveau:blasting_potion_strong"
+					}
+				}
+				count: 64L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

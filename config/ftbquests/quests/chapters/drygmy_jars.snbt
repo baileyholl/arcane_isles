@@ -7,6 +7,10 @@
 	icon: "ars_nouveau:mob_jar"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		x: 13.5d
+		y: 0.5d
+		id: "531F88E84D4FF647"
+	}]
 	quest_links: [ ]
 }
