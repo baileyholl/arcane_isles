@@ -313,6 +313,7 @@
 		{
 			x: 3.5d
 			y: -2.5d
+			description: ["Combining Amethyst with a book has curious results."]
 			dependencies: ["7D9EFB225A839AAD"]
 			id: "0415DA254AB79A7C"
 			tasks: [{
@@ -325,11 +326,6 @@
 						"patchouli:book": "hexcasting:thehexbook"
 					}
 				}
-			}]
-			rewards: [{
-				id: "7AC6CA4ACCB5F67B"
-				type: "item"
-				item: "ars_scalaes:archwood_staff"
 			}]
 		}
 		{
