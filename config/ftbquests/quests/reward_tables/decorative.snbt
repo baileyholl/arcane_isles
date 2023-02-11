@@ -28,5 +28,8 @@
 		{ item: "ars_nouveau:smooth_sourcestone", count: 64 }
 		{ item: "mcwbridges:rope_dark_oak_bridge", count: 64 }
 		{ item: "minecraft:blackstone", count: 64 }
+		{ item: "ars_nouveau:sconce", count: 8 }
+		{ item: "ars_nouveau:magelight_torch", count: 8 }
+		{ item: "minecraft:candle", count: 32 }
 	]
 }

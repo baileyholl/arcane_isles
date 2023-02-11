@@ -592,7 +592,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -3.0d
 			y: -9.0d
 			description: ["Ars Caelum adds a variety of rituals for conjuring islands and platforms.\\n\\nThe chapter for Island Creation has been unlocked!"]
 			dependencies: ["73937DADFAF6DAEE"]
@@ -1154,8 +1154,8 @@
 			]
 		}
 		{
-			x: 3.5d
-			y: -6.0d
+			x: 4.0d
+			y: -5.5d
 			description: ["Cannot be moved by pistons, but can be set to face a block at any angle using the Dominion Wand.\\n\\nAccepts Prism Lenses."]
 			dependencies: ["1FE9F44B1CEE2D5A"]
 			id: "216BE3B75FE7DB74"
@@ -1178,8 +1178,8 @@
 			]
 		}
 		{
-			x: 3.5d
-			y: -7.5d
+			x: 3.0d
+			y: -6.5d
 			description: ["Redirects a spell projectile in the direction the prism is facing.\\n\\nCan be moved with a piston for making elaborate redstone contraptions."]
 			dependencies: ["55610EA99C268B52"]
 			id: "1FE9F44B1CEE2D5A"
@@ -1507,8 +1507,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -8.5d
+			x: -3.5d
+			y: -8.0d
 			description: ["Summons a raid when performed with a villager nearby. Can be augmented with an emerald to increase the difficulty if you are not playing on Hard.\\n\\nAllows you to obtain the Totem of Undying from Evokers when performing a Hard raid."]
 			dependencies: ["13FC7955A316CA5E"]
 			id: "0B95AB4FEFB31D49"
