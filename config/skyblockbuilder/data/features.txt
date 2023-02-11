@@ -1,7 +1,4 @@
 minecraft:acacia
-hexcasting:akashic_tree1
-hexcasting:akashic_tree2
-hexcasting:akashic_tree3
 byg:allium_bush
 byg:allium_field_flowers
 byg:allium_pink
@@ -569,7 +566,6 @@ byg:palo_verde_trees
 ars_nouveau:patch_berry
 minecraft:patch_berry_bush
 minecraft:patch_brown_mushroom
-farmersdelight:patch_brown_mushroom_colonies
 minecraft:patch_cactus
 minecraft:patch_crimson_roots
 minecraft:patch_dead_bush
@@ -580,21 +576,12 @@ minecraft:patch_large_fern
 minecraft:patch_melon
 minecraft:patch_pumpkin
 minecraft:patch_red_mushroom
-farmersdelight:patch_red_mushroom_colonies
-farmersdelight:patch_sandy_shrub
 minecraft:patch_soul_fire
 minecraft:patch_sugar_cane
 minecraft:patch_sunflower
 minecraft:patch_taiga_grass
 minecraft:patch_tall_grass
 minecraft:patch_waterlily
-farmersdelight:patch_wild_beetroots
-farmersdelight:patch_wild_cabbages
-farmersdelight:patch_wild_carrots
-farmersdelight:patch_wild_onions
-farmersdelight:patch_wild_potatoes
-farmersdelight:patch_wild_rice
-farmersdelight:patch_wild_tomatoes
 byg:peach_leather_flower
 minecraft:pile_hay
 minecraft:pile_ice
@@ -638,9 +625,7 @@ byg:quartz_spike
 byg:rainbow_eucalyptus_tree1
 byg:rainbow_eucalyptus_trees
 byg:rainforest_trees
-ars_elemental:random_common_archwood
 ars_nouveau:random_common_archwood
-ars_elemental:random_flashing
 ars_nouveau:random_mixed
 byg:red_birch_tree1
 byg:red_birch_tree2

@@ -30,7 +30,7 @@ $MODPACK_NAME = "arcane-isles"
 $CLIENT_NAME = "arcane-isles"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.1.1"
+$MODPACK_VERSION = "1.0.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
@@ -62,7 +62,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written."
 # @(6756) - is Minecraft 1.12.2
 # @(8203) - is Minecraft 1.16.5
 # More can be found by running GetGameVersions
-$GAME_VERSIONS = @(8203)
+$GAME_VERSIONS = @(9366)
 
 # Can be "alpha", "beta" or "release"
 $CLIENT_RELEASE_TYPE = "beta"
@@ -81,7 +81,7 @@ $MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
 #  CLIENT FILE SETTINGS
 #=====================================================================//
 
-$CLIENT_FILE_AUTHOR = "MyName"
+$CLIENT_FILE_AUTHOR = "Bailey"
 
 $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
     "config",
@@ -103,7 +103,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
     "sidebar_buttons.json",
     "sophisticatedcore-client.toml",
     "supplementaries-client.toml",
-    "forge-client.toml")
+    "forge-client.toml",
+    "MouseTweaks.cfg",
+    "lightoverlay.properties")
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbchunks", "config/roughlyenoughitems", "resourcepacks")
 
@@ -136,7 +138,7 @@ $ENABLE_SERVER_FILE_MODULE = $true
 # This will update the "modpackUrl" in the file found at $SERVER_SETUP_CONFIG_PATH
 # to point to your newly created client files on the CurseForge CDN.
 # Default: $false
-$ENABLE_SERVERSTARTER_MODULE = $false
+$ENABLE_SERVERSTARTER_MODULE = $true
 
 # Toggle automatic changelog generator on/off
 # This module requires an older modpack manifest zip to be present, 
@@ -179,7 +181,7 @@ $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
 $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
 
 # Default: "$CLIENT_NAME $MODPACK_VERSION"
-$CLIENT_FILE_DISPLAY_NAME = "MyModpack $MODPACK_VERSION"
+$CLIENT_FILE_DISPLAY_NAME = "Arcane Isles $MODPACK_VERSION"
 
 # Can be "markdown", "text" or "html"
 # Default: $CLIENT_CHANGELOG_TYPE
@@ -197,4 +199,4 @@ $SERVER_RELEASE_TYPE = $CLIENT_RELEASE_TYPE
 $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 
 # Default: $SERVER_FILENAME
-$SERVER_FILE_DISPLAY_NAME = "MyModpack Server $MODPACK_VERSION"
+$SERVER_FILE_DISPLAY_NAME = "Arcane Isles Server $MODPACK_VERSION"

@@ -26,7 +26,6 @@ minecraft:ruined_portal_ocean
 minecraft:ruined_portal_swamp
 minecraft:shipwreck
 minecraft:shipwreck_beached
-ars_elemental:starbuncle_shrine
 byg:stone_arch
 minecraft:stronghold
 minecraft:swamp_hut
@@ -40,4 +39,3 @@ minecraft:village_snowy
 minecraft:village_taiga
 byg:village_tropical
 byg:volcano
-supplementaries:way_sign
