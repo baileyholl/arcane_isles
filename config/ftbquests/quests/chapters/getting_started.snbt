@@ -423,12 +423,19 @@
 				type: "item"
 				item: "ars_nouveau:whirlisprig_charm"
 			}]
-			rewards: [{
-				id: "705F71777A5CA384"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			rewards: [
+				{
+					id: "705F71777A5CA384"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 5468626932468587212L
+				}
+				{
+					id: "0B8D4CB25459679C"
+					type: "item"
+					item: "ars_nouveau:music_disc_aria_biblio"
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -1498,6 +1505,25 @@
 				item: "supplementaries:flax_seeds"
 				count: 2
 			}]
+		}
+		{
+			x: -4.5d
+			y: -8.5d
+			description: ["Summons a raid when performed with a villager nearby. Can be augmented with an emerald to increase the difficulty if you are not playing on Hard.\\n\\nAllows you to obtain the Totem of Undying from Evokers when performing a Hard raid."]
+			dependencies: ["13FC7955A316CA5E"]
+			id: "0B95AB4FEFB31D49"
+			tasks: [
+				{
+					id: "63662D98340AF154"
+					type: "item"
+					item: "ars_nouveau:ritual_challenge"
+				}
+				{
+					id: "26E5343C61F004C6"
+					type: "item"
+					item: "minecraft:totem_of_undying"
+				}
+			]
 		}
 	]
 	quest_links: [ ]
