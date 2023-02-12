@@ -25,3 +25,4 @@ ModListCreator-4.0.2-fatjar.jar
 ESM/
 config/skyblockbuilder/data/
 config/defaultoptions/servers.dat
+*.bak
