@@ -60,19 +60,11 @@
     //    damage            = Attacking others, or getting attacked
     //    healing           = Getting healed and saturated on spawn
     "spawnProtectionEvents": [
-      "interact_entities",
-      "interact_blocks",
       "mob_griefing",
-      "explosions",
-      "crop_grow",
-      "mobs_spawn",
-      "mobs_spawn_egg",
-      "damage",
-      "healing"
     ],
     
     // The radius of chunks where to apply spawn protection. In this area, only op players can avoid this.
-    "spawnProtectionRadius": 5,
+    "spawnProtectionRadius": 2,
     
     "Height": {
     
