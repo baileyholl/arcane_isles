@@ -72,7 +72,7 @@
     ],
     
     // The radius of chunks where to apply spawn protection. In this area, only op players can avoid this.
-    "spawnProtectionRadius": 5,
+    "spawnProtectionRadius": 0,
     
     "Height": {
     
