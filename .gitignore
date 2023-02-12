@@ -26,3 +26,4 @@ ESM/
 config/skyblockbuilder/data/
 config/defaultoptions/servers.dat
 *.bak
+*.zip

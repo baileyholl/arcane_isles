@@ -65,7 +65,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written."
 $GAME_VERSIONS = @(9366)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "release"
 
 #=====================================================================//
 #  DEPENDENCIES
@@ -130,7 +130,7 @@ $ENABLE_CLIENT_FILE_MODULE = $true
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.
 # Default: $true
-$ENABLE_MODPACK_UPLOADER_MODULE = $false
+$ENABLE_MODPACK_UPLOADER_MODULE = $true
 
 # Toggle server file feature on/off
 # Default: $true
@@ -146,7 +146,7 @@ $ENABLE_SERVERSTARTER_MODULE = $true
 # This module requires an older modpack manifest zip to be present, 
 # $LAST_MODPACK_VERSION must be set, and the manifest naming must be consistent.
 # Default: $false
-$ENABLE_CHANGELOG_GENERATOR_MODULE = $false
+$ENABLE_CHANGELOG_GENERATOR_MODULE = $true
 # Path to the ChangelogGenerator's output file
 $CHANGELOG_PATH = "$INSTANCE_ROOT/changelogs/changelog_mods_$MODPACK_VERSION.md"
 
