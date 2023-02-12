@@ -705,11 +705,6 @@
 							Items: [ ]
 							id: "ars_nouveau:mob_jar"
 							entityTag: {
-								Motion: [
-									-2.2977671225922253E-4d
-									-0.12d
-									5.2114165318764255E-5d
-								]
 								Health: 5s
 								Invulnerable: 0b
 								Air: 300s
@@ -2255,11 +2250,6 @@
 							Items: [ ]
 							id: "ars_nouveau:mob_jar"
 							entityTag: {
-								Motion: [
-									1.962601141863566E-4d
-									-0.08d
-									-1.1807378094782172E-4d
-								]
 								Health: 5s
 								Invulnerable: 0b
 								Air: 300s
