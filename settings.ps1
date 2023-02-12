@@ -105,7 +105,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
     "supplementaries-client.toml",
     "forge-client.toml",
     "MouseTweaks.cfg",
-    "lightoverlay.properties")
+    "lightoverlay.properties",
+    "jeresources.toml",
+    "sophisticatedstorage-client.toml")
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbchunks", "config/roughlyenoughitems", "resourcepacks")
 
