@@ -227,6 +227,15 @@
 					type: "item"
 					item: "ars_nouveau:scryers_crystal"
 				}
+				{
+					id: "719C43EA57F6CADC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:scryer_scroll"
+						Count: 1b
+						tag: { }
+					}
+				}
 			]
 		}
 		{
@@ -284,6 +293,7 @@
 			y: -6.0d
 			description: ["Allows the usage of Tier 2 glyphs."]
 			dependencies: ["7E99B255A00E8014"]
+			hide: true
 			id: "04F4F5A09F1527B9"
 			tasks: [{
 				id: "56C6A26CA01E53C7"
@@ -318,6 +328,7 @@
 			y: -10.0d
 			description: ["Relay's can be used to transfer source between other jars and relays. Basic relays can support one connection for draining, and one for importing.\\n\\nTo configure a Relay, see the documentation on the Dominion Wand and Source Relay."]
 			dependencies: ["73937DADFAF6DAEE"]
+			hide: true
 			id: "65975BBB8CD2E37D"
 			tasks: [{
 				id: "745C5C62B31CD7E7"
@@ -359,6 +370,7 @@
 			y: -11.5d
 			description: ["Starbuncles can transport items, harvest sourceberries, and pick items off the ground."]
 			dependencies: ["3EA4C9F408CE81EF"]
+			hide: true
 			id: "166A8594ADE733CA"
 			tasks: [{
 				id: "48DD9E39E7ECFFE9"
@@ -392,6 +404,7 @@
 			y: -11.5d
 			description: ["Drygmys provide alternatives to mob farms by generating loot from the mobs around their home. Additional items are created for the number of mobs nearby. Mobs can also be stored and harvested from Containment Jars."]
 			dependencies: ["3EA4C9F408CE81EF"]
+			hide: true
 			id: "6A3154A3D6CC1B97"
 			tasks: [{
 				id: "7E837590FDD6EA87"
@@ -417,6 +430,7 @@
 			y: -10.5d
 			description: ["A Whirlisprig can generate natural materials that are placed within its home, enabling the automation of unique plants materials without harvesting them.\\n\\nThe Whirlisprig has unique happiness requirements and restriction. See the Worn Notebook."]
 			dependencies: ["3EA4C9F408CE81EF"]
+			hide: true
 			id: "00BE258E0FA15BC2"
 			tasks: [{
 				id: "653A4290A7620E8E"
@@ -442,6 +456,7 @@
 			y: -12.0d
 			description: ["A Wixie can autocraft items and potions at the cost of a small amount of Source. Use a Wixie Charm on a Cauldron and use an item you wish to craft, or place them on pedestals adjacent to the wixie.\\n\\nItems will be automatically taken from nearby chests."]
 			dependencies: ["3EA4C9F408CE81EF"]
+			hide: true
 			id: "09327991E8546F09"
 			tasks: [{
 				id: "662DAD8F9B48A4EA"
@@ -467,6 +482,7 @@
 			y: -10.5d
 			description: ["The Dominion Wand is used to configure relays, entities, and other automations in the mod.\\n\\nUsage of the wand is described in the entries that the wand applies to, such as Starbuncles or Relays."]
 			dependencies: ["34602A8B5EB8F541"]
+			hide: true
 			id: "3EA4C9F408CE81EF"
 			tasks: [{
 				id: "5D27952A1D1DE8BF"
@@ -483,6 +499,7 @@
 			y: -10.5d
 			description: ["Like the whirlisprig, a Siren will generate fishing loot based on its happiness. See the Worn Notebook for more information."]
 			dependencies: ["3EA4C9F408CE81EF"]
+			hide: true
 			id: "5E81794FFE9B5C34"
 			tasks: [{
 				id: "6373C5FA80801234"
@@ -504,8 +521,8 @@
 			]
 		}
 		{
-			x: 4.5d
-			y: -8.0d
+			x: 4.0d
+			y: -6.5d
 			description: ["Warp Scrolls are one use items for teleporting within the same dimension. Useful for the nether!\\n\\nUse a scroll while sneaking to set its location. Using the scroll will consume it."]
 			dependencies: ["557EE1C4BE8CEDA4"]
 			id: "7C783A5073522204"
@@ -526,8 +543,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -8.0d
+			x: 5.5d
+			y: -6.5d
 			subtitle: "Warp Portals"
 			description: ["Warp Portals can be created by building a frame of Sourcestone and throwing a warp scroll into it with a full source jar nearby.\\n\\nPortals can be any size and flat or vertical. Once a portal is created, it does not require source to warp you. Use a dominion wand on the portal to change the texture.\\n\\nPortal Frames can be made of any sourcestone variant as well as Mirrorweave."]
 			dependencies: ["7C783A5073522204"]
@@ -558,8 +575,8 @@
 			]
 		}
 		{
-			x: -2.5d
-			y: -11.5d
+			x: -3.5d
+			y: -11.0d
 			description: ["Splitter Relay's support an infinite number of connections in both directions."]
 			dependencies: ["65975BBB8CD2E37D"]
 			id: "390AF620B9A909CA"
@@ -575,8 +592,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -13.0d
+			x: -4.5d
+			y: -12.0d
 			description: ["Warper Relay's can teleport Source between other warp relays an infinite distance. Warping beyond 30 blocks has a chance to lose source in the process."]
 			dependencies: ["390AF620B9A909CA"]
 			id: "55009434AE8F5DB3"
@@ -609,8 +626,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -9.0d
+			x: 4.5d
+			y: -7.5d
 			description: ["The Alteration Table allows you to add Threads to magical armors. Threads provide a variety of buffs including max mana, elytra flight, spell damage, and more.\\n\\nEach type of magical armor has its own set of Thread Slots, check the documentation before deciding which armor to create."]
 			dependencies: ["557EE1C4BE8CEDA4"]
 			id: "3672A17FB1186495"
@@ -626,10 +643,11 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -9.0d
+			x: 3.0d
+			y: -7.5d
 			description: ["Magebloom is used for crafting magic fiber, used for a variety of items in Ars Nouveau.\\n\\nMageblooms also grant a bonus to the Agronomic Sourcelink when they grow."]
 			dependencies: ["34602A8B5EB8F541"]
+			hide: true
 			id: "557EE1C4BE8CEDA4"
 			tasks: [{
 				id: "01F637FA0076295B"
@@ -788,8 +806,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -10.0d
+			x: 5.5d
+			y: -8.5d
 			description: ["Boosts the wearers maximum mana."]
 			dependencies: ["3672A17FB1186495"]
 			id: "53923CB32491CB40"
@@ -805,8 +823,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: -9.0d
+			x: 6.0d
+			y: -7.5d
 			description: ["Increases movement speed and grants step assist in slot 3."]
 			dependencies: ["3672A17FB1186495"]
 			id: "06792A76D1940F5C"
@@ -1020,10 +1038,10 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -10.0d
+			x: 3.0d
+			y: -9.0d
 			description: ["Allows you to bind multiple rituals to a single location. Can also be used decoratively."]
-			dependencies: ["26E668C31E63E807"]
+			dependencies: ["34602A8B5EB8F541"]
 			id: "03FCB167C979526B"
 			tasks: [{
 				id: "7E7CE015752A81C5"
@@ -1117,10 +1135,10 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: -7.5d
+			x: -1.0d
+			y: -10.5d
 			description: ["Spell Turrets can cast spells at the cost of Source. To set a spell, use your book on the turret while sneaking, or use Spell Parchment.\\n\\nBasic turrets need redstone and a nearby source jar to activate."]
-			dependencies: ["76D63B3E394212ED"]
+			dependencies: ["73937DADFAF6DAEE"]
 			hide: true
 			id: "55610EA99C268B52"
 			tasks: [{
@@ -1149,8 +1167,8 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: -5.5d
+			x: -3.0d
+			y: -12.0d
 			description: ["Cannot be moved by pistons, but can be set to face a block at any angle using the Dominion Wand.\\n\\nAccepts Prism Lenses."]
 			dependencies: ["1FE9F44B1CEE2D5A"]
 			id: "216BE3B75FE7DB74"
@@ -1173,8 +1191,8 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: -6.5d
+			x: -2.0d
+			y: -11.0d
 			description: ["Redirects a spell projectile in the direction the prism is facing.\\n\\nCan be moved with a piston for making elaborate redstone contraptions."]
 			dependencies: ["55610EA99C268B52"]
 			id: "1FE9F44B1CEE2D5A"
@@ -1199,8 +1217,8 @@
 			]
 		}
 		{
-			x: 1.0d
-			y: -6.5d
+			x: -0.5d
+			y: -12.0d
 			description: ["Casts a spell on a configurable timer. Redstone will disable casting.\\n\\nCasts Projectile and Redstone glyphs at a discount."]
 			dependencies: ["55610EA99C268B52"]
 			id: "241BC843A63F89EA"
@@ -1224,8 +1242,8 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: -6.0d
+			x: -1.5d
+			y: -12.0d
 			description: ["Casts all spells at a great discount."]
 			dependencies: ["55610EA99C268B52"]
 			id: "6E97B44CD3770C45"
@@ -1249,8 +1267,8 @@
 			]
 		}
 		{
-			x: 5.5d
-			y: -7.0d
+			x: 5.0d
+			y: -5.5d
 			description: ["A multi-use warp scroll that can be used cross dimensionally.\\n\\nBuilds a temporary portal on use. Using in a Warp Portal will consume the scroll but create a cross dimensional portal."]
 			dependencies: ["7C783A5073522204"]
 			id: "4BB15955D2F4159A"
@@ -1484,6 +1502,7 @@
 			}]
 		}
 		{
+			icon: "minecraft:string"
 			x: 0.0d
 			y: -11.0d
 			description: ["Essences can convert and craft a variety of items. Check JEI for all recipes.\\n\\nCraft wheat seeds with a Manipulation Essence for Flax Seeds."]

@@ -280,6 +280,7 @@
 			x: 0.0d
 			y: 1.5d
 			description: ["Many items and blocks added by Ars Nouveau and addons are not covered in these quests. See the Worn Notebook for a full list."]
+			dependencies: ["34602A8B5EB8F541"]
 			hide: true
 			id: "632AD43DFB1E7DB7"
 			tasks: [{
