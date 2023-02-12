@@ -257,7 +257,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -3.0d
 			y: -7.0d
 			description: ["Mana can be increased by learning new glyphs, wearing magical armor, special curios, and upgrading your spell book.\\n\\nPotions, foods, and other items can also provide a boost."]
 			dependencies: ["7E99B255A00E8014"]
@@ -984,11 +984,6 @@
 					item: "ars_nouveau:glyph_projectile"
 				}
 				{
-					id: "6C5DFE58A4CC1FF2"
-					type: "item"
-					item: "ars_nouveau:glyph_harm"
-				}
-				{
 					id: "614B73489A7BE895"
 					type: "item"
 					item: "ars_nouveau:glyph_self"
@@ -1524,6 +1519,57 @@
 					item: "minecraft:totem_of_undying"
 				}
 			]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			description: ["Creates a light the color of the spell."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "34B2E80D4024C87D"
+			tasks: [{
+				id: "030AAF9A66FAFA2E"
+				type: "item"
+				item: "ars_nouveau:glyph_light"
+			}]
+			rewards: [{
+				id: "55856BE7D4A8F1E1"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			description: ["Deals damage to the hit target."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "1F6ACFF389DBA311"
+			tasks: [{
+				id: "4AA48B9A7AB938FE"
+				type: "item"
+				item: "ars_nouveau:glyph_harm"
+			}]
+			rewards: [{
+				id: "229DF43AC07D04F8"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			description: ["Smelting copper, wood, and stone early will be a reliable form of EXP. Essential for creating Glyphs."]
+			dependencies: ["5434FD35898DA564"]
+			id: "52D9D14AD11A3707"
+			tasks: [{
+				id: "2371282A7178A029"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+			rewards: [{
+				id: "4E7CD35BCD28A85D"
+				type: "xp"
+				xp: 20
+			}]
 		}
 	]
 	quest_links: [ ]
