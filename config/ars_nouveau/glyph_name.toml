@@ -16,5 +16,5 @@
 	augment_limits = []
 	#The tier of the glyph
 	#Range: 1 ~ 99
-	glyph_tier = 2
+	glyph_tier = 1
 
