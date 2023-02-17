@@ -6,5 +6,5 @@
 	#Range: 0 ~ 10000
 	ritual_source = 0
 	#The biome to use for the starting island ritual, like minecraft:plains. Providing nothing will not change the biome.
-	ritual_biome = ""
+	ritual_biome = "minecraft:plains"
 
