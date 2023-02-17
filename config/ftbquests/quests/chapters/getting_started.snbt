@@ -1843,7 +1843,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: 1.0d
 			y: -7.0d
 			description: ["Smelting copper, wood, and stone early will be a reliable form of EXP. Essential for creating Glyphs."]
 			dependencies: ["5434FD35898DA564"]
@@ -1857,6 +1857,31 @@
 				id: "4E7CD35BCD28A85D"
 				type: "xp"
 				xp: 20
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			description: ["Used to share glyphs with friends.\\n\\nThe number of glyphs recorded will increase the amount of EXP required to use the codex. Codex consumed on use."]
+			dependencies: ["7E99B255A00E8014"]
+			id: "01887388E6E52978"
+			tasks: [{
+				id: "5744DBF8ABC501D5"
+				type: "item"
+				item: {
+					id: "ars_nouveau:annotated_codex"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "3130C6CAAD7B0D9A"
+				type: "item"
+				item: {
+					id: "ars_nouveau:annotated_codex"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]
