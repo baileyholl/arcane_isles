@@ -74,12 +74,59 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "1D8A7C1A5356D47F"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 857495032092348212L
-			}]
+			rewards: [
+				{
+					id: "1D8A7C1A5356D47F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 857495032092348212L
+				}
+				{
+					id: "4ED8335632F9F75B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "A classic."
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Fireball!"
+										recipe: {
+											size: 7
+											part0: "ars_nouveau:glyph_projectile"
+											part1: "ars_nouveau:glyph_ignite"
+											part2: "ars_nouveau:glyph_explosion"
+											part3: "ars_nouveau:glyph_amplify"
+											part4: "ars_nouveau:glyph_amplify"
+											part5: "ars_nouveau:glyph_aoe"
+											part6: "ars_nouveau:glyph_aoe"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Fireball!\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -1.5d

@@ -295,14 +295,58 @@
 				advancement: "hexcasting:enlightenment"
 				criterion: ""
 			}]
-			rewards: [{
-				id: "2CBF8706ED828F50"
-				type: "command"
-				title: "Nothing... is holding you back."
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:flight @p"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "2CBF8706ED828F50"
+					type: "command"
+					title: "Nothing... is holding you back."
+					icon: "hexcasting:scroll"
+					command: "/hexcasting patterns give hexcasting:flight @p"
+					player_command: false
+				}
+				{
+					id: "47626E6F038826E3"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "Heroes are so straightforward, so easily befuddled..."
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "KirinDave's Sinister Switch"
+										recipe: {
+											part3: "ars_nouveau:glyph_amplify"
+											size: 4
+											part0: "ars_nouveau:glyph_self"
+											part1: "ars_nouveau:glyph_summon_decoy"
+											part2: "ars_nouveau:glyph_blink"
+										}
+										spellColor: {
+											r: 25
+											b: 255
+											g: 255
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"KirinDave's Sinister Switch\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Hint: Open only if needed."

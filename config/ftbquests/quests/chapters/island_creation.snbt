@@ -28,7 +28,10 @@
 		{
 			x: 0.0d
 			y: 1.5d
-			description: ["Archwood Islands contain new and otherwise unobtainable resources. Each Ritual will require a full Source Jar near the Ritual Brazier. Perform the ritual 14+ blocks from any other blocks, or you may miss out on parts of the island.\\n\\nUse Manipulation Essence to convert Archwood Saplings for the island of your choice."]
+			description: [
+				"Archwood Islands contain new and otherwise unobtainable resources. Each Ritual will require a full Source Jar near the Ritual Brazier. Perform the ritual 14+ blocks from any other blocks, or you may miss out on parts of the island.\\n\\nUse Manipulation Essence to convert Archwood Saplings for the island of your choice."
+				"\\nName entities to remove them from the passive mob cap."
+			]
 			dependencies: ["73937DADFAF6DAEE"]
 			hide: true
 			id: "436678048E9C48BB"
@@ -36,6 +39,11 @@
 				id: "0E1DF835702B31C4"
 				type: "checkmark"
 				title: "Island Conjuring"
+			}]
+			rewards: [{
+				id: "403056FA3AD92BD3"
+				type: "item"
+				item: "ars_nouveau:glyph_name"
 			}]
 		}
 		{
@@ -390,12 +398,57 @@
 				type: "item"
 				item: "ars_nouveau:ritual_containment"
 			}]
-			rewards: [{
-				id: "1B5B354184C68731"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			rewards: [
+				{
+					id: "1B5B354184C68731"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 5468626932468587212L
+				}
+				{
+					id: "3293D080818B3D76"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "Sometimes you just need to get over that wall."
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Vault"
+										recipe: {
+											size: 5
+											part0: "ars_nouveau:glyph_self"
+											part1: "ars_nouveau:glyph_launch"
+											part2: "ars_nouveau:glyph_delay"
+											part3: "ars_nouveau:glyph_leap"
+											part4: "ars_nouveau:glyph_slowfall"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Vault\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -1.5d
@@ -534,10 +587,54 @@
 				type: "item"
 				item: "ars_caelum:ritual_conjure_island_village"
 			}]
+			rewards: [{
+				id: "098E95769DB13BF8"
+				type: "item"
+				item: {
+					id: "ars_nouveau:caster_tome"
+					Count: 1b
+					tag: {
+						"ars_nouveau:caster": {
+							flavor: "Creates a fire that quickly freezes to ice."
+							hidden_recipe: ""
+							is_hidden: 0b
+							current_slot: 0
+							spell_count: 1
+							spells: {
+								spell0: {
+									name: "Farfalla's Frosty Flames"
+									recipe: {
+										size: 5
+										part0: "ars_nouveau:glyph_projectile"
+										part1: "ars_nouveau:glyph_ignite"
+										part2: "ars_nouveau:glyph_delay"
+										part3: "ars_nouveau:glyph_conjure_water"
+										part4: "ars_nouveau:glyph_freeze"
+									}
+									spellColor: {
+										r: 255
+										b: 180
+										g: 25
+									}
+									sound: {
+										volume: 1.0f
+										pitch: 1.0f
+										soundTag: { }
+									}
+								}
+							}
+						}
+						display: {
+							Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Farfalla's Frosty Flames\"}"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 4.5d
 			y: -0.5d
+			description: ["Slay the dragon!"]
 			dependencies: ["656A7A573BD36A4F"]
 			id: "4B5ECEA5395D968C"
 			tasks: [{
@@ -546,11 +643,56 @@
 				advancement: "minecraft:end/kill_dragon"
 				criterion: ""
 			}]
-			rewards: [{
-				id: "11DC07037E8293AD"
-				type: "item"
-				item: "minecraft:chorus_flower"
-			}]
+			rewards: [
+				{
+					id: "11DC07037E8293AD"
+					type: "item"
+					item: "minecraft:chorus_flower"
+				}
+				{
+					id: "74F715E491CCCB0D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "Launches the caster into the air and grants temporary elytra flight!"
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Takeoff!"
+										recipe: {
+											size: 5
+											part0: "ars_nouveau:glyph_self"
+											part1: "ars_nouveau:glyph_launch"
+											part2: "ars_nouveau:glyph_launch"
+											part3: "ars_nouveau:glyph_glide"
+											part4: "ars_nouveau:glyph_duration_down"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Takeoff!\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 	]
 	quest_links: [ ]

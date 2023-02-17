@@ -300,11 +300,57 @@
 				type: "item"
 				item: "ars_nouveau:apprentice_spell_book"
 			}]
-			rewards: [{
-				id: "4F60473C1216A84E"
-				type: "item"
-				item: "ars_scalaes:glyph_resize"
-			}]
+			rewards: [
+				{
+					id: "4F60473C1216A84E"
+					type: "item"
+					item: "ars_scalaes:glyph_resize"
+				}
+				{
+					id: "66AF07C9D61D4FDB"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "Creates three snaring projectiles."
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Arachne's Weaving"
+										recipe: {
+											size: 6
+											part0: "ars_nouveau:glyph_projectile"
+											part1: "ars_nouveau:glyph_split"
+											part2: "ars_nouveau:glyph_split"
+											part3: "ars_nouveau:glyph_snare"
+											part4: "ars_nouveau:glyph_extend_time"
+											part5: "ars_nouveau:glyph_extend_time"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Arachne's Weaving\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -5.5d
@@ -493,6 +539,49 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "1C92E9D2608B20F9"
+				type: "item"
+				item: {
+					id: "ars_nouveau:caster_tome"
+					Count: 1b
+					tag: {
+						"ars_nouveau:caster": {
+							flavor: "Snares the target and grants other targets Glowing."
+							hidden_recipe: ""
+							is_hidden: 0b
+							current_slot: 0
+							spell_count: 1
+							spells: {
+								spell0: {
+									name: "Glow Trap"
+									recipe: {
+										size: 5
+										part0: "ars_nouveau:glyph_touch"
+										part1: "ars_nouveau:glyph_rune"
+										part2: "ars_nouveau:glyph_snare"
+										part3: "ars_nouveau:glyph_extend_time"
+										part4: "ars_nouveau:glyph_light"
+									}
+									spellColor: {
+										r: 255
+										b: 180
+										g: 25
+									}
+									sound: {
+										volume: 1.0f
+										pitch: 1.0f
+										soundTag: { }
+									}
+								}
+							}
+						}
+						display: {
+							Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Glow Trap\"}"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 4.5d
@@ -514,9 +603,50 @@
 					table_id: 5468626932468587212L
 				}
 				{
-					id: "79B6A546A27A04BB"
+					id: "1D74BB026FA54660"
 					type: "item"
-					item: "ars_nouveau:scryers_crystal"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "The squid's Lovecraftian roots appear to make it immune."
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Gootastic's Telekinetic Fishing Rod"
+										recipe: {
+											size: 8
+											part0: "ars_nouveau:glyph_projectile"
+											part1: "ars_nouveau:glyph_launch"
+											part2: "ars_nouveau:glyph_amplify"
+											part3: "ars_nouveau:glyph_amplify"
+											part4: "ars_nouveau:glyph_delay"
+											part5: "ars_nouveau:glyph_pull"
+											part6: "ars_nouveau:glyph_amplify"
+											part7: "ars_nouveau:glyph_amplify"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Gootastic's Telekinetic Fishing Rod\"}"
+							}
+						}
+					}
 				}
 			]
 		}
@@ -636,11 +766,58 @@
 				type: "item"
 				item: "ars_nouveau:alteration_table"
 			}]
-			rewards: [{
-				id: "0007AD58D7410388"
-				type: "item"
-				item: "ars_nouveau:blank_thread"
-			}]
+			rewards: [
+				{
+					id: "0007AD58D7410388"
+					type: "item"
+					item: "ars_nouveau:blank_thread"
+				}
+				{
+					id: "755E42CF3A218E42"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "To the MOOn"
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Bailey's Bovine Rocket"
+										recipe: {
+											size: 7
+											part0: "ars_nouveau:glyph_projectile"
+											part1: "ars_nouveau:glyph_launch"
+											part2: "ars_nouveau:glyph_amplify"
+											part3: "ars_nouveau:glyph_amplify"
+											part4: "ars_nouveau:glyph_delay"
+											part5: "ars_nouveau:glyph_explosion"
+											part6: "ars_nouveau:glyph_amplify"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Bailey's Bovine Rocket\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -931,11 +1108,55 @@
 				type: "item"
 				item: "ars_nouveau:glyph_blink"
 			}]
-			rewards: [{
-				id: "685C327BF8930493"
-				type: "item"
-				item: "ars_nouveau:glyph_intangible"
-			}]
+			rewards: [
+				{
+					id: "685C327BF8930493"
+					type: "item"
+					item: "ars_nouveau:glyph_intangible"
+				}
+				{
+					id: "5100AD33985C0410"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "Teleportation, with style!"
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Warp Impact"
+										recipe: {
+											part3: "ars_nouveau:glyph_aoe"
+											size: 4
+											part0: "ars_nouveau:glyph_projectile"
+											part1: "ars_nouveau:glyph_blink"
+											part2: "ars_nouveau:glyph_explosion"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Warp Impact\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -6.5d
@@ -1281,15 +1502,63 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "4BE233382FA73F74"
-				type: "item"
-				item: {
-					id: "ars_nouveau:stable_warp_scroll"
-					Count: 1b
-					tag: { }
+			rewards: [
+				{
+					id: "4BE233382FA73F74"
+					type: "item"
+					item: {
+						id: "ars_nouveau:stable_warp_scroll"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+				{
+					id: "6C84A2CADAF4BEB0"
+					type: "item"
+					item: {
+						id: "ars_nouveau:caster_tome"
+						Count: 1b
+						tag: {
+							"ars_nouveau:caster": {
+								flavor: "Summons orbiting projectiles that will launch nearby enemies."
+								hidden_recipe: ""
+								is_hidden: 0b
+								current_slot: 0
+								spell_count: 1
+								spells: {
+									spell0: {
+										name: "Knocked out of Orbit"
+										recipe: {
+											size: 8
+											part0: "ars_nouveau:glyph_orbit"
+											part1: "ars_nouveau:glyph_launch"
+											part2: "ars_nouveau:glyph_amplify"
+											part3: "ars_nouveau:glyph_amplify"
+											part4: "ars_nouveau:glyph_delay"
+											part5: "ars_nouveau:glyph_gust"
+											part6: "ars_nouveau:glyph_amplify"
+											part7: "ars_nouveau:glyph_amplify"
+										}
+										spellColor: {
+											r: 255
+											b: 180
+											g: 25
+										}
+										sound: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: { }
+										}
+									}
+								}
+							}
+							display: {
+								Name: "{\"italic\":true,\"color\":\"dark_purple\",\"text\":\"Knocked out of Orbit\"}"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -2.5d
