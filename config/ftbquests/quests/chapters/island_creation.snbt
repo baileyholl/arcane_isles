@@ -547,9 +547,9 @@
 				criterion: ""
 			}]
 			rewards: [{
-				id: "25F0B78CFE7EC0D6"
+				id: "11DC07037E8293AD"
 				type: "item"
-				item: "minecraft:chorus_fruit"
+				item: "minecraft:chorus_flower"
 			}]
 		}
 	]
