@@ -1,12 +1,12 @@
 {
   "type": "ars_nouveau:crush",
   "input": {
-    "item": "minecraft:amethyst_shard"
+    "item": "minecraft:amethyst_block"
   },
   "output": [
     {
       "chance": 1.0,
-      "count": 5,
+      "count": 20,
       "item": "hexcasting:amethyst_dust",
       "maxRange": 1
     }
