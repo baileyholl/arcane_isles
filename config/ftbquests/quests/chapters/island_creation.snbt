@@ -737,6 +737,24 @@
 				item: "ars_nouveau:glyph_animate_block"
 			}]
 		}
+		{
+			x: 5.0d
+			y: -2.5d
+			description: ["Convert amethyst blocks to corundum with manipulation essence.\\n\\nOther colors can be obtained with dye."]
+			dependencies: ["3AD4C88E5DE9C0AF"]
+			id: "5002D88B38750D31"
+			tasks: [{
+				id: "2B9BA0AD9F93C2D3"
+				type: "item"
+				item: "quark:white_corundum"
+			}]
+			rewards: [{
+				id: "34DFBBC575AF0FA5"
+				type: "item"
+				item: "quark:white_corundum"
+				count: 8
+			}]
+		}
 	]
 	quest_links: [ ]
 }

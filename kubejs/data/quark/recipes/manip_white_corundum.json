@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "ars_nouveau:manipulation_essence"
+    },
+    "X": {
+      "tag": "forge:storage_blocks/amethyst"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "item": "quark:white_corundum"
+  }
+}
