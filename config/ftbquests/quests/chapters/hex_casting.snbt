@@ -1114,6 +1114,7 @@
 			}]
 		}
 		{
+			title: "Hexal Great Spells"
 			x: 0.5d
 			y: 0.5d
 			description: ["By offering amethyst and relevant items, you can get copies of every great spell."]
@@ -1122,7 +1123,7 @@
 			tasks: [{
 				id: "03526F43637F1759"
 				type: "advancement"
-				title: "Hexal Greater Spells"
+				title: "Hexal Great Spells"
 				icon: "hexcasting:scroll"
 				advancement: "hexcasting:enlightenment"
 				criterion: ""
