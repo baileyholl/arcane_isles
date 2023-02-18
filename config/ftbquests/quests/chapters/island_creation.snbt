@@ -694,6 +694,32 @@
 				}
 			]
 		}
+		{
+			x: 3.0d
+			y: 3.5d
+			description: ["The nether is reached by building a standard nether portal.\\n\\nPrepare some spells and food before you go! Mana Regen is reduced in this pack and can be restored by consuming regen items like berries and potions."]
+			dependencies: ["28CE515EC64C90F8"]
+			id: "529B4508B700B199"
+			tasks: [{
+				id: "160B3AB310492D14"
+				type: "dimension"
+				icon: "minecraft:obsidian"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [
+				{
+					id: "07A0185516A34AEC"
+					type: "item"
+					item: "ars_nouveau:source_berry_roll"
+					count: 8
+				}
+				{
+					id: "2D4EDBD58CF1CB86"
+					type: "item"
+					item: "ars_nouveau:source_berry_pie"
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }
