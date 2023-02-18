@@ -720,6 +720,23 @@
 				}
 			]
 		}
+		{
+			x: 4.5d
+			y: 3.5d
+			description: ["Unlocks tier 2 glyphs and equipment."]
+			dependencies: ["529B4508B700B199"]
+			id: "6F6796259CC97E07"
+			tasks: [{
+				id: "07C73614E330373D"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+			rewards: [{
+				id: "69475025F0AFC2A1"
+				type: "item"
+				item: "ars_nouveau:glyph_animate_block"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
