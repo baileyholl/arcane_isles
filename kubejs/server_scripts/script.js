@@ -1,6 +1,6 @@
 // priority: 0
 
-console.info('Hello, World! (You will see this line every time server resources reload)')
+console.info('Welcome to Arcane Isles')
 
 ServerEvents.recipes(event => {
 	// Change recipes here
