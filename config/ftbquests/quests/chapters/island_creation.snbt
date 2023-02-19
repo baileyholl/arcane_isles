@@ -319,24 +319,6 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -2.5d
-			description: ["Combining Amethyst with a book has curious results."]
-			dependencies: ["7D9EFB225A839AAD"]
-			id: "0415DA254AB79A7C"
-			tasks: [{
-				id: "4FCF1073F6E33765"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "hexcasting:thehexbook"
-					}
-				}
-			}]
-		}
-		{
 			x: -1.0d
 			y: 5.0d
 			description: ["Summons Guardians. Can be augmented with a Sea Lantern to summon the Elder Guardian."]
