@@ -34,3 +34,8 @@
 	#cooldown for the active ability of wixie
 	wixie_cooldown = 100
 
+#Hexcasting Compat
+["HEX CASTING"]
+	#media value of a source gem
+	source_media = 50000
+
