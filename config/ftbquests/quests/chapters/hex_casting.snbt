@@ -465,17 +465,28 @@
 				type: "item"
 				item: "ars_nouveau:source_gem"
 			}]
-			rewards: [{
-				id: "01D34A85327A40F0"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "hexcasting:thehexbook"
+			rewards: [
+				{
+					id: "01D34A85327A40F0"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "hexcasting:thehexbook"
+						}
 					}
 				}
-			}]
+				{
+					id: "20C91B39ADAF1947"
+					type: "advancement"
+					title: "The book seems... familiar, somehow."
+					team_reward: true
+					auto: "enabled"
+					advancement: "hexcasting:root"
+					criterion: ""
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -534,7 +545,7 @@
 				""
 				"Normally Hexcasting is powered exclusively by Amethyst Shards, Dust and Charged Crystals. But in this pack, Source Gems and Source Gem Blocks also work (at the same value as Amethyst shards), to facilitate an earlier start."
 				""
-				"Good luck, have fun, and remember Hexcasting questions should go to the Hexcasting discord or the Hexcasting section of the Arcane Skies discussion on the Ars forum."
+				"Good luck, have fun, and remember Hexcasting questions should go to the Hexcasting discord or the Hexcasting section of the Arcane Isles discussion on the Ars forum."
 			]
 			dependencies: ["4B583A4181B3B0C1"]
 			id: "33D20298A810E03C"
