@@ -30,12 +30,12 @@ $MODPACK_NAME = "arcane-isles"
 $CLIENT_NAME = "arcane-isles"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.1.1"
+$MODPACK_VERSION = "1.2.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
 # Should be "$null" if this is the first release
-$LAST_MODPACK_VERSION = "1.1.0"
+$LAST_MODPACK_VERSION = "1.1.1"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
