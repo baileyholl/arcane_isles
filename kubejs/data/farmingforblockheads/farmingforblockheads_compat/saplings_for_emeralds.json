@@ -53,6 +53,7 @@
         { "output": "byg:blue_enchanted_sapling" },
         { "output": "byg:baobab_sapling" },
         { "output": "byg:aspen_sapling" },
-        { "output": "minecraft:mangrove_propagule" }
+        { "output": "minecraft:mangrove_propagule" },
+		{ "output": "quark:ancient_sapling" }
     ]
 }

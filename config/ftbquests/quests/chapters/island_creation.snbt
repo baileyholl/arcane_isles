@@ -737,6 +737,18 @@
 				count: 8
 			}]
 		}
+		{
+			x: 1.5d
+			y: 1.0d
+			description: ["Summons a variety of animals based on the biome it is performed in."]
+			dependencies: ["209971171B86E7E9"]
+			id: "185FB82A01372282"
+			tasks: [{
+				id: "10E2D6C3731D5108"
+				type: "item"
+				item: "ars_nouveau:ritual_animal_summon"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

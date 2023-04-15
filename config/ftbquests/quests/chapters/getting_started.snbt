@@ -447,7 +447,7 @@
 		}
 		{
 			x: 4.0d
-			y: -11.5d
+			y: -9.5d
 			description: ["Drygmys provide alternatives to mob farms by generating loot from the mobs around their home. Additional items are created for the number of mobs nearby. Mobs can also be stored and harvested from Containment Jars."]
 			dependencies: ["3EA4C9F408CE81EF"]
 			hide: true
@@ -868,8 +868,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -12.5d
+			x: 5.5d
+			y: -9.5d
 			description: ["Containment Jars provide decorative and functional storage for mobs. To store a mob in a jar, perform the Ritual of Containment with a Containment Jar nearby.\\n\\nSome mobs can be interacted with while in the jar, including chickens, sheep, villagers, cows, and more. Cast Dispel on a jar to release the mob."]
 			dependencies: ["6A3154A3D6CC1B97"]
 			id: "60935DDD3F0B3E00"
@@ -1194,7 +1194,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -5.0d
 			y: -5.5d
 			description: ["Duplicates spells onto nearby similar blocks.\\n\\nVein mining!"]
 			dependencies: ["04F4F5A09F1527B9"]
@@ -1755,10 +1755,10 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -5.5d
+			x: -2.0d
+			y: -0.5d
 			description: ["Amplifies the power of most spells."]
-			dependencies: ["04F4F5A09F1527B9"]
+			dependencies: ["7E99B255A00E8014"]
 			id: "537E72FF019B1814"
 			tasks: [{
 				id: "4CFE9073C9E040FB"
@@ -2095,8 +2095,8 @@
 					entityId: "minecraft:wandering_trader"
 				}
 			}
-			x: 6.0d
-			y: -13.5d
+			x: 7.0d
+			y: -9.5d
 			description: ["Capture a Wandering Trader in a jar and trade him away!"]
 			dependencies: ["60935DDD3F0B3E00"]
 			can_repeat: true
@@ -2120,6 +2120,49 @@
 				type: "choice"
 				exclude_from_claim_all: true
 				table_id: 2857586053021315683L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -11.5d
+			description: ["Storage Lecterns and Bookwyrms allow you to view, craft, and manage multiple inventories from a single UI. "]
+			dependencies: ["3EA4C9F408CE81EF"]
+			id: "232C305BA7E6936F"
+			tasks: [
+				{
+					id: "17BED865163840E5"
+					type: "item"
+					item: "ars_nouveau:bookwyrm_charm"
+				}
+				{
+					id: "42B89A7E91AB97C2"
+					type: "item"
+					item: "ars_nouveau:storage_lectern"
+				}
+			]
+			rewards: [{
+				id: "24CE348B4346716A"
+				type: "item"
+				item: "ars_nouveau:repository"
+				count: 8
+			}]
+		}
+		{
+			x: 5.0d
+			y: -12.5d
+			description: ["A Display Case is used for tracking the fill level of a specific item or scroll."]
+			dependencies: ["232C305BA7E6936F"]
+			id: "1E2C119DB7A4430B"
+			tasks: [{
+				id: "64B651B45AC9B583"
+				type: "item"
+				item: "ars_nouveau:item_detector"
+			}]
+			rewards: [{
+				id: "7DA0B449AC82C0B5"
+				type: "item"
+				item: "ars_nouveau:item_detector"
+				count: 3
 			}]
 		}
 	]

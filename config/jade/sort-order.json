@@ -44,6 +44,7 @@
   "cookingforblockheads:oven": null,
   "cookingforblockheads:fridge": null,
   "cookingforblockheads:sink": null,
+  "ars_nouveau:mob_jar": null,
   "cookingforblockheads:milk_jar": null,
   "cookingforblockheads:toaster": null,
   "cookingforblockheads:oven": null,
@@ -88,5 +89,6 @@
   "jade:registry_name": null,
   "jade:mod_name": null,
   "jade:distance": null,
-  "jade:block_face": null
+  "jade:block_face": null,
+  "ars_nouveau:mob_jar": null
 }
