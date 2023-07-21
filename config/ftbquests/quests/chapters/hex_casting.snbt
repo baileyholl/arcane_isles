@@ -1,59 +1,57 @@
 {
-	id: "12B9EFC8C84658B1"
-	group: ""
-	order_index: 3
-	filename: "hex_casting"
-	title: "Hex Casting"
-	icon: "hexcasting:creative_unlocker"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hex_casting"
+	group: ""
+	icon: "hexcasting:creative_unlocker"
+	id: "12B9EFC8C84658B1"
 	images: [
 		{
+			click: "https://talia-12.github.io/Hexal/"
+			corner: false
+			dependency: "4B583A4181B3B0C1"
+			dev: false
+			height: 1.0d
+			hover: ["Hexal Online Documentation"]
+			image: "hexcasting:textures/item/spellbook_empty.png"
+			rotation: 0.0d
+			width: 1.0d
 			x: -13.0d
 			y: -1.5d
-			width: 1.0d
-			height: 1.0d
-			rotation: 0.0d
-			image: "hexcasting:textures/item/spellbook_empty.png"
-			hover: ["Hexal Online Documentation"]
-			click: "https://talia-12.github.io/Hexal/"
-			dev: false
-			corner: false
-			dependency: "4B583A4181B3B0C1"
 		}
 		{
+			click: "https://gamma-delta.github.io/HexMod/"
+			corner: false
+			dependency: "4B583A4181B3B0C1"
+			dev: false
+			height: 1.0d
+			hover: ["Hexcasting Online Documentation"]
+			image: "hexcasting:textures/item/patchouli_book.png"
+			rotation: 0.0d
+			width: 1.0d
 			x: -13.0d
 			y: -0.5d
-			width: 1.0d
-			height: 1.0d
-			rotation: 0.0d
-			image: "hexcasting:textures/item/patchouli_book.png"
-			hover: ["Hexcasting Online Documentation"]
-			click: "https://gamma-delta.github.io/HexMod/"
-			dev: false
-			corner: false
-			dependency: "4B583A4181B3B0C1"
 		}
 		{
+			click: "https://forum.petra-k.at/viewforum.php?f=2"
+			corner: false
+			dependency: "4B583A4181B3B0C1"
+			dev: false
+			height: 1.0d
+			hover: ["The Hexcasting Forums - Share Ideas Here!"]
+			image: "hexcasting:textures/block/akashic_bookshelf.png"
+			rotation: 0.0d
+			width: 1.0d
 			x: -13.0d
 			y: -2.5d
-			width: 1.0d
-			height: 1.0d
-			rotation: 0.0d
-			image: "hexcasting:textures/block/akashic_bookshelf.png"
-			hover: ["The Hexcasting Forums - Share Ideas Here!"]
-			click: "https://forum.petra-k.at/viewforum.php?f=2"
-			dev: false
-			corner: false
-			dependency: "4B583A4181B3B0C1"
 		}
 	]
+	order_index: 3
+	quest_links: [ ]
 	quests: [
 		{
-			title: "The First Step Down"
-			icon: "minecraft:ender_eye"
-			x: -11.0d
-			y: 0.5d
+			dependencies: ["4B583A4181B3B0C1"]
+			dependency_requirement: "one_completed"
 			description: [
 				"For you, magic is a vital force eager to satisfy your whim. You fulfill"
 				"the contract, and Nature obeys you. But you know that there has to"
@@ -66,21 +64,20 @@
 				""
 				"Well, you have nothing but time to investigate!"
 			]
-			dependencies: ["4B583A4181B3B0C1"]
 			hide: true
-			dependency_requirement: "one_completed"
+			icon: "minecraft:ender_eye"
 			id: "357AE79D35750B0B"
 			tasks: [{
 				id: "37A675B6217765A0"
-				type: "checkmark"
 				title: "The First Facet"
+				type: "checkmark"
 			}]
+			title: "The First Step Down"
+			x: -11.0d
+			y: 0.5d
 		}
 		{
-			title: "A Tool For Thought"
-			icon: "ars_scalaes:archwood_staff"
-			x: -9.5d
-			y: 0.5d
+			dependencies: ["357AE79D35750B0B"]
 			description: [
 				"The book implies you need some sort of tool to understand the forces"
 				"it describes. It details many types of staves, made from oak and spruce."
@@ -88,26 +85,29 @@
 				""
 				"But maybe you can make due with Archwood?"
 			]
-			dependencies: ["357AE79D35750B0B"]
 			hide: true
+			icon: "ars_scalaes:archwood_staff"
 			id: "73A44A13E4C8E055"
+			rewards: [{
+				count: 32
+				id: "566E609CB35CD028"
+				item: "hexcasting:amethyst_dust"
+				type: "item"
+			}]
 			tasks: [{
 				id: "59798A0E8845C2E6"
-				type: "item"
 				item: "ars_scalaes:archwood_staff"
-			}]
-			rewards: [{
-				id: "566E609CB35CD028"
 				type: "item"
-				item: "hexcasting:amethyst_dust"
-				count: 32
 			}]
+			title: "A Tool For Thought"
+			x: -9.5d
+			y: 0.5d
 		}
 		{
-			title: "Tutorial: Your First Spell"
-			icon: "ars_nouveau:glyph_break"
-			x: -10.0d
-			y: 2.0d
+			dependencies: [
+				"73A44A13E4C8E055"
+				"56568E78096DCFD8"
+			]
 			description: [
 				"One of the best effects Hex Casting gives you early on is \"Break\", which lets you break a block just by looking at it. Try casting the spell by drawing these patterns in seqence:"
 				""
@@ -121,23 +121,21 @@
 				"(Remember, you need to be looking at a breakable block within 32 blocks of your location"
 				"and carrying some amethyst, or this won't work!)"
 			]
-			dependencies: [
-				"73A44A13E4C8E055"
-				"56568E78096DCFD8"
-			]
 			hide: true
-			optional: true
+			icon: "ars_nouveau:glyph_break"
 			id: "06C934753EBBCFE8"
+			optional: true
 			tasks: [{
 				id: "5AFBE9C5B5DFB4AD"
-				type: "checkmark"
 				title: "I've written it!"
+				type: "checkmark"
 			}]
+			title: "Tutorial: Your First Spell"
+			x: -10.0d
+			y: 2.0d
 		}
 		{
-			title: "Optional: Tutorial Quests"
-			x: -11.5d
-			y: 2.0d
+			dependencies: ["357AE79D35750B0B"]
 			description: [
 				"This tutorial quest line contains no concrete rewards. It is meant to"
 				"help novice Hex Casters understand the mod by offering advice on how "
@@ -152,19 +150,19 @@
 				""
 				"Good luck!"
 			]
-			dependencies: ["357AE79D35750B0B"]
 			hide: true
 			id: "56568E78096DCFD8"
 			tasks: [{
 				id: "6374AFCB47EC8FC6"
-				type: "checkmark"
 				title: "Enable Tutorial Quests"
+				type: "checkmark"
 			}]
+			title: "Optional: Tutorial Quests"
+			x: -11.5d
+			y: 2.0d
 		}
 		{
-			title: "There Has To Be A Better Way!"
-			x: -8.0d
-			y: 0.5d
+			dependencies: ["73A44A13E4C8E055"]
 			description: [
 				"Finally, you can break blocks with this magic! But... it seems quite laborious. Even worse, the notebook says this is incredibly inefficient."
 				""
@@ -172,19 +170,21 @@
 				""
 				"All it takes is a bit of amethyst dust and copper to make the body for this marvelous timesaver. You should do that right now!"
 			]
-			dependencies: ["73A44A13E4C8E055"]
 			id: "54650ACFCA4F48F5"
 			tasks: [{
 				id: "51823417E6B25D05"
-				type: "item"
 				item: "hexcasting:cypher"
+				type: "item"
 			}]
+			title: "There Has To Be A Better Way!"
+			x: -8.0d
+			y: 0.5d
 		}
 		{
-			title: "Tutorial: How to make Cyphers"
-			icon: "hexcasting:cypher"
-			x: -8.5d
-			y: 2.0d
+			dependencies: [
+				"06C934753EBBCFE8"
+				"54650ACFCA4F48F5"
+			]
 			description: [
 				"To make a cypher you first must use Scout's Distillation to find a stack of Amethyst (dust is fine, drop the whole stack with your mouse or control-Q) you dropped on the ground. Then, without clearing the hex grid, write the following spell. Space may get tight, so think ahead."
 				""
@@ -197,41 +197,39 @@
 				""
 				"If all goes well, you should have a Cypher!"
 			]
-			dependencies: [
-				"06C934753EBBCFE8"
-				"54650ACFCA4F48F5"
-			]
 			hide: true
+			icon: "hexcasting:cypher"
 			id: "05075DC105963B0F"
 			tasks: [{
 				id: "4B1F2615951F396C"
-				type: "checkmark"
 				title: "I've made it!"
+				type: "checkmark"
 			}]
+			title: "Tutorial: How to make Cyphers"
+			x: -8.5d
+			y: 2.0d
 		}
 		{
-			title: "A Better Better Way"
-			x: -8.0d
-			y: -0.5d
+			dependencies: ["54650ACFCA4F48F5"]
 			description: [
 				"You Cypher is useful, but it's rather tedious having to remake it over and over again. But if you make the same design with iron, you think it could survive being refilled. No more remaking the same cypher over and over!"
 				""
 				""
 				""
 			]
-			dependencies: ["54650ACFCA4F48F5"]
 			hide: true
 			id: "3B8565E1A9763020"
 			tasks: [{
 				id: "20CD4E641323365D"
-				type: "item"
 				item: "hexcasting:trinket"
+				type: "item"
 			}]
+			title: "A Better Better Way"
+			x: -8.0d
+			y: -0.5d
 		}
 		{
-			title: "Better Doesn't Mean \"Safer\""
-			x: -8.0d
-			y: -1.5d
+			dependencies: ["3B8565E1A9763020"]
 			description: [
 				"With more esoteric materials, your journal explains that you can make a more sophisticated device."
 				""
@@ -241,61 +239,61 @@
 				""
 				""
 			]
-			dependencies: ["3B8565E1A9763020"]
 			hide: true
 			id: "3DB7F1B23F02DF01"
-			tasks: [{
-				id: "581D5246F3EB83FF"
-				type: "item"
-				item: "hexcasting:artifact"
-			}]
 			rewards: [{
 				id: "08987FB89795BC89"
-				type: "item"
 				item: "minecraft:music_disc_otherside"
+				type: "item"
 			}]
+			tasks: [{
+				id: "581D5246F3EB83FF"
+				item: "hexcasting:artifact"
+				type: "item"
+			}]
+			title: "Better Doesn't Mean \"Safer\""
+			x: -8.0d
+			y: -1.5d
 		}
 		{
-			title: "A Bold Insight"
-			icon: "hexcasting:scroll"
-			x: -6.5d
-			y: 0.5d
+			dependencies: ["54650ACFCA4F48F5"]
 			description: [
 				"You notice an enigmatic section in the notebook about Great Spells, and it occurs to you that with enough time and patience and sacrifical amethyst you could probably brute force one of the easy patterns."
 				""
 				"\"Create Lava\" doesn't look to hard, and it would be handy to have lava..."
 			]
-			dependencies: ["54650ACFCA4F48F5"]
 			hide: true
+			icon: "hexcasting:scroll"
 			id: "50DE947731A92253"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:create_lava @p"
+				icon: "hexcasting:scroll"
+				id: "5D7FE7F04C2D1070"
+				player_command: false
+				title: "An Amazing Insight!"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "4E1E0E6C03828FCE"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
 					consume_items: true
+					count: 8L
+					id: "4E1E0E6C03828FCE"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
 				}
 				{
-					id: "1BC04536AA2A663D"
-					type: "item"
-					item: "hexcasting:scroll_medium"
 					consume_items: true
+					id: "1BC04536AA2A663D"
+					item: "hexcasting:scroll_medium"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "5D7FE7F04C2D1070"
-				type: "command"
-				title: "An Amazing Insight!"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:create_lava @p"
-				player_command: false
-			}]
+			title: "A Bold Insight"
+			x: -6.5d
+			y: 0.5d
 		}
 		{
-			title: "Failure, or success?"
-			x: -5.0d
-			y: 0.5d
+			dependencies: ["50DE947731A92253"]
 			description: [
 				"It didn't work."
 				""
@@ -305,22 +303,23 @@
 				""
 				"(Hint: Check your notebook, or use the tutorial quests to progress in the mod)."
 			]
-			dependencies: ["50DE947731A92253"]
 			hide: false
+			id: "6C1B40E37B54E90A"
 			invisible: true
 			invisible_until_tasks: 1
-			id: "6C1B40E37B54E90A"
 			tasks: [{
-				id: "09386C5496BDC372"
-				type: "advancement"
-				title: "But wait..."
 				advancement: "hexcasting:y_u_no_cast_angy"
 				criterion: ""
+				id: "09386C5496BDC372"
+				title: "But wait..."
+				type: "advancement"
 			}]
+			title: "Failure, or success?"
+			x: -5.0d
+			y: 0.5d
 		}
 		{
-			x: -1.5d
-			y: 0.5d
+			dependencies: ["0D69E723E64DE8B9"]
 			description: [
 				"It's all so clear now. It's all so clear. You could never see through the clouds because they're too clear."
 				""
@@ -328,58 +327,49 @@
 				""
 				"You need some villagers. You need them quickly. There's so much work to be done."
 			]
-			dependencies: ["0D69E723E64DE8B9"]
+			id: "10CA6FEAD2E43050"
 			invisible: true
 			invisible_until_tasks: 1
-			id: "10CA6FEAD2E43050"
-			tasks: [{
-				id: "7C7319F625399E19"
-				type: "advancement"
-				title: "The Edge of Knowledge"
-				advancement: "hexcasting:enlightenment"
-				criterion: ""
-			}]
 			rewards: [
 				{
-					id: "2CBF8706ED828F50"
-					type: "command"
-					title: "Nothing... is holding you back."
-					icon: "hexcasting:scroll"
 					command: "/hexcasting patterns give hexcasting:flight @p"
+					icon: "hexcasting:scroll"
+					id: "2CBF8706ED828F50"
 					player_command: false
+					title: "Nothing... is holding you back."
+					type: "command"
 				}
 				{
 					id: "47626E6F038826E3"
-					type: "item"
 					item: {
-						id: "ars_nouveau:caster_tome"
 						Count: 1b
+						id: "ars_nouveau:caster_tome"
 						tag: {
 							"ars_nouveau:caster": {
+								current_slot: 0
 								flavor: "Heroes are so straightforward, so easily befuddled..."
 								hidden_recipe: ""
 								is_hidden: 0b
-								current_slot: 0
 								spell_count: 1
 								spells: {
 									spell0: {
 										name: "KirinDave's Sinister Switch"
 										recipe: {
-											part3: "ars_nouveau:glyph_amplify"
-											size: 4
 											part0: "ars_nouveau:glyph_self"
 											part1: "ars_nouveau:glyph_summon_decoy"
 											part2: "ars_nouveau:glyph_blink"
-										}
-										spellColor: {
-											r: 25
-											b: 255
-											g: 255
+											part3: "ars_nouveau:glyph_amplify"
+											size: 4
 										}
 										sound: {
-											volume: 1.0f
 											pitch: 1.0f
 											soundTag: { }
+											volume: 1.0f
+										}
+										spellColor: {
+											b: 255
+											g: 255
+											r: 25
 										}
 									}
 								}
@@ -389,14 +379,24 @@
 							}
 						}
 					}
+					type: "item"
 				}
 			]
+			tasks: [{
+				advancement: "hexcasting:enlightenment"
+				criterion: ""
+				id: "7C7319F625399E19"
+				title: "The Edge of Knowledge"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: 0.5d
 		}
 		{
-			title: "Hint: Open only if needed."
-			icon: "minecraft:writable_book"
-			x: -3.5d
-			y: 2.0d
+			dependencies: [
+				"0D69E723E64DE8B9"
+				"501EA0707DC77A52"
+			]
 			description: [
 				"The Hex Journal really does tell you how to progress, but it's subtle."
 				""
@@ -404,22 +404,20 @@
 				""
 				"Crafting this spell is up to you. You have several spells that have a variable cost in your notebook. You just need to make a spell that costs exactly 19 dust."
 			]
-			dependencies: [
-				"0D69E723E64DE8B9"
-				"501EA0707DC77A52"
-			]
 			hide: true
+			icon: "minecraft:writable_book"
 			id: "63CFD5A021FF32FB"
 			tasks: [{
 				id: "38368C29B65BEE5E"
-				type: "checkmark"
 				title: "I understand."
+				type: "checkmark"
 			}]
+			title: "Hint: Open only if needed."
+			x: -3.5d
+			y: 2.0d
 		}
 		{
-			title: "Memory is Overrated"
-			x: -6.5d
-			y: -0.5d
+			dependencies: ["54650ACFCA4F48F5"]
 			description: [
 				"It's not too hard to make a cypher once you get the hang of it, but if you want to make more sophisticated spells, you run out of room on your grid."
 				""
@@ -428,25 +426,23 @@
 				"Make sure to read the section on \"Reading and Writing\" Patterns carefully. Focuses are very versatile, can can be read from your offhand, when dropped in world, or when placed in item frames. You can make shockingly sophisticated things with them!"
 				""
 			]
-			dependencies: ["54650ACFCA4F48F5"]
 			hide: true
 			id: "6083DEDE155373EF"
-			tasks: [{
-				id: "2CA47797886EB380"
-				type: "item"
-				item: "hexcasting:focus"
-			}]
 			rewards: [{
 				id: "29CAC6F618FD3280"
-				type: "item"
 				item: "hexcasting:focus"
+				type: "item"
 			}]
+			tasks: [{
+				id: "2CA47797886EB380"
+				item: "hexcasting:focus"
+				type: "item"
+			}]
+			title: "Memory is Overrated"
+			x: -6.5d
+			y: -0.5d
 		}
 		{
-			title: "The Top Of The Steps"
-			x: -13.0d
-			y: 0.5d
-			shape: "circle"
 			description: [
 				"Having come into the possssion of these curious gems, you cannot help but spend a moment captivated by their beauty. Pleasing to every sense, and obviously brimming with magical power."
 				""
@@ -454,32 +450,35 @@
 				""
 				"Is someone else out there? Are they still here? Are they watching right now? Why would this book come to you?"
 			]
-			min_required_dependencies: 1
 			hide: false
 			hide_text_until_complete: false
+			id: "4B583A4181B3B0C1"
 			invisible: true
 			invisible_until_tasks: 1
-			id: "4B583A4181B3B0C1"
-			tasks: [{
-				id: "6DBCA44F8D559360"
-				type: "item"
-				item: "ars_nouveau:source_gem"
-			}]
+			min_required_dependencies: 1
 			rewards: [{
 				id: "01D34A85327A40F0"
-				type: "item"
 				item: {
-					id: "patchouli:guide_book"
 					Count: 1b
+					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "hexcasting:thehexbook"
 					}
 				}
+				type: "item"
 			}]
+			shape: "circle"
+			tasks: [{
+				id: "6DBCA44F8D559360"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "The Top Of The Steps"
+			x: -13.0d
+			y: 0.5d
 		}
 		{
-			x: -3.0d
-			y: 0.5d
+			dependencies: ["6C1B40E37B54E90A"]
 			description: [
 				"You've forced a cast to happen using just your body... but it doesn't seem to matter for the Great Spell you devised. Why not?"
 				""
@@ -487,21 +486,19 @@
 				""
 				"If only you could get closer, maybe you could see it."
 			]
-			dependencies: ["6C1B40E37B54E90A"]
 			id: "0D69E723E64DE8B9"
 			tasks: [{
-				id: "0E2B0FAEB313EE3B"
-				type: "advancement"
-				title: "If I just reach further, I can see it!"
 				advancement: "hexcasting:opened_eyes"
 				criterion: ""
+				id: "0E2B0FAEB313EE3B"
+				title: "If I just reach further, I can see it!"
+				type: "advancement"
 			}]
+			x: -3.0d
+			y: 0.5d
 		}
 		{
-			title: "Tutorial: Hexal Silk Touch"
-			icon: "minecraft:dragon_egg"
-			x: -7.0d
-			y: 2.0d
+			dependencies: ["05075DC105963B0F"]
 			description: [
 				"This modpack includes Hexal, an addon to Hex Casting with many new features. One such feature is the \"Gravity\" spell, which turns a block into a Falling Block, as if it were gravel."
 				""
@@ -515,18 +512,19 @@
 				""
 				"Place a torch (or conjure a light) below the block you want to silk touch, aim your sights at the block, and cast that spell. The block will fall on the torch and break."
 			]
-			dependencies: ["05075DC105963B0F"]
+			icon: "minecraft:dragon_egg"
 			id: "501EA0707DC77A52"
 			tasks: [{
 				id: "6C2447EF03C3EBEB"
-				type: "checkmark"
 				title: "I've Made It!"
+				type: "checkmark"
 			}]
+			title: "Tutorial: Hexal Silk Touch"
+			x: -7.0d
+			y: 2.0d
 		}
 		{
-			title: "Introduction: What is Hexcasting in Arcane Isles?"
-			x: -13.5d
-			y: 2.0d
+			dependencies: ["4B583A4181B3B0C1"]
 			description: [
 				"Hexcasting is a magic mod with a runic flare, heavily based around the idea of drawing patterns to execute a magical \"program.\" It's very different from Ars Nouveau, and therefore serves a very different niche. It is very capable of automation and personal superpowers."
 				""
@@ -536,752 +534,752 @@
 				""
 				"Good luck, have fun, and remember Hexcasting questions should go to the Hexcasting discord or the Hexcasting section of the Arcane Skies discussion on the Ars forum."
 			]
-			dependencies: ["4B583A4181B3B0C1"]
 			id: "33D20298A810E03C"
 			tasks: [{
 				id: "51A49BB3DD3DA97D"
-				type: "checkmark"
 				title: "I won't spam the Ars Discord with Hexcasting Questions"
+				type: "checkmark"
 			}]
+			title: "Introduction: What is Hexcasting in Arcane Isles?"
+			x: -13.5d
+			y: 2.0d
 		}
 		{
-			x: 4.5d
-			y: 0.5d
-			description: ["By offering amethyst and relevant items, you can get copies of every great spell."]
 			dependencies: ["10CA6FEAD2E43050"]
+			description: ["By offering amethyst and relevant items, you can get copies of every great spell."]
 			id: "75AB2D0AA479E58D"
 			tasks: [{
-				id: "67038A5A37DE3B90"
-				type: "advancement"
-				title: "Hexcasting Great Spells"
-				icon: "hexcasting:scroll"
 				advancement: "hexcasting:enlightenment"
 				criterion: ""
+				icon: "hexcasting:scroll"
+				id: "67038A5A37DE3B90"
+				title: "Hexcasting Great Spells"
+				type: "advancement"
 			}]
+			x: 4.5d
+			y: 0.5d
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "169B3DE6BA7FBF83"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:craft/battery @p"
+				icon: "hexcasting:scroll"
+				id: "5C67CFD6929E3B64"
+				player_command: false
+				title: "Craft Phial"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "4E9C4E7E361C3161"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "4B9661B0AEB7FB07"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "389A871576E54713"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Craft Phial"
 			x: 3.0d
 			y: -1.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "169B3DE6BA7FBF83"
-			tasks: [
-				{
-					id: "4E9C4E7E361C3161"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "4B9661B0AEB7FB07"
-					type: "item"
-					item: "minecraft:honey_bottle"
-					consume_items: true
-				}
-				{
-					id: "389A871576E54713"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "5C67CFD6929E3B64"
-				type: "command"
-				title: "Craft Phial"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:craft/battery @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "1FADDF180352BA48"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:lightning @p"
+				icon: "hexcasting:scroll"
+				id: "3328E8E1607729E9"
+				player_command: false
+				title: "Summon Lightning"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "523AD531F7A98DFE"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3ED9A74212ADFB68"
+					item: "minecraft:lightning_rod"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "0BDC73B8F9D41659"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Summon Lightning"
 			x: 4.0d
 			y: -1.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "1FADDF180352BA48"
-			tasks: [
-				{
-					id: "523AD531F7A98DFE"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "3ED9A74212ADFB68"
-					type: "item"
-					item: "minecraft:lightning_rod"
-					consume_items: true
-				}
-				{
-					id: "0BDC73B8F9D41659"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "3328E8E1607729E9"
-				type: "command"
-				title: "Summon Lightning"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:lightning @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "389F843AE38DA691"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:brainsweep @p"
+				icon: "hexcasting:scroll"
+				id: "44B8F18B8925BA86"
+				player_command: false
+				title: "Flay Mind"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "2BEFAE0EBD5F6F31"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "51E5834499B4D3AB"
+					item: "minecraft:emerald_block"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "3805B19A0699188A"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Flay Mind"
 			x: 3.0d
 			y: -0.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "389F843AE38DA691"
-			tasks: [
-				{
-					id: "2BEFAE0EBD5F6F31"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "51E5834499B4D3AB"
-					type: "item"
-					item: "minecraft:emerald_block"
-					consume_items: true
-				}
-				{
-					id: "3805B19A0699188A"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "44B8F18B8925BA86"
-				type: "command"
-				title: "Flay Mind"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:brainsweep @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "3A951D378599A571"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:create_lava @p"
+				icon: "hexcasting:scroll"
+				id: "2FDD2881C568A36F"
+				player_command: false
+				title: "Create Lava"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "2B156DFB2F23D72C"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6E11E3FADBF75E98"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "61CD05FEAB5DE75E"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Create Lava"
 			x: 3.0d
 			y: 0.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "3A951D378599A571"
-			tasks: [
-				{
-					id: "2B156DFB2F23D72C"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "6E11E3FADBF75E98"
-					type: "item"
-					item: "minecraft:lava_bucket"
-					consume_items: true
-				}
-				{
-					id: "61CD05FEAB5DE75E"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "2FDD2881C568A36F"
-				type: "command"
-				title: "Create Lava"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:create_lava @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "079B3E3DFB28A89A"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:sentinel/create/great @p"
+				icon: "hexcasting:scroll"
+				id: "569BAC22C1657D56"
+				player_command: false
+				title: "Summon Greater Sentinel"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "57CC918D92738E08"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "78157CF44A780E88"
+					item: "minecraft:target"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "676E336ABB9E9A3D"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Summon Greater Sentinel"
 			x: 3.0d
 			y: 1.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "079B3E3DFB28A89A"
-			tasks: [
-				{
-					id: "57CC918D92738E08"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "78157CF44A780E88"
-					type: "item"
-					item: "minecraft:target"
-					consume_items: true
-				}
-				{
-					id: "676E336ABB9E9A3D"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "569BAC22C1657D56"
-				type: "command"
-				title: "Summon Greater Sentinel"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:sentinel/create/great @p"
-				player_command: false
-			}]
 		}
 		{
-			title: "Summon Rain"
-			x: 5.0d
-			y: -1.5d
-			dependencies: ["75AB2D0AA479E58D"]
 			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
 			id: "0106A9366CDC13A6"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:summon_rain @p"
+				icon: "hexcasting:scroll"
+				id: "7AFBFD2AAA2D25B6"
+				player_command: false
+				title: "Summon Rain"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "3EEA786CFF09B1C9"
-					type: "item"
-					item: "hexcasting:scroll"
 					consume_items: true
+					id: "3EEA786CFF09B1C9"
+					item: "hexcasting:scroll"
+					type: "item"
 				}
 				{
+					consume_items: true
 					id: "35BF73E5A47C4E4B"
-					type: "item"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:water"
 						}
 					}
-					consume_items: true
+					type: "item"
 				}
 				{
-					id: "1D326008DE063718"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
 					consume_items: true
+					count: 8L
+					id: "1D326008DE063718"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "7AFBFD2AAA2D25B6"
-				type: "command"
-				title: "Summon Rain"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:summon_rain @p"
-				player_command: false
-			}]
+			title: "Summon Rain"
+			x: 5.0d
+			y: -1.5d
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "1F254E169074109C"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:dispel_rain @p"
+				icon: "hexcasting:scroll"
+				id: "0BB3E5A9AE7E1456"
+				player_command: false
+				title: "Dispel Rain"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "4216D7189AEB4413"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "543484B749F65D79"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "49A43F00B7E780AE"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Dispel Rain"
 			x: 6.0d
 			y: -1.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "1F254E169074109C"
-			tasks: [
-				{
-					id: "4216D7189AEB4413"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "543484B749F65D79"
-					type: "item"
-					item: "minecraft:sand"
-					consume_items: true
-				}
-				{
-					id: "49A43F00B7E780AE"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "0BB3E5A9AE7E1456"
-				type: "command"
-				title: "Dispel Rain"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:dispel_rain @p"
-				player_command: false
-			}]
 		}
 		{
-			title: "Zenith: Black"
-			x: 6.0d
-			y: -0.5d
-			dependencies: ["75AB2D0AA479E58D"]
 			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
 			id: "3D061E79A6C0E8FC"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:potion/absorption @p"
+				icon: "hexcasting:scroll"
+				id: "4FF743C5C421EEAA"
+				player_command: false
+				title: "Black Sun's Zenith"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "0EE26A9605051C57"
-					type: "item"
-					item: "hexcasting:scroll"
 					consume_items: true
+					id: "0EE26A9605051C57"
+					item: "hexcasting:scroll"
+					type: "item"
 				}
 				{
+					consume_items: true
 					id: "2779F242D2AE6526"
-					type: "item"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "ars_nouveau:shielding_potion"
 						}
 					}
-					consume_items: true
+					type: "item"
 				}
 				{
-					id: "7A4CE2695DF648E5"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
 					consume_items: true
+					count: 8L
+					id: "7A4CE2695DF648E5"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "4FF743C5C421EEAA"
-				type: "command"
-				title: "Black Sun's Zenith"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:potion/absorption @p"
-				player_command: false
-			}]
+			title: "Zenith: Black"
+			x: 6.0d
+			y: -0.5d
 		}
 		{
-			title: "Zenith: Red"
-			x: 6.0d
-			y: 0.5d
-			dependencies: ["75AB2D0AA479E58D"]
 			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
 			id: "06140684D2D9C98C"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:potion/haste @p"
+				icon: "hexcasting:scroll"
+				id: "34F833806FA4FCE8"
+				player_command: false
+				title: "Red Sun's Zenith"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "235AB6CAF04B0338"
-					type: "item"
-					item: "hexcasting:scroll"
 					consume_items: true
+					id: "235AB6CAF04B0338"
+					item: "hexcasting:scroll"
+					type: "item"
 				}
 				{
+					consume_items: true
 					id: "3670716A1B8C7087"
-					type: "item"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:awkward"
 						}
 					}
-					consume_items: true
+					type: "item"
 				}
 				{
-					id: "7A43F6E7EBDC41BC"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
 					consume_items: true
+					count: 8L
+					id: "7A43F6E7EBDC41BC"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "34F833806FA4FCE8"
-				type: "command"
-				title: "Red Sun's Zenith"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:potion/haste @p"
-				player_command: false
-			}]
+			title: "Zenith: Red"
+			x: 6.0d
+			y: 0.5d
 		}
 		{
-			title: "Zenith: Blue"
-			x: 6.0d
-			y: 1.5d
-			dependencies: ["75AB2D0AA479E58D"]
 			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
 			id: "5A12D8955AECC5CC"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:potion/night_vision @p"
+				icon: "hexcasting:scroll"
+				id: "27C13F24396FBF83"
+				player_command: false
+				title: "Blue Sun's Zenith"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "54B7D334BB6C5E52"
-					type: "item"
-					item: "hexcasting:scroll"
 					consume_items: true
+					id: "54B7D334BB6C5E52"
+					item: "hexcasting:scroll"
+					type: "item"
 				}
 				{
+					consume_items: true
 					id: "0331E0602324338E"
-					type: "item"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:night_vision"
 						}
 					}
-					consume_items: true
+					type: "item"
 				}
 				{
-					id: "6616077460A6416B"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
 					consume_items: true
+					count: 8L
+					id: "6616077460A6416B"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "27C13F24396FBF83"
-				type: "command"
-				title: "Blue Sun's Zenith"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:potion/night_vision @p"
-				player_command: false
-			}]
+			title: "Zenith: Blue"
+			x: 6.0d
+			y: 1.5d
 		}
 		{
-			title: "Zenith: White"
-			x: 6.0d
-			y: 2.5d
-			dependencies: ["75AB2D0AA479E58D"]
 			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
 			id: "79C8C6FB157E5865"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:potion/regeneration @p"
+				icon: "hexcasting:scroll"
+				id: "31A6A285EC479192"
+				player_command: false
+				title: "White Sun's Zenith"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "63F3A0E520A65582"
-					type: "item"
-					item: "hexcasting:scroll"
 					consume_items: true
+					id: "63F3A0E520A65582"
+					item: "hexcasting:scroll"
+					type: "item"
 				}
 				{
+					consume_items: true
 					id: "14C1B359E0F246DC"
-					type: "item"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:regeneration"
 						}
 					}
-					consume_items: true
+					type: "item"
 				}
 				{
-					id: "22F974A066D478CA"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
 					consume_items: true
+					count: 8L
+					id: "22F974A066D478CA"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "31A6A285EC479192"
-				type: "command"
-				title: "White Sun's Zenith"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:potion/regeneration @p"
-				player_command: false
-			}]
+			title: "Zenith: White"
+			x: 6.0d
+			y: 2.5d
 		}
 		{
-			title: "Zenith: Green"
-			x: 5.0d
-			y: 2.5d
-			dependencies: ["75AB2D0AA479E58D"]
 			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
 			id: "0BB9FC4657383896"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:potion/strength @p"
+				icon: "hexcasting:scroll"
+				id: "0D6FE6F4A037C3FF"
+				player_command: false
+				title: "Green Sun's Zenith"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "2DB6F0C7B3822A4E"
-					type: "item"
-					item: "hexcasting:scroll"
 					consume_items: true
+					id: "2DB6F0C7B3822A4E"
+					item: "hexcasting:scroll"
+					type: "item"
 				}
 				{
+					consume_items: true
 					id: "5E17DC4A4E927037"
-					type: "item"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:strength"
 						}
 					}
-					consume_items: true
+					type: "item"
 				}
 				{
-					id: "4AD51608FD6968B3"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
 					consume_items: true
+					count: 8L
+					id: "4AD51608FD6968B3"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "0D6FE6F4A037C3FF"
-				type: "command"
-				title: "Green Sun's Zenith"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:potion/strength @p"
-				player_command: false
-			}]
+			title: "Zenith: Green"
+			x: 5.0d
+			y: 2.5d
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "0D8594DA1DE952EC"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:flight @p"
+				icon: "hexcasting:scroll"
+				id: "520BEB9717AB5816"
+				player_command: false
+				title: "Flight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "124D1DD9B58BFCE6"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3E2DAB5B6319950A"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "59B98101EAEB69E4"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Flight"
 			x: 3.0d
 			y: 2.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "0D8594DA1DE952EC"
-			tasks: [
-				{
-					id: "124D1DD9B58BFCE6"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "3E2DAB5B6319950A"
-					type: "item"
-					item: "ars_nouveau:ritual_flight"
-					consume_items: true
-				}
-				{
-					id: "59B98101EAEB69E4"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "520BEB9717AB5816"
-				type: "command"
-				title: "Flight"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:flight @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["75AB2D0AA479E58D"]
+			id: "0F8EF392DEB64336"
+			rewards: [{
+				command: "/hexcasting patterns give hexcasting:teleport @p"
+				icon: "hexcasting:scroll"
+				id: "3754AC4588ACD6AE"
+				player_command: false
+				title: "Greater Teleport"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "7DDFC9D094EF5E58"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1128728083951953"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "37B7369ECEF2E8A5"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Greater Teleport"
 			x: 4.0d
 			y: 2.5d
-			dependencies: ["75AB2D0AA479E58D"]
-			can_repeat: true
-			id: "0F8EF392DEB64336"
-			tasks: [
-				{
-					id: "7DDFC9D094EF5E58"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "1128728083951953"
-					type: "item"
-					item: "minecraft:ender_eye"
-					consume_items: true
-				}
-				{
-					id: "37B7369ECEF2E8A5"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "3754AC4588ACD6AE"
-				type: "command"
-				title: "Greater Teleport"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexcasting:teleport @p"
-				player_command: false
-			}]
 		}
 		{
+			dependencies: ["10CA6FEAD2E43050"]
+			description: ["By offering amethyst and relevant items, you can get copies of every great spell."]
+			id: "1B114AF545D9C09B"
+			tasks: [{
+				advancement: "hexcasting:enlightenment"
+				criterion: ""
+				icon: "hexcasting:scroll"
+				id: "03526F43637F1759"
+				title: "Hexal Great Spells"
+				type: "advancement"
+			}]
 			title: "Hexal Great Spells"
 			x: 0.5d
 			y: 0.5d
-			description: ["By offering amethyst and relevant items, you can get copies of every great spell."]
-			dependencies: ["10CA6FEAD2E43050"]
-			id: "1B114AF545D9C09B"
-			tasks: [{
-				id: "03526F43637F1759"
-				type: "advancement"
-				title: "Hexal Great Spells"
-				icon: "hexcasting:scroll"
-				advancement: "hexcasting:enlightenment"
-				criterion: ""
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["1B114AF545D9C09B"]
+			id: "2FD70E7D2D25C211"
+			rewards: [{
+				command: "/hexcasting patterns give hexal:tick @p"
+				icon: "hexcasting:scroll"
+				id: "1086714AE7EFD167"
+				player_command: false
+				title: "Accelerate"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "3C07266BD0EFF1A0"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1B472ACCF7327AD3"
+					item: "minecraft:clock"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "114F5BD237B0F945"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Accelerate"
 			x: 0.5d
 			y: -0.5d
-			dependencies: ["1B114AF545D9C09B"]
-			can_repeat: true
-			id: "2FD70E7D2D25C211"
-			tasks: [
-				{
-					id: "3C07266BD0EFF1A0"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "1B472ACCF7327AD3"
-					type: "item"
-					item: "minecraft:clock"
-					consume_items: true
-				}
-				{
-					id: "114F5BD237B0F945"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "1086714AE7EFD167"
-				type: "command"
-				title: "Accelerate"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexal:tick @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["1B114AF545D9C09B"]
+			id: "332D96C62CF6105C"
+			rewards: [{
+				command: "/hexcasting patterns give hexal:gate/make @p"
+				icon: "hexcasting:scroll"
+				id: "2196F2A44E6D82E9"
+				player_command: false
+				title: "Gate's Reflection"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "0BA500B20B513883"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "754D0C150FBB1BBA"
+					item: "ars_nouveau:glyph_blink"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "7E882795E2927001"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Gate's Reflection"
 			x: 0.5d
 			y: -1.5d
-			dependencies: ["1B114AF545D9C09B"]
-			can_repeat: true
-			id: "332D96C62CF6105C"
-			tasks: [
-				{
-					id: "0BA500B20B513883"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "754D0C150FBB1BBA"
-					type: "item"
-					item: "ars_nouveau:glyph_blink"
-					consume_items: true
-				}
-				{
-					id: "7E882795E2927001"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "2196F2A44E6D82E9"
-				type: "command"
-				title: "Gate's Reflection"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexal:gate/make @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["1B114AF545D9C09B"]
+			id: "07EE72C08356B6AA"
+			rewards: [{
+				command: "/hexcasting patterns give hexal:wisp/consume @p"
+				icon: "hexcasting:scroll"
+				id: "543A4EBC1E654FE3"
+				player_command: false
+				title: "Consume Wisp"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "366724D7B20F1EB1"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3236813D7C303E25"
+					item: "ars_nouveau:wilden_horn"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "2BBCD3464DD68033"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Consume Wisp"
 			x: 0.5d
 			y: 1.5d
-			dependencies: ["1B114AF545D9C09B"]
-			can_repeat: true
-			id: "07EE72C08356B6AA"
-			tasks: [
-				{
-					id: "366724D7B20F1EB1"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "3236813D7C303E25"
-					type: "item"
-					item: "ars_nouveau:wilden_horn"
-					consume_items: true
-				}
-				{
-					id: "2BBCD3464DD68033"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "543A4EBC1E654FE3"
-				type: "command"
-				title: "Consume Wisp"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexal:wisp/consume @p"
-				player_command: false
-			}]
 		}
 		{
+			can_repeat: true
+			dependencies: ["1B114AF545D9C09B"]
+			id: "1644C4E247E85399"
+			rewards: [{
+				command: "/hexcasting patterns give hexal:wisp/seon/set @p"
+				icon: "hexcasting:scroll"
+				id: "6FC7DF540E492E7B"
+				player_command: false
+				title: "Bind Wisp"
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "658B8F8E87D46B45"
+					item: "hexcasting:scroll"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "53E8AF4751C50773"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "6436B64CF139D416"
+					item: "hexcasting:charged_amethyst"
+					type: "item"
+				}
+			]
 			title: "Bind Wisp"
 			x: 0.5d
 			y: 2.5d
-			dependencies: ["1B114AF545D9C09B"]
-			can_repeat: true
-			id: "1644C4E247E85399"
-			tasks: [
-				{
-					id: "658B8F8E87D46B45"
-					type: "item"
-					item: "hexcasting:scroll"
-					consume_items: true
-				}
-				{
-					id: "53E8AF4751C50773"
-					type: "item"
-					item: "minecraft:golden_apple"
-					consume_items: true
-				}
-				{
-					id: "6436B64CF139D416"
-					type: "item"
-					item: "hexcasting:charged_amethyst"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "6FC7DF540E492E7B"
-				type: "command"
-				title: "Bind Wisp"
-				icon: "hexcasting:scroll"
-				command: "/hexcasting patterns give hexal:wisp/seon/set @p"
-				player_command: false
-			}]
 		}
 		{
-			title: "Helper: Reset All Patterns"
-			icon: "minecraft:bedrock"
-			x: -1.5d
-			y: 2.0d
+			can_repeat: true
+			dependencies: ["10CA6FEAD2E43050"]
 			description: [
 				"WARNING: Read before you use this quest!"
 				""
@@ -1291,23 +1289,25 @@
 				""
 				"This quest was put in place to help with maps that are updated to include Hexal, since they need to regenerate patterns in order to make Hexal Great Spells available."
 			]
-			dependencies: ["10CA6FEAD2E43050"]
-			can_repeat: true
+			icon: "minecraft:bedrock"
 			id: "7D80CDEA6FD1AABA"
+			rewards: [{
+				command: "/hexcasting recalcPatterns"
+				id: "001AC99658136C09"
+				ignore_reward_blocking: true
+				player_command: false
+				title: "/hexcasting recalcPatterns"
+				type: "command"
+			}]
 			tasks: [{
 				id: "4C7531BC98B3B167"
-				type: "checkmark"
 				title: "I'm really sure I want to do this!"
+				type: "checkmark"
 			}]
-			rewards: [{
-				id: "001AC99658136C09"
-				type: "command"
-				title: "/hexcasting recalcPatterns"
-				ignore_reward_blocking: true
-				command: "/hexcasting recalcPatterns"
-				player_command: false
-			}]
+			title: "Helper: Reset All Patterns"
+			x: -1.5d
+			y: 2.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Hex Casting"
 }

@@ -1,11 +1,11 @@
 {
 	id: "3F0A0DB351464AC2"
-	order_index: 1
-	title: "Redstoners"
 	loot_size: 1
+	order_index: 1
 	rewards: [
-		{ item: "minecraft:redstone", count: 32 }
-		{ item: "minecraft:comparator", count: 8 }
-		{ item: "minecraft:observer", count: 2 }
+		{ count: 32, item: "minecraft:redstone" }
+		{ count: 8, item: "minecraft:comparator" }
+		{ count: 2, item: "minecraft:observer" }
 	]
+	title: "Redstoners"
 }

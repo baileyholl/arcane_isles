@@ -1,425 +1,417 @@
 {
-	id: "275B5E5A202C785E"
-	group: ""
-	order_index: 1
-	filename: "island_creation"
-	title: "Island Creation"
-	icon: "ars_caelum:ritual_conjure_island_flourishing"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "island_creation"
+	group: ""
+	icon: "ars_caelum:ritual_conjure_island_flourishing"
+	id: "275B5E5A202C785E"
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
-			x: -1.0d
-			y: 3.5d
-			description: ["Contains coral, sugarcane, and sea grass. Also converts the nearby area into a Warm Ocean."]
 			dependencies: ["436678048E9C48BB"]
+			description: ["Contains coral, sugarcane, and sea grass. Also converts the nearby area into a Warm Ocean."]
 			id: "47B78DE895A1E4E2"
-			tasks: [{
-				id: "342655738A133570"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_cascading"
-			}]
 			rewards: [{
 				id: "2D070AE1B6B5ABA3"
-				type: "item"
 				item: "ars_elemental:siren_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "342655738A133570"
+				item: "ars_caelum:ritual_conjure_island_cascading"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
 		}
 		{
-			x: 0.0d
-			y: 1.5d
+			dependencies: ["73937DADFAF6DAEE"]
 			description: [
 				"Archwood Islands contain new and otherwise unobtainable resources. Each Ritual will require a full Source Jar near the Ritual Brazier. Perform the ritual 14+ blocks from any other blocks, or you may miss out on parts of the island.\\n\\nUse Manipulation Essence to convert Archwood Saplings for the island of your choice."
 				"\\nName entities to remove them from the passive mob cap."
 			]
-			dependencies: ["73937DADFAF6DAEE"]
 			hide: true
 			id: "436678048E9C48BB"
-			tasks: [{
-				id: "0E1DF835702B31C4"
-				type: "checkmark"
-				title: "Island Conjuring"
-			}]
 			rewards: [{
 				id: "403056FA3AD92BD3"
-				type: "item"
 				item: "ars_nouveau:glyph_name"
+				type: "item"
 			}]
+			tasks: [{
+				id: "0E1DF835702B31C4"
+				title: "Island Conjuring"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			x: -1.5d
-			y: -0.5d
-			description: ["Contains moss, sweet berries, bamboo, mendosteen, and flourishing trees. Converts the area to Mangrove Swamp"]
 			dependencies: ["436678048E9C48BB"]
+			description: ["Contains moss, sweet berries, bamboo, mendosteen, and flourishing trees. Converts the area to Mangrove Swamp"]
 			id: "7F43851A9C6D5805"
-			tasks: [{
-				id: "1FB9BFC2EC83D028"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_flourishing"
-			}]
 			rewards: [{
 				id: "50393A922E80E09F"
-				type: "item"
 				item: "ars_nouveau:whirlisprig_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "1FB9BFC2EC83D028"
+				item: "ars_caelum:ritual_conjure_island_flourishing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
 		}
 		{
-			x: -3.0d
-			y: -0.5d
-			description: ["Places oak and birch trees nearby with a radius of 7, increased for each source gem added to the ritual.\\n\\nAugmenting with a Brown Mushroom will convert the area and resources to Taiga.\\n\\nAugmenting with Glow Berries will spawn a jungle."]
 			dependencies: ["7F43851A9C6D5805"]
+			description: ["Places oak and birch trees nearby with a radius of 7, increased for each source gem added to the ritual.\\n\\nAugmenting with a Brown Mushroom will convert the area and resources to Taiga.\\n\\nAugmenting with Glow Berries will spawn a jungle."]
 			id: "34CC74F94005C45D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30E5A5C8212EE7DA"
+				table_id: 5468626932468587212L
+				type: "random"
+			}]
 			tasks: [
 				{
-					id: "22112DFB46AAC982"
-					type: "item"
 					icon: "ars_nouveau:ritual_forestation"
+					id: "22112DFB46AAC982"
 					item: "ars_nouveau:ritual_forestation"
+					type: "item"
 				}
 				{
 					id: "13F062A144F36807"
-					type: "item"
 					item: "minecraft:oak_sapling"
+					type: "item"
 				}
 				{
 					id: "798C947788B7A5DA"
-					type: "item"
 					item: "minecraft:birch_sapling"
+					type: "item"
 				}
 				{
 					id: "400AE8F749E905ED"
-					type: "item"
 					item: "minecraft:spruce_sapling"
+					type: "item"
 				}
 				{
 					id: "79788886A56979F2"
-					type: "item"
 					item: "minecraft:jungle_sapling"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "30E5A5C8212EE7DA"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			x: -3.0d
+			y: -0.5d
 		}
 		{
-			x: -2.5d
-			y: -1.5d
-			description: ["Spawns flowers and grass nearby with a radius of 7, increased for each source gem added.\\n\\nAugmenting with Sand will change the ritual to place cactus if possible."]
 			dependencies: ["7F43851A9C6D5805"]
+			description: ["Spawns flowers and grass nearby with a radius of 7, increased for each source gem added.\\n\\nAugmenting with Sand will change the ritual to place cactus if possible."]
 			id: "493F79CBA01189DF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41E7C0D272C5A679"
+				table_id: 5468626932468587212L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "1DBBCC4CB3F1ED04"
-					type: "item"
 					item: "minecraft:cactus"
+					type: "item"
 				}
 				{
 					id: "3A1A836B0C8D88B3"
-					type: "item"
 					item: "ars_nouveau:ritual_flowering"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "41E7C0D272C5A679"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			x: -2.5d
+			y: -1.5d
 		}
 		{
-			x: -1.5d
-			y: -2.0d
-			description: ["Creates an island of grass and dirt. Starts with a radius of 7, and increased by 1 for each Source Gem added to the ritual. Converts the biome to Plains.\\n\\nAugmenting with a Frostaya will convert the area to Snowy Plains."]
 			dependencies: ["7F43851A9C6D5805"]
+			description: ["Creates an island of grass and dirt. Starts with a radius of 7, and increased by 1 for each Source Gem added to the ritual. Converts the biome to Plains.\\n\\nAugmenting with a Frostaya will convert the area to Snowy Plains."]
 			id: "5263474A41F518A2"
+			rewards: [{
+				id: "7CC66AB69B38EFF5"
+				item: "ars_elemental:lesser_earth_focus"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7847A0EC3627C5AF"
-					type: "item"
 					item: "minecraft:snow_block"
+					type: "item"
 				}
 				{
 					id: "0F52FB8223A9920C"
-					type: "item"
 					item: "ars_nouveau:ritual_conjure_island_plains"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "7CC66AB69B38EFF5"
-				type: "item"
-				item: "ars_elemental:lesser_earth_focus"
-			}]
+			x: -1.5d
+			y: -2.0d
 		}
 		{
-			x: 2.5d
-			y: -3.0d
+			dependencies: ["7D9EFB225A839AAD"]
 			description: [
 				"Creates an island of Sculk and Deepslate and converts the area to Deep Dark. Be warned, the Warden is near!\\n\\nPerform 14 blocks from anything else. Requires a full jar of source."
 				""
 			]
-			dependencies: ["7D9EFB225A839AAD"]
 			id: "42DA6FEE22215A5A"
-			tasks: [{
-				id: "360A4088F7B7C839"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_sculk"
-			}]
 			rewards: [{
 				id: "0365AEC94387D1B5"
-				type: "item"
 				item: "ars_nouveau:wixie_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "360A4088F7B7C839"
+				item: "ars_caelum:ritual_conjure_island_sculk"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
 		}
 		{
-			x: 1.5d
-			y: -2.0d
-			description: ["Consumes food to generate source, granting bonuses for Sourceberries and magical food.\\n\\nAll Sourcelinks can consume items placed into adjacent pedestals."]
 			dependencies: ["209971171B86E7E9"]
+			description: ["Consumes food to generate source, granting bonuses for Sourceberries and magical food.\\n\\nAll Sourcelinks can consume items placed into adjacent pedestals."]
 			id: "7D3C01D14E69EA26"
-			tasks: [{
-				id: "781467CBFA498577"
-				type: "item"
-				item: "ars_nouveau:mycelial_sourcelink"
-			}]
 			rewards: [{
 				id: "1F2FFC81BA336436"
-				type: "item"
 				item: "ars_nouveau:wixie_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "781467CBFA498577"
+				item: "ars_nouveau:mycelial_sourcelink"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
 		}
 		{
-			x: 2.5d
-			y: -1.5d
-			description: ["Conjures a geode of Calcite, Basalt, and Amethyst. Summon 14 blocks from anything else. Requires a full jar of source."]
 			dependencies: ["209971171B86E7E9"]
+			description: ["Conjures a geode of Calcite, Basalt, and Amethyst. Summon 14 blocks from anything else. Requires a full jar of source."]
 			id: "7D9EFB225A839AAD"
-			tasks: [{
-				id: "07AB1E10F4090A6C"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_geode"
-			}]
 			rewards: [{
 				id: "78869E43EBDE50D7"
-				type: "item"
 				item: "ars_nouveau:wixie_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "07AB1E10F4090A6C"
+				item: "ars_caelum:ritual_conjure_island_geode"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
 		}
 		{
-			x: 1.5d
-			y: -0.5d
-			description: ["Contains mycelium, bastion fruit, mushrooms, source berries, and vexing trees. Converts the area to Mushroom Island."]
 			dependencies: ["436678048E9C48BB"]
+			description: ["Contains mycelium, bastion fruit, mushrooms, source berries, and vexing trees. Converts the area to Mushroom Island."]
 			id: "209971171B86E7E9"
-			tasks: [{
-				id: "79DD5DCB0F136DBA"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_vexing"
-			}]
 			rewards: [{
 				id: "2D5155C3E65A7A35"
-				type: "item"
 				item: "ars_nouveau:wixie_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "79DD5DCB0F136DBA"
+				item: "ars_caelum:ritual_conjure_island_vexing"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
 		}
 		{
-			x: 4.0d
-			y: -1.5d
-			description: ["Amethyst Golems can automate the collection and growing of Amethyst, and converts nearby Amethyst Blocks into Budding Amethyst.\\n\\nObtained by performing a Ritual of Awakening near a Budding Amethyst block."]
 			dependencies: ["7D9EFB225A839AAD"]
+			description: ["Amethyst Golems can automate the collection and growing of Amethyst, and converts nearby Amethyst Blocks into Budding Amethyst.\\n\\nObtained by performing a Ritual of Awakening near a Budding Amethyst block."]
 			id: "3AD4C88E5DE9C0AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72AF04EDCC88DB06"
+				table_id: 5468626932468587212L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "15626879437D3063"
-					type: "item"
 					item: "ars_nouveau:amethyst_golem_charm"
+					type: "item"
 				}
 				{
 					id: "6D33C17ADD7BD5E3"
-					type: "item"
 					item: "ars_nouveau:ritual_awakening"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "72AF04EDCC88DB06"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			x: 4.0d
+			y: -1.5d
 		}
 		{
-			x: 1.5d
-			y: 5.0d
-			description: ["Creates an island of Sand and Sandstone. Converts the area to Desert. Starts with a radius of 7, increased for each Source Gem applied.\\n\\nAugmenting with Terracotta will create a Badlands with red sand and terracotta."]
 			dependencies: ["28CE515EC64C90F8"]
+			description: ["Creates an island of Sand and Sandstone. Converts the area to Desert. Starts with a radius of 7, increased for each Source Gem applied.\\n\\nAugmenting with Terracotta will create a Badlands with red sand and terracotta."]
 			id: "0946010E36BFBE7F"
-			tasks: [{
-				id: "662A70478D10EF54"
-				type: "item"
-				item: "ars_nouveau:ritual_conjure_island_desert"
-			}]
 			rewards: [{
 				id: "52635A59F4D8C1D4"
-				type: "item"
 				item: "ars_elemental:lesser_fire_focus"
+				type: "item"
 			}]
+			tasks: [{
+				id: "662A70478D10EF54"
+				item: "ars_nouveau:ritual_conjure_island_desert"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
 		}
 		{
-			x: 0.5d
-			y: 4.5d
-			description: ["Consumes burnable materials to generate source. Will convert nearby Stone into Magma and Lava. See the worn notebook for more.\\n\\nCan consume items from adjacent pedestals."]
 			dependencies: ["28CE515EC64C90F8"]
+			description: ["Consumes burnable materials to generate source. Will convert nearby Stone into Magma and Lava. See the worn notebook for more.\\n\\nCan consume items from adjacent pedestals."]
 			id: "32D0704AED5BF1D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "156A0D70930F4AEF"
+				table_id: 5468626932468587212L
+				type: "random"
+			}]
 			tasks: [{
 				id: "5EA4479F85B6035A"
-				type: "item"
 				item: "ars_nouveau:volcanic_sourcelink"
+				type: "item"
 			}]
-			rewards: [{
-				id: "156A0D70930F4AEF"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			x: 0.5d
+			y: 4.5d
 		}
 		{
-			x: 1.5d
-			y: 3.5d
-			description: ["Contains lava, pumpkins, granite, and blazing archwood trees."]
 			dependencies: ["436678048E9C48BB"]
+			description: ["Contains lava, pumpkins, granite, and blazing archwood trees."]
 			id: "28CE515EC64C90F8"
-			tasks: [{
-				id: "050ABAB1825D298F"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_blazing"
-			}]
 			rewards: [{
 				id: "03BF30A850782E9E"
-				type: "item"
 				item: "ars_nouveau:starbuncle_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "050ABAB1825D298F"
+				item: "ars_caelum:ritual_conjure_island_blazing"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
 		}
 		{
-			x: 3.0d
-			y: -0.5d
-			description: ["Summons the Stronghold Portal Room. Note: The portal cannot be moved once placed. Perform far from other blocks! Requires a full jar of source."]
 			dependencies: ["209971171B86E7E9"]
+			description: ["Summons the Stronghold Portal Room. Note: The portal cannot be moved once placed. Perform far from other blocks! Requires a full jar of source."]
 			id: "656A7A573BD36A4F"
-			tasks: [{
-				id: "52CF439B0A365578"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_end_portal"
-			}]
 			rewards: [{
 				id: "14A40D361934C912"
-				type: "item"
 				item: "ars_nouveau:wixie_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "52CF439B0A365578"
+				item: "ars_caelum:ritual_conjure_island_end_portal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
 		}
 		{
-			x: -1.0d
-			y: 5.0d
-			description: ["Summons Guardians. Can be augmented with a Sea Lantern to summon the Elder Guardian."]
 			dependencies: ["47B78DE895A1E4E2"]
+			description: ["Summons Guardians. Can be augmented with a Sea Lantern to summon the Elder Guardian."]
 			id: "4AAA43B761A3533C"
-			tasks: [{
-				id: "45454FAC02774BE2"
-				type: "item"
-				item: "ars_caelum:ritual_elder_summon"
-			}]
 			rewards: [{
 				id: "24F9529115DE65EA"
-				type: "item"
 				item: "ars_elemental:lesser_water_focus"
+				type: "item"
 			}]
+			tasks: [{
+				id: "45454FAC02774BE2"
+				item: "ars_caelum:ritual_elder_summon"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
 		}
 		{
-			x: -0.5d
-			y: -1.5d
-			description: ["Rapidly grows nearby plants at the cost of source."]
 			dependencies: ["7F43851A9C6D5805"]
+			description: ["Rapidly grows nearby plants at the cost of source."]
 			id: "357D04B638638CED"
-			tasks: [{
-				id: "25B02761AD3DB2EF"
-				type: "item"
-				item: "ars_nouveau:ritual_overgrowth"
-			}]
 			rewards: [{
 				id: "166B835852F7643A"
-				type: "item"
 				item: "ars_nouveau:whirlisprig_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "25B02761AD3DB2EF"
+				item: "ars_nouveau:ritual_overgrowth"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
 		}
 		{
-			x: -2.5d
-			y: 0.5d
-			description: ["Harvests nearby plants at the cost of source."]
 			dependencies: ["7F43851A9C6D5805"]
+			description: ["Harvests nearby plants at the cost of source."]
 			id: "0900E2200B13F631"
-			tasks: [{
-				id: "73F65D0F3D180037"
-				type: "item"
-				item: "ars_nouveau:ritual_harvest"
-			}]
 			rewards: [{
 				id: "5C3D1CD8C1779157"
-				type: "item"
 				item: "ars_nouveau:starbuncle_shards"
+				type: "item"
 			}]
+			tasks: [{
+				id: "73F65D0F3D180037"
+				item: "ars_nouveau:ritual_harvest"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
 		}
 		{
-			x: 2.5d
-			y: 0.5d
-			description: ["Captures nearby mobs in Containment Jars.\\n\\nMany mobs will retain their behaviors in a jar. Catch them all!"]
 			dependencies: ["209971171B86E7E9"]
+			description: ["Captures nearby mobs in Containment Jars.\\n\\nMany mobs will retain their behaviors in a jar. Catch them all!"]
 			id: "4ABEB3A149493F58"
-			tasks: [{
-				id: "3CFAA3D5B5868EDD"
-				type: "item"
-				item: "ars_nouveau:ritual_containment"
-			}]
 			rewards: [
 				{
-					id: "1B5B354184C68731"
-					type: "choice"
 					exclude_from_claim_all: true
+					id: "1B5B354184C68731"
 					table_id: 5468626932468587212L
+					type: "choice"
 				}
 				{
 					id: "3293D080818B3D76"
-					type: "item"
 					item: {
-						id: "ars_nouveau:caster_tome"
 						Count: 1b
+						id: "ars_nouveau:caster_tome"
 						tag: {
 							"ars_nouveau:caster": {
+								current_slot: 0
 								flavor: "Sometimes you just need to get over that wall."
 								hidden_recipe: ""
 								is_hidden: 0b
-								current_slot: 0
 								spell_count: 1
 								spells: {
 									spell0: {
 										name: "Vault"
 										recipe: {
-											size: 5
 											part0: "ars_nouveau:glyph_self"
 											part1: "ars_nouveau:glyph_launch"
 											part2: "ars_nouveau:glyph_delay"
 											part3: "ars_nouveau:glyph_leap"
 											part4: "ars_nouveau:glyph_slowfall"
-										}
-										spellColor: {
-											r: 255
-											b: 180
-											g: 25
+											size: 5
 										}
 										sound: {
-											volume: 1.0f
 											pitch: 1.0f
 											soundTag: { }
+											volume: 1.0f
+										}
+										spellColor: {
+											b: 180
+											g: 25
+											r: 255
 										}
 									}
 								}
@@ -429,179 +421,179 @@
 							}
 						}
 					}
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "3CFAA3D5B5868EDD"
+				item: "ars_nouveau:ritual_containment"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
 		}
 		{
-			x: -1.5d
-			y: 1.0d
-			description: ["Causes animals to breed nearby if possible. Caps at 20 nearby animals."]
 			dependencies: ["7F43851A9C6D5805"]
+			description: ["Causes animals to breed nearby if possible. Caps at 20 nearby animals."]
 			id: "1FCB9F4E2C26B84A"
+			rewards: [{
+				count: 2
+				id: "6561A918E5C14ECD"
+				item: "minecraft:goat_spawn_egg"
+				type: "item"
+			}]
 			tasks: [{
 				id: "04F1DB6266D71AEF"
-				type: "item"
 				item: "ars_nouveau:ritual_fertility"
-			}]
-			rewards: [{
-				id: "6561A918E5C14ECD"
 				type: "item"
-				item: "minecraft:goat_spawn_egg"
-				count: 2
 			}]
+			x: -1.5d
+			y: 1.0d
 		}
 		{
-			x: 0.5d
-			y: -1.5d
-			description: ["Allows nearby players to gain creative flight within 40 blocks. Consumes source periodically."]
 			dependencies: ["209971171B86E7E9"]
+			description: ["Allows nearby players to gain creative flight within 40 blocks. Consumes source periodically."]
 			id: "54ECF3B04E5DBF77"
-			tasks: [{
-				id: "5EA3455C2941FBEC"
-				type: "item"
-				item: "ars_nouveau:ritual_flight"
-			}]
 			rewards: [{
 				id: "57DA31822B16EE31"
-				type: "item"
 				item: "ars_nouveau:ritual_binding"
+				type: "item"
 			}]
+			tasks: [{
+				id: "5EA3455C2941FBEC"
+				item: "ars_nouveau:ritual_flight"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
 		}
 		{
-			x: 2.5d
-			y: 4.5d
-			description: ["Converts nearby mobs into experience shards but destroys drops."]
 			dependencies: ["28CE515EC64C90F8"]
+			description: ["Converts nearby mobs into experience shards but destroys drops."]
 			id: "6FEFCE9E8B3FDBEA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E7396B3D01FB555"
+				table_id: 5468626932468587212L
+				type: "random"
+			}]
 			tasks: [{
 				id: "599AE65C2A1BAFDC"
-				type: "item"
 				item: "ars_nouveau:ritual_disintegration"
+				type: "item"
 			}]
-			rewards: [{
-				id: "6E7396B3D01FB555"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			x: 2.5d
+			y: 4.5d
 		}
 		{
-			x: 2.5d
-			y: 2.5d
-			description: ["Flashpines can be acquired by imbueing a blazing archwood sapling and pod with lightning rods."]
 			dependencies: ["28CE515EC64C90F8"]
+			description: ["Flashpines can be acquired by imbueing a blazing archwood sapling and pod with lightning rods."]
 			id: "3C449AC9D8DC450F"
 			tasks: [
 				{
 					id: "0E7D1584594DD487"
-					type: "item"
 					item: "ars_elemental:yellow_archwood_sapling"
+					type: "item"
 				}
 				{
 					id: "28B7194607796456"
-					type: "item"
 					item: "ars_elemental:flashpine_pod"
+					type: "item"
 				}
 			]
+			x: 2.5d
+			y: 2.5d
 		}
 		{
-			x: 4.0d
-			y: 2.5d
-			description: ["Grants speed to all nearby starbuncles."]
 			dependencies: ["3C449AC9D8DC450F"]
+			description: ["Grants speed to all nearby starbuncles."]
 			id: "254B58746BE53DF3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1577486EE6D75678"
+				table_id: 4542458237970434754L
+				type: "random"
+			}]
 			tasks: [{
 				id: "1740B3C4A2D046E6"
-				type: "item"
 				item: "ars_elemental:ritual_squirrels"
+				type: "item"
 			}]
-			rewards: [{
-				id: "1577486EE6D75678"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 4542458237970434754L
-			}]
+			x: 4.0d
+			y: 2.5d
 		}
 		{
-			x: 3.5d
-			y: 1.5d
-			description: ["Repels all nearby mobs."]
 			dependencies: ["3C449AC9D8DC450F"]
+			description: ["Repels all nearby mobs."]
 			id: "2B06DFE629D651D9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "097A89877C5E4F12"
+				table_id: 5468626932468587212L
+				type: "random"
+			}]
 			tasks: [{
 				id: "5DBA0B3F6ABF583C"
-				type: "item"
 				item: "ars_elemental:ritual_repulsion"
+				type: "item"
 			}]
-			rewards: [{
-				id: "097A89877C5E4F12"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 5468626932468587212L
-			}]
+			x: 3.5d
+			y: 1.5d
 		}
 		{
-			x: 0.0d
-			y: -0.5d
-			description: ["Heals players and cures villager zombies, granting a discount to trades."]
 			dependencies: ["7F43851A9C6D5805"]
+			description: ["Heals players and cures villager zombies, granting a discount to trades."]
 			id: "0E417C1C8453A261"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FAC024C8691C5C3"
+				table_id: 4542458237970434754L
+				type: "random"
+			}]
 			tasks: [{
 				id: "5FE7627E84410E8B"
-				type: "item"
 				item: "ars_nouveau:ritual_restoration"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0FAC024C8691C5C3"
-				type: "random"
-				exclude_from_claim_all: true
-				table_id: 4542458237970434754L
-			}]
+			x: 0.0d
+			y: -0.5d
 		}
 		{
-			x: -2.5d
-			y: 3.5d
-			description: ["Conjures a magical village island. Perform this ritual 14 blocks from any other blocks."]
 			dependencies: ["47B78DE895A1E4E2"]
+			description: ["Conjures a magical village island. Perform this ritual 14 blocks from any other blocks."]
 			id: "7857457A228595D9"
-			tasks: [{
-				id: "1AC029DAC161FD3F"
-				type: "item"
-				item: "ars_caelum:ritual_conjure_island_village"
-			}]
 			rewards: [{
 				id: "098E95769DB13BF8"
-				type: "item"
 				item: {
-					id: "ars_nouveau:caster_tome"
 					Count: 1b
+					id: "ars_nouveau:caster_tome"
 					tag: {
 						"ars_nouveau:caster": {
+							current_slot: 0
 							flavor: "Creates a fire that quickly freezes to ice."
 							hidden_recipe: ""
 							is_hidden: 0b
-							current_slot: 0
 							spell_count: 1
 							spells: {
 								spell0: {
 									name: "Farfalla's Frosty Flames"
 									recipe: {
-										size: 5
 										part0: "ars_nouveau:glyph_projectile"
 										part1: "ars_nouveau:glyph_ignite"
 										part2: "ars_nouveau:glyph_delay"
 										part3: "ars_nouveau:glyph_conjure_water"
 										part4: "ars_nouveau:glyph_freeze"
-									}
-									spellColor: {
-										r: 255
-										b: 180
-										g: 25
+										size: 5
 									}
 									sound: {
-										volume: 1.0f
 										pitch: 1.0f
 										soundTag: { }
+										volume: 1.0f
+									}
+									spellColor: {
+										b: 180
+										g: 25
+										r: 255
 									}
 								}
 							}
@@ -611,59 +603,58 @@
 						}
 					}
 				}
+				type: "item"
 			}]
+			tasks: [{
+				id: "1AC029DAC161FD3F"
+				item: "ars_caelum:ritual_conjure_island_village"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
 		}
 		{
-			x: 4.5d
-			y: -0.5d
-			description: ["Slay the dragon!"]
 			dependencies: ["656A7A573BD36A4F"]
+			description: ["Slay the dragon!"]
 			id: "4B5ECEA5395D968C"
-			tasks: [{
-				id: "1F958EDF4FA0E45D"
-				type: "advancement"
-				advancement: "minecraft:end/kill_dragon"
-				criterion: ""
-			}]
 			rewards: [
 				{
 					id: "11DC07037E8293AD"
-					type: "item"
 					item: "minecraft:chorus_flower"
+					type: "item"
 				}
 				{
 					id: "74F715E491CCCB0D"
-					type: "item"
 					item: {
-						id: "ars_nouveau:caster_tome"
 						Count: 1b
+						id: "ars_nouveau:caster_tome"
 						tag: {
 							"ars_nouveau:caster": {
+								current_slot: 0
 								flavor: "Launches the caster into the air and grants temporary elytra flight!"
 								hidden_recipe: ""
 								is_hidden: 0b
-								current_slot: 0
 								spell_count: 1
 								spells: {
 									spell0: {
 										name: "Takeoff!"
 										recipe: {
-											size: 5
 											part0: "ars_nouveau:glyph_self"
 											part1: "ars_nouveau:glyph_launch"
 											part2: "ars_nouveau:glyph_launch"
 											part3: "ars_nouveau:glyph_glide"
 											part4: "ars_nouveau:glyph_duration_down"
-										}
-										spellColor: {
-											r: 255
-											b: 180
-											g: 25
+											size: 5
 										}
 										sound: {
-											volume: 1.0f
 											pitch: 1.0f
 											soundTag: { }
+											volume: 1.0f
+										}
+										spellColor: {
+											b: 180
+											g: 25
+											r: 255
 										}
 									}
 								}
@@ -673,82 +664,91 @@
 							}
 						}
 					}
+					type: "item"
 				}
 			]
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "1F958EDF4FA0E45D"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -0.5d
 		}
 		{
-			x: 3.0d
-			y: 3.5d
-			description: ["The nether is reached by building a standard nether portal.\\n\\nPrepare some spells and food before you go! Mana Regen is reduced in this pack and can be restored by consuming regen items like berries and potions."]
 			dependencies: ["28CE515EC64C90F8"]
+			description: ["The nether is reached by building a standard nether portal.\\n\\nPrepare some spells and food before you go! Mana Regen is reduced in this pack and can be restored by consuming regen items like berries and potions."]
 			id: "529B4508B700B199"
-			tasks: [{
-				id: "160B3AB310492D14"
-				type: "dimension"
-				icon: "minecraft:obsidian"
-				dimension: "minecraft:the_nether"
-			}]
 			rewards: [
 				{
-					id: "07A0185516A34AEC"
-					type: "item"
-					item: "ars_nouveau:source_berry_roll"
 					count: 8
+					id: "07A0185516A34AEC"
+					item: "ars_nouveau:source_berry_roll"
+					type: "item"
 				}
 				{
 					id: "2D4EDBD58CF1CB86"
-					type: "item"
 					item: "ars_nouveau:source_berry_pie"
+					type: "item"
 				}
 			]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:obsidian"
+				id: "160B3AB310492D14"
+				type: "dimension"
+			}]
+			x: 3.0d
+			y: 3.5d
 		}
 		{
-			x: 4.5d
-			y: 3.5d
-			description: ["Unlocks tier 2 glyphs and equipment."]
 			dependencies: ["529B4508B700B199"]
+			description: ["Unlocks tier 2 glyphs and equipment."]
 			id: "6F6796259CC97E07"
-			tasks: [{
-				id: "07C73614E330373D"
-				type: "item"
-				item: "minecraft:blaze_rod"
-			}]
 			rewards: [{
 				id: "69475025F0AFC2A1"
-				type: "item"
 				item: "ars_nouveau:glyph_animate_block"
+				type: "item"
 			}]
+			tasks: [{
+				id: "07C73614E330373D"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
 		}
 		{
-			x: 5.0d
-			y: -2.5d
-			description: ["Convert amethyst blocks to corundum with manipulation essence.\\n\\nOther colors can be obtained with dye."]
 			dependencies: ["3AD4C88E5DE9C0AF"]
+			description: ["Convert amethyst blocks to corundum with manipulation essence.\\n\\nOther colors can be obtained with dye."]
 			id: "5002D88B38750D31"
+			rewards: [{
+				count: 8
+				id: "34DFBBC575AF0FA5"
+				item: "quark:white_corundum"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2B9BA0AD9F93C2D3"
-				type: "item"
 				item: "quark:white_corundum"
-			}]
-			rewards: [{
-				id: "34DFBBC575AF0FA5"
 				type: "item"
-				item: "quark:white_corundum"
-				count: 8
 			}]
+			x: 5.0d
+			y: -2.5d
 		}
 		{
-			x: 1.5d
-			y: 1.0d
-			description: ["Summons a variety of animals based on the biome it is performed in."]
 			dependencies: ["209971171B86E7E9"]
+			description: ["Summons a variety of animals based on the biome it is performed in."]
 			id: "185FB82A01372282"
 			tasks: [{
 				id: "10E2D6C3731D5108"
-				type: "item"
 				item: "ars_nouveau:ritual_animal_summon"
+				type: "item"
 			}]
+			x: 1.5d
+			y: 1.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Island Creation"
 }

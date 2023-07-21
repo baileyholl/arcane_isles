@@ -50,6 +50,7 @@
   "cookingforblockheads:oven": null,
   "cookingforblockheads:fridge": null,
   "cookingforblockheads:sink": null,
+  "ars_nouveau:mob_jar": null,
   "enigmaticgraves:grave": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
@@ -89,6 +90,5 @@
   "jade:registry_name": null,
   "jade:mod_name": null,
   "jade:distance": null,
-  "jade:block_face": null,
-  "ars_nouveau:mob_jar": null
+  "jade:block_face": null
 }

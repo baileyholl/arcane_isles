@@ -1,154 +1,147 @@
 {
-	id: "2F912A1A3C4A9B2E"
-	group: "4216FE5ADC621CC5"
-	order_index: 0
-	filename: "wizzies_bistro"
-	title: "Wizzie's Bistro"
-	icon: "farmersdelight:shepherds_pie_block"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wizzies_bistro"
+	group: "4216FE5ADC621CC5"
+	icon: "farmersdelight:shepherds_pie_block"
+	id: "2F912A1A3C4A9B2E"
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.5d
-			y: 0.0d
 			description: ["Exchanges emeralds for otherwise unobtainable seeds."]
 			id: "2252DFE57555188D"
-			tasks: [{
-				id: "6F44E3B034391614"
-				type: "item"
-				item: "farmingforblockheads:market"
-			}]
 			rewards: [
 				{
-					id: "2C4E67311089B8D6"
-					type: "item"
-					item: "ftbquests:screen_1"
 					count: 3
+					id: "2C4E67311089B8D6"
+					item: "ftbquests:screen_1"
+					type: "item"
 				}
 				{
 					id: "0698A21E01DB56EA"
-					type: "item"
 					item: "minecraft:emerald"
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "6F44E3B034391614"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
 		}
 		{
-			x: -1.0d
-			y: 0.0d
 			dependencies: ["2252DFE57555188D"]
 			id: "3E3CB9A790A86185"
 			tasks: [{
 				id: "7600E6A22764B1C3"
-				type: "item"
 				item: "farmersdelight:tomato_seeds"
+				type: "item"
 			}]
+			x: -1.0d
+			y: 0.0d
 		}
 		{
-			x: -0.5d
-			y: 1.0d
 			dependencies: ["2252DFE57555188D"]
 			id: "092247EC2298BACE"
 			tasks: [{
 				id: "084669A9165B07CD"
-				type: "item"
 				item: "minecraft:carrot"
+				type: "item"
 			}]
+			x: -0.5d
+			y: 1.0d
 		}
 		{
-			x: 1.5d
-			y: 1.0d
 			dependencies: ["2252DFE57555188D"]
 			id: "3617E372762A3B8C"
 			tasks: [{
 				id: "77ED21EEDE543180"
-				type: "item"
 				item: "farmersdelight:onion"
+				type: "item"
 			}]
+			x: 1.5d
+			y: 1.0d
 		}
 		{
-			x: 2.0d
-			y: 0.0d
 			dependencies: ["2252DFE57555188D"]
 			id: "73FAD1E3F0711750"
 			tasks: [{
 				id: "0F6A737001EE53DF"
-				type: "item"
 				item: "minecraft:beetroot_seeds"
+				type: "item"
 			}]
+			x: 2.0d
+			y: 0.0d
 		}
 		{
-			x: -0.5d
-			y: -1.0d
 			dependencies: ["2252DFE57555188D"]
 			id: "495428AC0E806145"
 			tasks: [{
 				id: "5FB8841CE0904093"
-				type: "item"
 				item: "farmersdelight:rice"
+				type: "item"
 			}]
+			x: -0.5d
+			y: -1.0d
 		}
 		{
-			x: 1.5d
-			y: -1.0d
 			dependencies: ["2252DFE57555188D"]
 			id: "4F33637470E78134"
 			tasks: [{
 				id: "30B4471B3430690A"
-				type: "item"
 				item: "minecraft:potato"
+				type: "item"
 			}]
+			x: 1.5d
+			y: -1.0d
 		}
 		{
-			x: 0.5d
-			y: 1.5d
 			dependencies: ["2252DFE57555188D"]
 			id: "4C78CBB94630F09D"
 			tasks: [{
 				id: "422F28C1B70583D9"
-				type: "item"
 				item: "farmersdelight:cabbage_seeds"
+				type: "item"
 			}]
+			x: 0.5d
+			y: 1.5d
 		}
 		{
-			title: "Well Done"
-			x: -2.0d
-			y: -4.5d
 			description: ["Spell Turrets can use Interact with a Knife on a Cutting Board."]
 			id: "491003FF02C996E8"
-			tasks: [
-				{
-					id: "0B2C66524C879B54"
-					type: "item"
-					item: "farmersdelight:beef_patty"
-					count: 500L
-					consume_items: true
-				}
-				{
-					id: "0A6CB251A60257EE"
-					type: "item"
-					item: "farmersdelight:cutting_board"
-				}
-			]
 			rewards: [{
 				id: "78D5A99B0ED8A48E"
-				type: "item"
 				item: {
-					id: "ars_nouveau:mob_jar"
 					Count: 1b
+					id: "ars_nouveau:mob_jar"
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							id: "ars_nouveau:mob_jar"
 							entityTag: {
-								Brain: {
-									memories: { }
-								}
-								HurtByTimestamp: 0
-								ForgeData: { }
+								AbsorptionAmount: 0.0f
+								Age: 0
+								Air: 300s
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
 								Attributes: [
 									{
 										Base: 16.0d
 										Modifiers: [{
+											Amount: 0.011379469602159851d
+											Name: "Random spawn bonus"
 											Operation: 1
 											UUID: [I;
 												341470520
@@ -156,8 +149,6 @@
 												-1590038261
 												-393965996
 											]
-											Amount: 0.011379469602159851d
-											Name: "Random spawn bonus"
 										}]
 										Name: "minecraft:generic.follow_range"
 									}
@@ -174,202 +165,205 @@
 										Name: "forge:entity_gravity"
 									}
 								]
-								Invulnerable: 0b
-								FallFlying: 0b
-								ForcedAge: 0
-								PortalCooldown: 0
-								AbsorptionAmount: 0.0f
-								FallDistance: 0.0f
-								InLove: 0
+								Brain: {
+									memories: { }
+								}
+								CanPickUpLoot: 0b
 								CanUpdate: 1b
 								DeathTime: 0s
+								FallDistance: 0.0f
+								FallFlying: 0b
+								Fire: 143s
+								ForcedAge: 0
+								ForgeData: { }
 								HandDropChances: [
 									0.085f
 									0.085f
 								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								Health: 9.0f
+								HurtByTimestamp: 0
+								HurtTime: 0s
+								InLove: 0
+								Invulnerable: 0b
+								LeftHanded: 0b
+								Motion: [
+									0.053842105100351804d
+									-0.0784000015258789d
+									0.0d
+								]
+								OnGround: 1b
 								PersistenceRequired: 0b
-								id: "minecraft:cow"
+								PortalCooldown: 0
+								Pos: [
+									6.509397895791337d
+									65.0d
+									2.387499988079071d
+								]
+								Rotation: [
+									185.7403f
+									-40.0f
+								]
 								UUID: [I;
 									-1447662096
 									-117686167
 									-1513368929
 									-755928012
 								]
-								Age: 0
-								Motion: [
-									0.053842105100351804d
-									-0.0784000015258789d
-									0.0d
-								]
-								Health: 9.0f
-								LeftHanded: 0b
-								Air: 300s
-								OnGround: 1b
-								Rotation: [
-									185.7403f
-									-40.0f
-								]
-								HandItems: [
-									{ }
-									{ }
-								]
-								ArmorDropChances: [
-									0.085f
-									0.085f
-									0.085f
-									0.085f
-								]
-								Pos: [
-									6.509397895791337d
-									65.0d
-									2.387499988079071d
-								]
-								Fire: 143s
-								ArmorItems: [
-									{ }
-									{ }
-									{ }
-									{ }
-								]
-								CanPickUpLoot: 0b
-								HurtTime: 0s
+								id: "minecraft:cow"
 							}
+							id: "ars_nouveau:mob_jar"
 						}
 					}
 				}
+				type: "item"
 			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 500L
+					id: "0B2C66524C879B54"
+					item: "farmersdelight:beef_patty"
+					type: "item"
+				}
+				{
+					id: "0A6CB251A60257EE"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "Well Done"
+			x: -2.0d
+			y: -4.5d
 		}
 		{
-			x: -2.0d
-			y: -6.0d
 			id: "54A0B6678F1163A2"
 			tasks: [{
-				id: "3B2F007100E03F58"
-				type: "item"
-				item: "farmersdelight:barbecue_stick"
-				count: 500L
 				consume_items: true
+				count: 500L
+				id: "3B2F007100E03F58"
+				item: "farmersdelight:barbecue_stick"
+				type: "item"
 			}]
+			x: -2.0d
+			y: -6.0d
 		}
 		{
-			x: -2.0d
-			y: -7.5d
 			id: "026E8D6A40FC1FFC"
 			tasks: [{
-				id: "7E50168E01749786"
-				type: "item"
-				item: "farmersdelight:shepherds_pie_block"
-				count: 500L
 				consume_items: true
+				count: 500L
+				id: "7E50168E01749786"
+				item: "farmersdelight:shepherds_pie_block"
+				type: "item"
 			}]
+			x: -2.0d
+			y: -7.5d
 		}
 		{
-			x: -0.5d
-			y: -4.5d
 			id: "38E7444FBD139299"
 			tasks: [{
-				id: "72A758B7C8F3A684"
-				type: "item"
-				item: "farmersdelight:bacon_and_eggs"
-				count: 500L
 				consume_items: true
+				count: 500L
+				id: "72A758B7C8F3A684"
+				item: "farmersdelight:bacon_and_eggs"
+				type: "item"
 			}]
+			x: -0.5d
+			y: -4.5d
 		}
 		{
-			x: 3.0d
-			y: -4.5d
 			description: [
 				"Honey can be collected by casting Cut on a beehive."
 				"\\n\\nGrow Oak, Birch, or Mangrove trees within two blocks of a flower for a chance at a bee nest."
 			]
 			id: "289DA60E155A3980"
 			tasks: [{
-				id: "1C929CA18447FDE2"
-				type: "item"
-				item: "supplementaries:candy"
-				count: 1000L
 				consume_items: true
+				count: 1000L
+				id: "1C929CA18447FDE2"
+				item: "supplementaries:candy"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -4.5d
 		}
 		{
-			x: 3.0d
-			y: -7.5d
 			id: "610B23D2DAACCC75"
 			tasks: [{
-				id: "6B149BAE0DD55447"
-				type: "item"
-				item: "farmersdelight:apple_pie_slice"
-				count: 2000L
 				consume_items: true
+				count: 2000L
+				id: "6B149BAE0DD55447"
+				item: "farmersdelight:apple_pie_slice"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -7.5d
 		}
 		{
-			x: 3.0d
-			y: -9.0d
 			id: "12541F73237187CD"
 			tasks: [{
-				id: "476E21351D986EE5"
-				type: "item"
-				item: "farmersdelight:chocolate_pie_slice"
-				count: 2000L
 				consume_items: true
+				count: 2000L
+				id: "476E21351D986EE5"
+				item: "farmersdelight:chocolate_pie_slice"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -9.0d
 		}
 		{
-			x: -0.5d
-			y: -6.0d
 			id: "63AF5DCA7994BC21"
 			tasks: [{
-				id: "594D23BB1DDEBEBA"
-				type: "item"
-				item: "farmersdelight:chicken_sandwich"
-				count: 500L
 				consume_items: true
+				count: 500L
+				id: "594D23BB1DDEBEBA"
+				item: "farmersdelight:chicken_sandwich"
+				type: "item"
 			}]
+			x: -0.5d
+			y: -6.0d
 		}
 		{
-			x: 3.0d
-			y: -6.0d
 			id: "68DEBE675634707F"
 			tasks: [{
-				id: "6B273DB71344F2FE"
-				type: "item"
-				item: "farmersdelight:melon_popsicle"
-				count: 500L
 				consume_items: true
+				count: 500L
+				id: "6B273DB71344F2FE"
+				item: "farmersdelight:melon_popsicle"
+				type: "item"
 			}]
+			x: 3.0d
+			y: -6.0d
 		}
 		{
-			x: 1.5d
-			y: -4.5d
 			id: "08A7C42E3D59DB90"
 			tasks: [{
-				id: "6A8056B770950F62"
-				type: "item"
-				item: "farmersdelight:kelp_roll"
-				count: 500L
 				consume_items: true
+				count: 500L
+				id: "6A8056B770950F62"
+				item: "farmersdelight:kelp_roll"
+				type: "item"
 			}]
+			x: 1.5d
+			y: -4.5d
 		}
 		{
-			x: 1.5d
-			y: -6.0d
 			id: "1FB44DAB8C24037D"
 			tasks: [{
-				id: "1C9050ABBAD794EF"
-				type: "item"
-				item: "farmersdelight:rice_roll_medley_block"
-				count: 200L
 				consume_items: true
+				count: 200L
+				id: "1C9050ABBAD794EF"
+				item: "farmersdelight:rice_roll_medley_block"
+				type: "item"
 			}]
+			x: 1.5d
+			y: -6.0d
 		}
 		{
-			title: "Who ate all the pie?"
-			icon: "ars_nouveau:glyph_grow"
-			x: 0.5d
-			y: -10.0d
-			subtitle: "Who knew wixies liked to cook so much?"
-			hide_dependency_lines: true
 			dependencies: [
 				"63AF5DCA7994BC21"
 				"08A7C42E3D59DB90"
@@ -383,39 +377,45 @@
 				"12541F73237187CD"
 				"491003FF02C996E8"
 			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:glyph_grow"
 			id: "5E7AE8BA6EB369DF"
+			rewards: [{
+				id: "4218A1C79551471F"
+				item: "ars_nouveau:glyph_grow"
+				type: "item"
+			}]
+			subtitle: "Who knew wixies liked to cook so much?"
 			tasks: [{
 				id: "4C80379F2CD927B7"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "4218A1C79551471F"
-				type: "item"
-				item: "ars_nouveau:glyph_grow"
-			}]
+			title: "Who ate all the pie?"
+			x: 0.5d
+			y: -10.0d
 		}
 		{
-			x: 0.5d
-			y: -1.5d
 			dependencies: ["2252DFE57555188D"]
 			id: "41BBA4609D0553B2"
 			tasks: [{
 				id: "5EF56A825FD6813D"
-				type: "item"
 				item: "minecraft:melon_seeds"
+				type: "item"
 			}]
+			x: 0.5d
+			y: -1.5d
 		}
 		{
-			x: 0.5d
-			y: -3.0d
 			description: ["Wizzie's Corporate has requested for absurd amounts of food! If only they could figure out how the use that cooking pot...\\n\\nRituals of Overgrowth, Turrets, and Containment Jars can be used to make cooking a breeze."]
 			id: "38EBD9D86F6F852E"
 			tasks: [{
 				id: "3E44DC9DD37577F1"
-				type: "checkmark"
 				title: "Cooking Challenges"
+				type: "checkmark"
 			}]
+			x: 0.5d
+			y: -3.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Wizzie's Bistro"
 }

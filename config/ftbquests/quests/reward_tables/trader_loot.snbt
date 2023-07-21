@@ -1,9 +1,8 @@
 {
-	id: "27A82F6005723263"
-	order_index: 3
-	title: "Trader Loot"
 	icon: "minecraft:wandering_trader_spawn_egg"
+	id: "27A82F6005723263"
 	loot_size: 1
+	order_index: 3
 	rewards: [
 		{ item: "minecraft:allay_spawn_egg" }
 		{ item: "minecraft:music_disc_13" }
@@ -35,4 +34,5 @@
 		{ item: "minecraft:wolf_spawn_egg" }
 		{ item: "minecraft:panda_spawn_egg" }
 	]
+	title: "Trader Loot"
 }

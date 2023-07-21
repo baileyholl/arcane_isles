@@ -1,8 +1,7 @@
 {
 	id: "0BE66F304086CF34"
-	order_index: 0
-	title: "Shards"
 	loot_size: 1
+	order_index: 0
 	rewards: [
 		{ item: "ars_nouveau:starbuncle_shards" }
 		{ item: "ars_nouveau:wixie_shards" }
@@ -10,4 +9,5 @@
 		{ item: "ars_nouveau:whirlisprig_shards" }
 		{ item: "ars_elemental:siren_shards" }
 	]
+	title: "Shards"
 }
